@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Meter Product List - Simplified Desktop</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#fcc603",
+                        "primary-dark": "#e5b300",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#231f0f",
+                        "surface-light": "#ffffff",
+                        "text-main": "#181710",
+                        "text-subtle": "#8d835e",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main min-h-screen flex flex-col">
+<header class="bg-surface-light border-b border-[#f5f4f0] sticky top-0 z-50">
+<div class="px-6 lg:px-10 py-3 flex items-center justify-between mx-auto max-w-[1440px]">
+<div class="flex items-center gap-4 text-[#181710]">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">electric_bolt</span>
+</div>
+<h2 class="text-[#181710] text-xl font-bold leading-tight tracking-tight">VoltMeter Co.</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#181710] text-sm font-medium hover:text-primary transition-colors" href="#">Products</a>
+<a class="text-[#181710] text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-[#181710] text-sm font-medium hover:text-primary transition-colors" href="#">Support</a>
+<a class="text-[#181710] text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center p-2 rounded-full text-[#181710] hover:bg-background-light">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark transition-colors text-[#181710] text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Login</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-6 lg:px-10 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<aside class="lg:col-span-3 space-y-8">
+<div class="flex flex-wrap gap-2 text-sm text-text-subtle mb-4">
+<a class="hover:text-primary" href="#">Home</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Products</a>
+<span>/</span>
+<span class="text-text-main font-medium">Smart Meters</span>
+</div>
+<div class="bg-surface-light rounded-xl p-6 shadow-sm border border-[#f0f0ed]">
+<h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">category</span>
+                    Categories
+                </h3>
+<ul class="space-y-1">
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg bg-primary/10 text-text-main font-medium border-l-4 border-primary" href="#">
+<span>All Meters</span>
+<span class="text-xs bg-white px-2 py-0.5 rounded-full shadow-sm">124</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-background-light text-text-subtle hover:text-text-main transition-colors" href="#">
+<span>Single Phase</span>
+<span class="text-xs text-text-subtle">42</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-background-light text-text-subtle hover:text-text-main transition-colors" href="#">
+<span>Three Phase</span>
+<span class="text-xs text-text-subtle">36</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-background-light text-text-subtle hover:text-text-main transition-colors" href="#">
+<span>DIN Rail Mount</span>
+<span class="text-xs text-text-subtle">18</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-background-light text-text-subtle hover:text-text-main transition-colors" href="#">
+<span>Panel Meters</span>
+<span class="text-xs text-text-subtle">15</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-background-light text-text-subtle hover:text-text-main transition-colors" href="#">
+<span>Smart Gateways</span>
+<span class="text-xs text-text-subtle">13</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="bg-primary/5 rounded-xl p-6 border border-primary/20">
+<h4 class="font-bold text-base mb-2">Need a Custom Solution?</h4>
+<p class="text-sm text-text-subtle mb-4">Our engineering team can design meters specific to your grid requirements.</p>
+<button class="w-full py-2 px-4 bg-white border border-primary text-text-main text-sm font-bold rounded-lg hover:bg-primary hover:border-transparent transition-colors">
+                    Contact Sales
+                </button>
+</div>
+</aside>
+<section class="lg:col-span-9 flex flex-col gap-6">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h1 class="text-3xl font-bold text-text-main tracking-tight mb-2">Industrial Smart Meters</h1>
+<p class="text-text-subtle">High-precision energy measurement for modern industrial grids.</p>
+</div>
+<div class="text-sm font-medium text-text-main">
+                        Showing <span class="font-bold">1-12</span> of <span class="font-bold">124</span> products
+                    </div>
+</div>
+<div class="relative w-full max-w-xl">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-subtle">search</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface-light border border-[#e5e5e0] focus:border-primary focus:ring-0 rounded-xl text-sm transition-colors shadow-sm" placeholder="Search by model, specs, or series..." type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<div class="absolute top-3 right-3 z-10">
+<span class="bg-primary text-[#181710] text-xs font-bold px-2 py-1 rounded">NEW</span>
+</div>
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Close up of an industrial electronic circuit board with components representing smart meter technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD24r5O3wW3GVYUB_HceWXT87vIXcZKWUDR8EJ3ahqX8iIQge7GG5o1oOJuouM87FEklt-HYUUVIsnCM98hvZkMi-ii4M26s7llsugCsz7QFaEIeFvwSbosoWYRWx3xiWaXrJ7ggCjtq3zBBSnWbWC2IUAHUV3v9M1jhkXRSzkK3uvHX0UuYyZMvIy2qd-VCxNZRLitd_8fDtPnUQQl0z2Zurs0zrGiGiHJWP-hOlnAyoBpRhaPbG_Pcp8zRSbdtTfZ1htTwNXu4xw"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">Three Phase</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">VM-3000 Industrial IoT</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Voltage</span>
+<span class="font-medium text-text-main">3x230/400V</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Accuracy</span>
+<span class="font-medium text-text-main">Class 0.5S</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Connectivity</span>
+<span class="font-medium text-text-main truncate">Modbus RTU, LoRaWAN</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Abstract white and grey geometric patterns representing modern industrial design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuNmRdnBuDMBJRupjP6tM3v-LApfVSwMcGLQM5iEPDjqgkxd1l3nNZvlV97qRoMm8t-NWu1vDqaZG-qs6LGb7Ysd1lofs-xtsh79iQZrr_5NGfRyVWYmK8CQv7jvJ_xD8ZSvf_HbpLLQpJFWmXEerVNrTBM0_diuG_daivVsdhJPkLT_QWyjN58gu8QwJqs4GLQQ9Z0nllLv0EOnWGEdLUTgPRz9bMrhQ22_zDaXcR6sjJhOuHOXmCzVMwf-pFgG5vmk8k0G0ZBW8"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">Single Phase</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">VM-100 Compact</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Voltage</span>
+<span class="font-medium text-text-main">230V</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Accuracy</span>
+<span class="font-medium text-text-main">Class 1.0</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Connectivity</span>
+<span class="font-medium text-text-main truncate">RS485</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Detailed close up of metallic industrial machinery part" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr1lqRmiwmdYTfn3dGV3GlvJVcgE0SVESsPfvhO2YyYF_ACUIqGpb9lBl2X1VNkxPyVD9iSoJ2dFL0ypFiNdqNKOsG6tmjTag8nTM_ZzknC778QhystcfIbq7MRr4DFOdkY5CbbCJn9Pw4WTAL2luZAZ8UMlcDumptpf3B5yM-2Fw1tSUrB7EPLTrvPTXMHwkjY94hGH-G0O43FZPZmvxoQH0I4gNi__Q4gjPriO_Xxp8M0PyL6QGtGApRWC8pHrW8rACzX_VGLxY"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">DIN Rail</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">DR-500 Smart Rail</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Voltage</span>
+<span class="font-medium text-text-main">230/400V</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Accuracy</span>
+<span class="font-medium text-text-main">Class 0.2S</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Connectivity</span>
+<span class="font-medium text-text-main truncate">Ethernet, Modbus TCP</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<div class="absolute top-3 right-3 z-10">
+<span class="bg-[#231f0f] text-white text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+</div>
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Microchip on a circuit board macro shot representing advanced electronics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjhJRnCiod5YGWDQ4g-EvCkJ0-ifFxqRzvli6mYiZF21_YkR-AKZMrpwAA7v4CY6tupIHTSAmp4RTlP6F45q8ctk7IW5evALua5yLKalWdH1g_RiKwMKwZtLm8b6LnHe2Se-hsL_psvzmMQzXEvgrv9UNvvpz8E06SGCrGxj1-dcZqpcPniKC0shRO9BN3aHA_l0IYuJgd6_EITsbgsPXx6JRJpncrytuRSu0ed7ybCCXNZ3AzybOjUTPGGzXtR3vK_Ybt44Mhjus"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">Panel Mount</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">PM-Series 96</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Dimensions</span>
+<span class="font-medium text-text-main">96x96mm</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Display</span>
+<span class="font-medium text-text-main">LCD Backlit</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Connectivity</span>
+<span class="font-medium text-text-main truncate">Pulse Output, RS485</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Blue electric arc welding sparks representing energy and power" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6OIpFHaeRMAvtAb6Wnc8ZgyQu5PKm04UoKyFmiu0BDueTbXhByGbu87fTJ7_J8MWOADhlVk--jXIopBN5CptJfwf3u0lwVdrXHAkzoNXr2pj3o45hl_hp7hVnh3C8-clh7SfOU4oKKTSLTcw1rYXUZk1f7SVm7LrCbxc8bxgYcCu2mo5StZHsOo6Ty1p0OkAKM7WleGa_LvWJhiKXzsRsTpnQrHp5Mq2w5eN-MFohLHlQBzXZgMI1fuQQtIx37_y8FpOx-_0d23g"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">Three Phase</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">VM-4000 High Voltage</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Voltage</span>
+<span class="font-medium text-text-main">3x57.7/100V</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Accuracy</span>
+<span class="font-medium text-text-main">Class 0.2S</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Connectivity</span>
+<span class="font-medium text-text-main truncate">DLMS/COSEM</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="group bg-surface-light rounded-xl overflow-hidden border border-[#f0f0ed] hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="aspect-[4/3] bg-background-light relative p-6 flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Modern server room lights with depth of field representing connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFMPL-ilEkG43QxaKTGdtYrDcd2fl_XtWDwRYcT850GAK0bIfBZxRbnVzqnJKn6p7xM0eYtPvUXzsmFF8T5rlrbqA9CNfPmyQaBtWShWxTKo79YXIs15sq6Dr20bOUr1moeIXVjwv5JEnolrCSnh0k8TMbdbYH9IHhfxm-yO7cBDIuka8QMqMVe3qR6zhGGVwvDE1J5eQxGdzi1TxdUcwWOx5bef6e9TDQUSl_LbvaY7miiKDcO7y3INAljwa5alTFOhMDHBv7KTU"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-4">
+<p class="text-xs font-medium text-text-subtle mb-1">Smart Gateway</p>
+<h3 class="text-lg font-bold text-text-main group-hover:text-primary-dark transition-colors">GW-X Data Concentrator</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm mb-6 flex-1">
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Protocol</span>
+<span class="font-medium text-text-main">Zigbee/LTE</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-text-subtle">Capacity</span>
+<span class="font-medium text-text-main">100+ Nodes</span>
+</div>
+<div class="flex flex-col col-span-2">
+<span class="text-xs text-text-subtle">Interface</span>
+<span class="font-medium text-text-main truncate">Ethernet, USB, RS232</span>
+</div>
+</div>
+<div class="flex gap-3 mt-auto">
+<button class="flex-1 py-2 px-3 border border-[#e5e5e0] rounded-lg text-sm font-semibold hover:bg-background-light transition-colors">Details</button>
+<button class="flex-1 py-2 px-3 bg-primary text-[#181710] rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">Inquiry</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-[#e5e5e0] text-text-subtle hover:text-text-main hover:bg-white transition-colors disabled:opacity-50">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-[#181710] font-bold shadow-sm">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-white text-text-subtle font-medium transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-white text-text-subtle font-medium transition-colors">3</button>
+<span class="text-text-subtle px-2">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-transparent hover:bg-white text-text-subtle font-medium transition-colors">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-[#e5e5e0] text-text-subtle hover:text-text-main hover:bg-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="bg-[#231f0f] text-white py-12 mt-12">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-3xl text-primary">electric_bolt</span>
+<h2 class="text-2xl font-bold">VoltMeter Co.</h2>
+</div>
+<p class="text-gray-400 max-w-sm mb-6">Leading manufacturer of industrial energy measurement solutions. Reliable, accurate, and connected.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-colors" href="#">
+<span class="font-bold">in</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-colors" href="#">
+<span class="font-bold">x</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-4 text-primary">Products</h3>
+<ul class="space-y-3 text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">Single Phase Meters</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Three Phase Meters</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Smart Gateways</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Accessories</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-4 text-primary">Company</h3>
+<ul class="space-y-3 text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Certifications</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Support</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-6 lg:px-10 mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+            © 2024 VoltMeter Co. All rights reserved. Privacy Policy
+        </div>
+</footer>
+
+</body></html>
