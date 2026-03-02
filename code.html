@@ -1,284 +1,279 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
+
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#fcc803",
-                        "background-light": "#f8f8f5",
-                        "background-dark": "#231f0f",
-                    },
-                    fontFamily: {
-                        "display": ["Newsreader", "serif"],
-                        "sans": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#fcc603",
+              "background-light": "#f8f8f5",
+              "background-dark": "#231f0f",
             },
-        }
+            fontFamily: {
+              "display": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
-<style type="text/tailwindcss">
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .font-display { font-family: 'Newsreader', serif; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="mx-auto max-w-[1600px] px-10 py-4 flex items-center justify-between">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-[1600px] mx-auto px-10 h-20 flex items-center justify-between">
 <div class="flex items-center gap-12">
 <div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-slate-900">
-<span class="material-symbols-outlined text-3xl">bolt</span>
+<div class="size-8 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark">bolt</span>
 </div>
-<h2 class="font-display text-2xl font-bold tracking-tight">SmartMeter Co.</h2>
+<h2 class="text-xl font-bold tracking-tight">SmartMeter Co.</h2>
 </div>
 <nav class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Products</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Solutions</a>
-<a class="text-sm font-semibold text-primary" href="#">News</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Support</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary transition-colors" href="#">News</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Technology</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Sustainability</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
-<div class="relative hidden xl:block w-64">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-<input class="w-full rounded-lg border-none bg-slate-100 dark:bg-slate-800 pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary" placeholder="Search insights..." type="text"/>
+<div class="relative w-64 group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary">search</span>
+<input class="w-full h-10 pl-10 pr-4 bg-slate-100 dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm" placeholder="Search insights..." type="text"/>
 </div>
-<button class="rounded-lg bg-primary px-6 py-2 text-sm font-bold text-slate-900 hover:bg-primary/90 transition-all">
-                    Login
+<button class="bg-primary hover:bg-primary/90 text-slate-900 px-6 py-2 rounded-lg font-bold text-sm transition-all">
+                    Contact Us
                 </button>
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="User profile circular avatar photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6x0KyVEo-YU_kzEZd3f4vpVaaclzujiUKSLPIzMEzZKgkrvR6CMjnfxFMN6EeCb4O7y3l2_gLkEhb6VpOKg-lcUgQja0IoUDyd5x24uhEvRSrGtv0mtOWymwNCjJAu6Z37F7OdqK6JKPeBqCOfccyQzveT7wPa0SHBgkvAY1TG0DjYGa5uP0EaiWvYU2pm2HtnZ_XmZoP18pJI5aRKaFLzAZ6Ms7a9WTulU6PqnRcVNquu3vVJ6FsJhtgeXTA87xmmQdDE8kzRM8"/>
+</div>
 </div>
 </div>
 </header>
-<main class="mx-auto w-full max-w-[1600px] px-10 py-8">
-<section class="mb-12">
-<div class="relative h-[600px] w-full overflow-hidden rounded-xl bg-slate-900">
-<div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARrPXVNMTHUNw5DUt-gGV8UJdMU2YPSCkl9BTgaC5uX1uKvCP_VFz9pTj97W4DKcgo-frGuwU9Y6s0tUCYGyvzUnxSQIVpMK-XH3eeA0I88asXLHO2BclsFuu-Av7bs_fQFpMoaXTwVgfnbg4bsW6Wcr7aeO7IE2TDT-v3rntgoiAbzHpfGezA_iIyNJ0RI4B9bRb56uds2mLwJdWqJm3r-wJjQqFzaoEeTSaLnp_T-Yw3relEWIzP9OeCnX5X4bGZ1FELzrN5zJ8')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-12 max-w-4xl">
-<span class="mb-4 inline-block rounded bg-primary px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-900">Featured Article</span>
-<h1 class="font-display text-6xl font-bold leading-tight text-white mb-6">The Future of Energy Management with Next-Gen Smart Meters</h1>
-<p class="text-lg text-slate-200 mb-8 max-w-2xl font-light">Explore how AI-integrated metering systems are revolutionizing household consumption monitoring and grid efficiency in the new decade.</p>
-<button class="flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-bold text-slate-900 hover:bg-primary/90 transition-all">
-<span>Read Full Article</span>
-<span class="material-symbols-outlined">arrow_forward</span>
+<main class="max-w-[1600px] mx-auto px-10 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-12">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">News</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Industry Trends</span>
+</nav>
+<!-- Article Header -->
+<div class="max-w-4xl mx-auto text-center mb-12">
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6 tracking-tight">
+                The Future of Smart Metering: <br/><span class="text-primary italic">2024 Industry Trends</span>
+</h1>
+<div class="flex items-center justify-center gap-6 text-slate-500 dark:text-slate-400 border-y border-slate-200 dark:border-slate-800 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<span>October 24, 2023</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">person</span>
+<span>By Jane Doe</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>6 min read</span>
+</div>
+</div>
+</div>
+<!-- Featured Image -->
+<div class="w-full mb-16 px-10">
+<div class="rounded-xl overflow-hidden aspect-[21/9] shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="Modern residential smart meter installed on wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnLHXMLw1ctIldCg8tgsRPmIwDIlCCaHyKUS9eUJxPfAtt_KkYmNCeYlAVvayA_9ODtZ2f-96Cnp17a-q4e8kvBr_BdQPzMdO78LCvMU9kon99jQMDybtUTl0uCMT6mV5Fl3YH7ByyDeAY8UJ4ROfVtJN4v58r59NPocHAk1Jtlvk8ylqfXmvzwOaxCk8pGJdLFIgzQeLeYzMEklyazjdkhF4naCKh8-Df-vqqJlBzfp9smUpcleP5MQNe5EWwLB9IMBzm_dLwbl4"/>
+</div>
+<p class="mt-4 text-center text-slate-500 italic text-sm">Technicians installing the latest Gen-4 Smart Meter in a sustainable housing development.</p>
+</div>
+<!-- Content Grid -->
+<div class="grid grid-cols-12 gap-12 relative">
+<!-- Left Sidebar: Social Sharing (Sticky) -->
+<div class="col-span-1">
+<div class="sticky top-32 flex flex-col gap-4 items-center">
+<span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 mb-2">Share</span>
+<button class="size-10 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</button>
+<button class="size-10 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</button>
+<button class="size-10 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">link</span>
 </button>
 </div>
 </div>
-</section>
-<div class="mb-10 flex flex-col lg:flex-row items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
-<div class="flex gap-10 overflow-x-auto pb-1 no-scrollbar w-full lg:w-auto">
-<a class="relative pb-4 text-sm font-bold text-slate-900 dark:text-white whitespace-nowrap after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:bg-primary" href="#">All Stories</a>
-<a class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors whitespace-nowrap" href="#">Corporate News</a>
-<a class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors whitespace-nowrap" href="#">Industry Trends</a>
-<a class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors whitespace-nowrap" href="#">Technical Articles</a>
-<a class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors whitespace-nowrap" href="#">Product Launches</a>
+<!-- Main Content Area -->
+<div class="col-span-12 lg:col-span-7 prose prose-lg dark:prose-invert max-w-none">
+<p class="text-xl leading-relaxed first-letter:text-7xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left mb-8">
+                    As we approach the mid-point of the decade, the energy sector is undergoing a profound transformation. Smart meters are no longer just passive recording devices; they have evolved into the nervous system of the modern smart grid, providing real-time data that drives efficiency and sustainability.
+                </p>
+<h2 class="text-3xl font-bold mt-12 mb-6 tracking-tight">1. Real-Time Data Analytics</h2>
+<p class="mb-6">
+                    The biggest shift in 2024 is the move from daily reporting to high-frequency, real-time analytics. Utilities are now able to detect leaks or surges within minutes rather than days. This capability is crucial for balancing the load from intermittent renewable sources like solar and wind.
+                </p>
+<blockquote class="my-10 border-l-[6px] border-primary bg-primary/5 p-8 rounded-r-lg">
+<p class="text-2xl font-display italic leading-relaxed text-slate-800 dark:text-slate-200">
+                        "The transition to smart metering isn't just about billing; it's about empowering the consumer to take control of their carbon footprint through actionable intelligence."
+                    </p>
+<cite class="block mt-4 font-bold text-slate-600 dark:text-slate-400">— Dr. Robert Vance, CTO of SmartMeter Co.</cite>
+</blockquote>
+<h3 class="text-2xl font-bold mt-10 mb-4 tracking-tight">Enhanced Connectivity via 5G</h3>
+<p class="mb-6">
+                    With the global rollout of 5G infrastructure, smart meters are benefiting from lower latency and higher device density. This allows for:
+                </p>
+<ul class="list-none space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span>Seamless integration with home IoT ecosystems and smart appliances.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span>Instant over-the-air (OTA) firmware updates to enhance security.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span>Granular demand-response capabilities for EV charging stations.</span>
+</li>
+</ul>
+<h2 class="text-3xl font-bold mt-12 mb-6 tracking-tight">2. Decentralized Grid Management</h2>
+<p class="mb-6">
+                    As more households install solar panels and battery storage, the grid is becoming bidirectional. Smart meters are now tasked with managing "Prosumers"—those who both consume and produce energy.
+                </p>
+<div class="my-10 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+<img class="w-full h-64 object-cover" data-alt="Grid pattern of solar panels on a large roof" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHZNBwHJfw4Z9PAL__A0XDeWw7JIq6slG7hQxcJ_po6PpUYMZEeYLvvkVoDWuQXvaG8RfF_fccIwcMLKZoRQZ1l2JG0LN4FC6e525GnuLzd8KvvSCcVxsQNQD2fBBqpsLFFYp8KujjuwXdyzzLIRnrU6EhmGn4rpq4Zi2cAiWT8dHbpSCqCopnu64lxDYfcPl3IBsgBlPopS8spdwFd1VBeMVR71S5QIrsISONn9rt9IuTMXCLv63WXxghvknnia3PlHXuB0uamTY"/>
+<div class="p-4 bg-slate-50 dark:bg-slate-900 text-sm">
+                        Prosumer networks are expected to grow by 45% by the end of 2024.
+                    </div>
 </div>
-<div class="hidden lg:flex items-center gap-4 text-sm text-slate-500 font-medium">
-<span>Sort by:</span>
-<select class="border-none bg-transparent font-bold text-slate-900 dark:text-white focus:ring-0">
-<option>Latest</option>
-<option>Most Popular</option>
-<option>Oldest</option>
-</select>
+<p class="mb-6">
+                    In conclusion, the future of smart metering lies in its ability to act as a bridge between the physical energy infrastructure and the digital world. By leveraging AI and 5G, we are creating a more resilient, transparent, and sustainable energy future for everyone.
+                </p>
 </div>
-</div>
-<div class="flex flex-col xl:flex-row gap-12">
-<div class="flex-1 space-y-8">
-<article class="group flex flex-col md:flex-row bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-<div class="w-full md:w-1/3 lg:w-80 h-64 md:h-auto overflow-hidden shrink-0">
-<img alt="Smart City Infrastructure" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK280HBblYQquIUV9hiQdU8jgFcr-FeiQvNYOPszCEjzhFo6QSU3-xlFU8TeVb_wuk0rdnnUCxCW-jCrt5Rpr-mINgH1p_i2wbfgYahsy5P36SpzpNwmZJ2RAnAqnKBTlqBAfP6XIAkoh2QBOzSl_wula_z_rmvyj8loHVAs6CQ1aYYIYPk3XpQnOgKoV86M-T7aXLfR9HisZxRzZR3IWB9OmweB6VvUZEfzuBwx-OBtcf-JEzrMnolbHSvs9SGXRxy8EjdxT3-Hg"/>
-</div>
-<div class="flex flex-col p-8 flex-1">
-<div class="flex items-center gap-4 mb-3">
-<span class="rounded bg-primary px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-900">Industry Trends</span>
-<span class="text-xs text-slate-400">October 24, 2023</span>
-</div>
-<h3 class="font-display text-2xl font-bold leading-tight mb-4 group-hover:text-primary transition-colors">Smart Cities: Scaling Grid Intelligence Beyond the Home</h3>
-<p class="text-base text-slate-500 dark:text-slate-400 mb-6 font-light leading-relaxed">As urbanization accelerates, municipal governments are increasingly leveraging IoT meter data to optimize energy distribution during peak loads. Our latest study explores the integration of neighborhood-level storage solutions with real-time demand monitoring to prevent localized grid stress while reducing operational costs by up to 15%.</p>
-<div class="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-<span>Read Full Story</span>
-<span class="material-symbols-outlined text-sm">east</span>
-</div>
-</div>
-</article>
-<article class="group flex flex-col md:flex-row bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-<div class="w-full md:w-1/3 lg:w-80 h-64 md:h-auto overflow-hidden shrink-0">
-<img alt="Hardware Engineering" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIUSsYsSgTFkFHk7ayl6dcxmgzmKOQg69CmrOnR6bWwjVFqCVkeaU7gw4IN-cwqD2OzDBzv4WPLb69pzfAdiCD0v1qMQQsBKrTQKRmfwH14dL8CWnoaD0esj_FCohp-KndRBKGWha262r3cFTFA6mMzgg85NbIG5oqFg8m_6KiR2AWtEKzXOGAFOgi0mRRAFBc9cJ5PheCq67l2fOnzTpxdP1r991kcUHmf-pHng9F-eTCMnRENpUSkvJk7re63rICHJO_iHkNp7o"/>
-</div>
-<div class="flex flex-col p-8 flex-1">
-<div class="flex items-center gap-4 mb-3">
-<span class="rounded bg-primary px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-900">Technical</span>
-<span class="text-xs text-slate-400">October 21, 2023</span>
-</div>
-<h3 class="font-display text-2xl font-bold leading-tight mb-4 group-hover:text-primary transition-colors">Deep Dive: The Security Architecture of M-Series Meters</h3>
-<p class="text-base text-slate-500 dark:text-slate-400 mb-6 font-light leading-relaxed">Security is at the heart of our mission. This engineering analysis provides an in-depth look at the end-to-end encryption protocols protecting consumer energy data. We detail our proprietary hardware-level trust modules and how they safeguard against sophisticated firmware-based cyber threats in the modern smart grid ecosystem.</p>
-<div class="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-<span>Read Full Story</span>
-<span class="material-symbols-outlined text-sm">east</span>
-</div>
-</div>
-</article>
-<article class="group flex flex-col md:flex-row bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-<div class="w-full md:w-1/3 lg:w-80 h-64 md:h-auto overflow-hidden shrink-0">
-<img alt="Solar Farm" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ36llvUwQJpsscfI5JpwjkdgeexILzdG9xuew8x4D2ypokBz3HA0XvJ-FqeqmdRhup4dq5Pmn_Gn2v9skCL4gCqM4gTl4dnvO6Ra12URnE3h5wBdWL5YE-mbH6Gt9AsoLtNcnC1glzY7UKDENG3afTi53XoRU0UslI4-hVSvX__XOcJaBZ4yX6HwV8OaVrS7DTQi80ZlUPukKmrzT_8J3vLCfjmp1g3Z_p37PvuCZAZd3u58odNd1y2QfSu9AEABDuIrvXD2kv_8"/>
-</div>
-<div class="flex flex-col p-8 flex-1">
-<div class="flex items-center gap-4 mb-3">
-<span class="rounded bg-primary px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-900">Product</span>
-<span class="text-xs text-slate-400">October 18, 2023</span>
-</div>
-<h3 class="font-display text-2xl font-bold leading-tight mb-4 group-hover:text-primary transition-colors">Announcing the SolarLink Integration Module</h3>
-<p class="text-base text-slate-500 dark:text-slate-400 mb-6 font-light leading-relaxed">We are proud to launch the SolarLink module, designed to seamlessly bridge residential solar output with the wider utility grid. This update introduces advanced net-metering visualization tools, allowing homeowners to see their carbon footprint offset in real-time while maximizing the financial benefits of their renewable investments.</p>
-<div class="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-<span>Read Full Story</span>
-<span class="material-symbols-outlined text-sm">east</span>
-</div>
-</div>
-</article>
-<article class="group flex flex-col md:flex-row bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-<div class="w-full md:w-1/3 lg:w-80 h-64 md:h-auto overflow-hidden shrink-0">
-<img alt="Global Partnership" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWW7L3g1EADKtcz1zcLFoqNti1DjezjU-64G9jMbpv3awDojwlz8al1leiNGx8-fmTxn0_6LmtuS2mtlPWMalPKD1-v2rtQJ2ePC0-ksAuZXQ98RzPk0SkK9d6rt2NAg7CJbhSq6qTV2BZT-JWQ0lN-wnWF6iFhSRUBPlH8Y-Ubcpb1YuQ2ZzIIQ02BlMo3IOrjdtHNjBnZbcpM4opvRpX8OwiL_mRDifrUP_CreCCz_T5R3ElBY3jhXuMvhYzTzZOhfkd2FZ6hy0"/>
-</div>
-<div class="flex flex-col p-8 flex-1">
-<div class="flex items-center gap-4 mb-3">
-<span class="rounded bg-primary px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-900">Corporate</span>
-<span class="text-xs text-slate-400">October 12, 2023</span>
-</div>
-<h3 class="font-display text-2xl font-bold leading-tight mb-4 group-hover:text-primary transition-colors">SmartMeter Co. Partnership with Global Utilities</h3>
-<p class="text-base text-slate-500 dark:text-slate-400 mb-6 font-light leading-relaxed">By forming a strategic alliance with major European energy providers, we are set to deploy over 2 million smart metering units across the continent by the end of 2025. This partnership marks a significant milestone in our international expansion and solidifies our position as a leader in sustainable infrastructure.</p>
-<div class="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-<span>Read Full Story</span>
-<span class="material-symbols-outlined text-sm">east</span>
-</div>
-</div>
-</article>
-<div class="mt-16 flex items-center justify-center gap-2">
-<button class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-<span class="material-symbols-outlined text-xl">chevron_left</span>
-</button>
-<button class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary font-bold text-slate-900 shadow-sm shadow-primary/20">1</button>
-<button class="flex h-10 w-10 items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium transition-colors">2</button>
-<button class="flex h-10 w-10 items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium transition-colors">3</button>
-<span class="px-2 text-slate-400">...</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium transition-colors">10</button>
-<button class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-<span class="material-symbols-outlined text-xl">chevron_right</span>
-</button>
-</div>
-</div>
-<aside class="w-full xl:w-96">
-<div class="mb-8 rounded-xl bg-slate-100 dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800">
-<h4 class="mb-4 text-lg font-bold">Search Articles</h4>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-<input class="w-full rounded-lg border-none bg-white dark:bg-slate-800 pl-10 pr-4 py-3 text-sm focus:ring-2 focus:ring-primary shadow-sm" placeholder="Keywords..." type="text"/>
-</div>
-</div>
-<div class="mb-8 rounded-xl bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
-<h4 class="mb-6 text-lg font-bold border-b border-slate-100 dark:border-slate-800 pb-2">Popular Insights</h4>
+<!-- Right Sidebar: Widgets -->
+<div class="col-span-12 lg:col-span-4 space-y-8">
+<!-- Latest News Card -->
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+<h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">newsmode</span>
+                        Latest News
+                    </h4>
 <div class="space-y-6">
-<a class="group flex gap-4" href="#">
-<div class="h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-slate-100">
-<img alt="Data Center" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtX22uNLgqeFadfzc7_IREBEbbLmBYJKsREh93Cws5grm6lY7ckwetybZo6x-gqKAP4PolB78kUq05X8CPvG19f37b-jv0CdK3km4Trz3xWzRYZwFkr7AynklEaqGG3goFrl_Y1K4PSa_XtjVxkpw8wBOVTPUV5HrygP6_jkMx8PbT2BhWVNHys-unxiBEzCcglhYSoZhbIV95Pwt40tWb2sXV0Uwe1yoB5_dqnGGOc0LOdJlh4ivbojm4KRVkzUURnPut9fT-9aA"/>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Technical</span>
-<h5 class="font-display text-sm font-bold leading-snug group-hover:text-primary transition-colors">Optimizing Data Transmission for Edge Devices</h5>
-</div>
+<a class="group block" href="#">
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Technology</span>
+<h5 class="font-bold group-hover:text-primary transition-colors leading-snug">Implementing AI for Predictive Grid Maintenance</h5>
+<p class="text-sm text-slate-500 mt-1">Oct 20, 2023</p>
 </a>
-<a class="group flex gap-4" href="#">
-<div class="h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-slate-100">
-<img alt="Energy Saving" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBF-VaQb8RujpMSqix1Hyi66NVaSNfy5f0FSZCGgOyXxKbhXR2nRo2ZVDwrUb30VbdRcYy5qz8LsHSuAjk9tNeiSF2UD0xZnDhrrhlWywWEnI2Qpb_pd5n6vxlKgtX2q-hvW3jjcaYJJsaiLHiad4SUqtMJNR9k8d1qT9kqUbI_yU7WSmMkx8mMecOin81r8E9RWQCbCPNK5w7WlnKA6EVm9kBOC4eAChOdv8V4ZdPofRrG7C1jxwPq1r_U95c-mjpIp5IW0hxS7M"/>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Trends</span>
-<h5 class="font-display text-sm font-bold leading-snug group-hover:text-primary transition-colors">Energy Saving Tips for the Smart Household</h5>
-</div>
+<div class="h-px bg-slate-100 dark:bg-slate-700"></div>
+<a class="group block" href="#">
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Global</span>
+<h5 class="font-bold group-hover:text-primary transition-colors leading-snug">New Partnerships in the Southeast Asia Region</h5>
+<p class="text-sm text-slate-500 mt-1">Oct 18, 2023</p>
 </a>
-<a class="group flex gap-4" href="#">
-<div class="h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-slate-100">
-<img alt="Monitoring App" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3sCmJXxCchjOcxf70moL1UXumBHou_Rrh20g1inMMGmyIEDESwYMzb5EzP57zt41zWIE6GiySYKR4ZNh6YDPDUwDfU3ozO4lJ4qLBz_6iDO2cP65nybYPsbSCQLBD3ClWAU4m_ZGd-r1ymCAI6olWdBjg3QFWxgROWX4LXSzHl7xqKLwhQ1eFysx-KcAEXEhfz8wWPbUbl_oFYnB7e7ERN-GthsFB1LLwbHXVcSeCIPTuvInflfx2ZFfmkDDcE667cyETcn9QOXk"/>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Products</span>
-<h5 class="font-display text-sm font-bold leading-snug group-hover:text-primary transition-colors">A Look at the New Mobile Monitoring App</h5>
-</div>
+<div class="h-px bg-slate-100 dark:bg-slate-700"></div>
+<a class="group block" href="#">
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Design</span>
+<h5 class="font-bold group-hover:text-primary transition-colors leading-snug">Redesigning the User Experience for Meter Portals</h5>
+<p class="text-sm text-slate-500 mt-1">Oct 15, 2023</p>
 </a>
 </div>
+<button class="w-full mt-8 py-3 border border-primary text-primary hover:bg-primary hover:text-slate-900 font-bold rounded-lg transition-all">
+                        View All News
+                    </button>
 </div>
-<div class="rounded-xl bg-primary p-8 text-slate-900 shadow-xl">
-<span class="material-symbols-outlined mb-4 text-4xl">mail</span>
-<h4 class="font-display text-2xl font-bold leading-tight mb-2 text-slate-900">Industry Insights Delivered</h4>
-<p class="mb-6 text-sm font-medium text-slate-800 opacity-90">Join 15,000+ professionals receiving weekly energy market updates.</p>
-<form class="space-y-3">
-<input class="w-full rounded-lg border-none bg-white/30 px-4 py-3 text-sm placeholder:text-slate-800 text-slate-900 focus:ring-2 focus:ring-slate-900 transition-all" placeholder="Email address" type="email"/>
-<button class="w-full rounded-lg bg-slate-900 py-3 text-sm font-bold text-white hover:bg-slate-800 transition-colors">Subscribe Now</button>
-</form>
+<!-- Related Topics -->
+<div class="bg-background-dark text-white p-8 rounded-xl shadow-lg">
+<h4 class="text-xl font-bold mb-6">Related Topics</h4>
+<div class="flex flex-wrap gap-3">
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">Sustainability</a>
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">IoT</a>
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">5G</a>
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">Clean Energy</a>
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">Data Privacy</a>
+<a class="px-4 py-2 bg-slate-700 hover:bg-primary hover:text-slate-900 rounded-full text-sm font-medium transition-colors" href="#">Smart Grid</a>
 </div>
-</aside>
+</div>
+<!-- Newsletter Call to Action -->
+<div class="bg-primary p-8 rounded-xl relative overflow-hidden group">
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl text-black/10 group-hover:scale-110 transition-transform">mail</span>
+<h4 class="text-2xl font-bold text-slate-900 mb-2">Stay Informed</h4>
+<p class="text-slate-800 text-sm mb-6">Get the latest industry updates delivered to your inbox.</p>
+<input class="w-full h-12 px-4 rounded-lg bg-white/50 border-none focus:ring-2 focus:ring-slate-900 mb-3 placeholder:text-slate-600" placeholder="Your email address" type="email"/>
+<button class="w-full h-12 bg-slate-900 text-white font-bold rounded-lg">Subscribe Now</button>
+</div>
+</div>
 </div>
 </main>
-<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12">
-<div class="mx-auto max-w-[1600px] px-10">
+<!-- Footer -->
+<footer class="bg-background-dark text-white mt-24 py-16">
+<div class="max-w-[1600px] mx-auto px-10">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 <div class="col-span-1">
 <div class="flex items-center gap-3 mb-6">
-<div class="flex h-8 w-8 items-center justify-center rounded bg-primary text-slate-900">
-<span class="material-symbols-outlined text-xl">bolt</span>
+<div class="size-8 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark">bolt</span>
 </div>
-<h2 class="font-display text-xl font-bold">SmartMeter Co.</h2>
+<h2 class="text-xl font-bold tracking-tight">SmartMeter Co.</h2>
 </div>
-<p class="text-sm text-slate-500 leading-relaxed max-w-xs">Pioneering the next generation of energy management systems for a more sustainable and efficient world.</p>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Leading the transition to a sustainable future through intelligent energy management and advanced metering infrastructure.
+                    </p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="size-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
 </div>
 <div>
-<h5 class="mb-6 text-sm font-bold uppercase tracking-widest text-slate-400">Company</h5>
-<ul class="space-y-4 text-sm font-medium text-slate-600 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<h5 class="font-bold mb-6 text-primary">Solutions</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-white" href="#">Residential Meters</a></li>
+<li><a class="hover:text-white" href="#">Industrial Systems</a></li>
+<li><a class="hover:text-white" href="#">Grid Management</a></li>
+<li><a class="hover:text-white" href="#">Data Analytics</a></li>
 </ul>
 </div>
 <div>
-<h5 class="mb-6 text-sm font-bold uppercase tracking-widest text-slate-400">Resources</h5>
-<ul class="space-y-4 text-sm font-medium text-slate-600 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">API Documentation</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Community Forum</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Whitepapers</a></li>
+<h5 class="font-bold mb-6 text-primary">Company</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-white" href="#">About Us</a></li>
+<li><a class="hover:text-white" href="#">Careers</a></li>
+<li><a class="hover:text-white" href="#">Press Room</a></li>
+<li><a class="hover:text-white" href="#">Contact</a></li>
 </ul>
 </div>
 <div>
-<h5 class="mb-6 text-sm font-bold uppercase tracking-widest text-slate-400">Legal</h5>
-<ul class="space-y-4 text-sm font-medium text-slate-600 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
+<h5 class="font-bold mb-6 text-primary">Support</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-white" href="#">Help Center</a></li>
+<li><a class="hover:text-white" href="#">System Status</a></li>
+<li><a class="hover:text-white" href="#">Documentation</a></li>
+<li><a class="hover:text-white" href="#">Privacy Policy</a></li>
 </ul>
 </div>
 </div>
-<div class="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-400">
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
 <p>© 2023 SmartMeter Co. All rights reserved.</p>
-<div class="flex gap-6 mt-6 md:mt-0">
-<a class="hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
-<a class="hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
-<a class="hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">groups</span></a>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-white" href="#">Cookies Policy</a>
+<a class="hover:text-white" href="#">Accessibility</a>
 </div>
 </div>
 </div>
 </footer>
-</div>
-
 </body></html>
