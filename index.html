@@ -10,6 +10,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-[#f8f8f5] dark:bg-[#231f0f] text-slate-900 dark:text-slate-100 [font-family:'Space_Grotesk',sans-serif]">
+<!-- Header: Top Contact Bar -->
 <div class="bg-[#231f0f] text-white text-sm py-2 border-b border-gray-800">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-row justify-between items-center gap-2">
 <div class="flex items-center gap-3 sm:gap-6">
@@ -31,6 +32,7 @@
 </div>
 </div>
 </div>
+<!-- Header: Main Navigation -->
 <header class="relative sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-16 sm:h-20 lg:h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
@@ -86,7 +88,9 @@
 </nav>
 </div>
 </header>
+<!-- Main Content Start -->
 <main class="w-full">
+<!-- Main Section: Hero Banner -->
 <section class="relative h-[500px] lg:h-[700px] w-full flex items-center px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
@@ -109,6 +113,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: Why Choose Smart Meter -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-white dark:bg-slate-900/50">
 <div class="max-w-[1600px] mx-auto">
 <div class="mb-16 text-center">
@@ -139,6 +144,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: Core Feature Interaction -->
 <section class="bg-[#231f0f] text-white overflow-hidden">
 <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row lg:h-[560px] lg:max-h-[560px]">
 <div class="order-1 lg:order-1 lg:w-2/5 p-5 sm:p-6 lg:p-7 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
@@ -215,6 +221,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: Sustainability Case Study -->
 <section class="py-24 px-4 sm:px-6 lg:px-10">
 <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 <div class="relative rounded-2xl overflow-hidden min-h-[600px] group">
@@ -261,6 +268,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: System Architecture -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-slate-50 dark:bg-slate-900/40">
 <div class="max-w-[1600px] mx-auto">
 <div class="mb-16 flex justify-between items-end">
@@ -296,6 +304,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: Hardware Catalog -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="max-w-[1600px] mx-auto">
 <div class="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mb-12 sm:mb-16 gap-4">
@@ -417,6 +426,7 @@
 </button>
 </div>
 </section>
+<!-- Main Section: Industry Solutions -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-[#f8f8f5] dark:bg-slate-900/20">
 <div class="max-w-[1600px] mx-auto">
 <div class="text-center mb-16">
@@ -469,6 +479,7 @@
 </div>
 </div>
 </section>
+<!-- Main Section: Contact CTA -->
 <section class="py-24 px-4 sm:px-6 lg:px-10">
 <div class="max-w-[1600px] mx-auto">
 <div class="bg-[#fcc603]/10 rounded-3xl p-6 sm:p-10 lg:p-16 flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-16 items-center">
@@ -529,6 +540,7 @@
 </div>
 </div>
 </div>
+<!-- Footer Start -->
 <footer class="bg-[#231f0f] text-gray-400 pt-14 sm:pt-20 lg:pt-24 pb-8 sm:pb-10 lg:pb-12 border-t-8 border-[#fcc603]" id="contact">
 <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-16 mb-12 sm:mb-16 lg:mb-20">
@@ -602,122 +614,8 @@
 </div>
 </footer>
 
+<!-- Header JS: mobile navigation only -->
 <script>
-    const featureItems = Array.from(document.querySelectorAll('.feature-item'));
-    const featureImage = document.getElementById('feature-image');
-    const featureTitle = document.getElementById('feature-title');
-    const featureDescription = document.getElementById('feature-description');
-    const mobileCardTitle = document.getElementById('feature-mobile-card-title');
-    const mobileCardSummary = document.getElementById('feature-mobile-card-summary');
-    const mobilePrevBtn = document.getElementById('feature-prev-mobile');
-    const mobileNextBtn = document.getElementById('feature-next-mobile');
-
-    const setActiveFeature = (index) => {
-        const safeIndex = (index + featureItems.length) % featureItems.length;
-        const item = featureItems[safeIndex];
-
-        featureItems.forEach((node) => {
-            node.classList.remove('bg-[#fcc603]', 'text-[#231f0f]');
-            node.classList.add('bg-slate-800/50', 'text-white');
-            const desc = node.querySelector('p');
-            if (desc) desc.classList.add('text-slate-400');
-            if (desc) desc.classList.remove('opacity-90');
-        });
-
-        item.classList.remove('bg-slate-800/50', 'text-white');
-        item.classList.add('bg-[#fcc603]', 'text-[#231f0f]');
-
-        const selectedDesc = item.querySelector('p');
-        const selectedTitle = item.querySelector('h4');
-        if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
-        if (selectedDesc) selectedDesc.classList.add('opacity-90');
-
-        featureImage.src = item.dataset.featureImage;
-        featureTitle.textContent = item.dataset.featureTitle;
-        featureDescription.textContent = item.dataset.featureDescription;
-
-        if (mobileCardTitle && selectedTitle) mobileCardTitle.textContent = selectedTitle.textContent;
-        if (mobileCardSummary && selectedDesc) mobileCardSummary.textContent = selectedDesc.textContent;
-
-        return safeIndex;
-    };
-
-    let activeFeatureIndex = 0;
-
-    featureItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-            activeFeatureIndex = setActiveFeature(index);
-        });
-    });
-
-    if (mobilePrevBtn) {
-        mobilePrevBtn.addEventListener('click', () => {
-            activeFeatureIndex = setActiveFeature(activeFeatureIndex - 1);
-        });
-    }
-
-    if (mobileNextBtn) {
-        mobileNextBtn.addEventListener('click', () => {
-            activeFeatureIndex = setActiveFeature(activeFeatureIndex + 1);
-        });
-    }
-
-    activeFeatureIndex = setActiveFeature(activeFeatureIndex);
-
-    const hardwareTrack = document.getElementById('hardware-track');
-    const hardwareItems = hardwareTrack ? Array.from(hardwareTrack.querySelectorAll('.hardware-item')) : [];
-    const hardwarePrevMobile = document.getElementById('hardware-prev-mobile');
-    const hardwareNextMobile = document.getElementById('hardware-next-mobile');
-    const hardwarePrevDesktop = document.getElementById('hardware-prev-desktop');
-    const hardwareNextDesktop = document.getElementById('hardware-next-desktop');
-    let hardwareActiveIndex = 0;
-
-    const scrollToHardware = (index) => {
-        if (!hardwareItems.length) return 0;
-        const safeIndex = (index + hardwareItems.length) % hardwareItems.length;
-        hardwareItems[safeIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-        return safeIndex;
-    };
-
-    if (hardwareTrack && hardwareItems.length) {
-        hardwareTrack.addEventListener('scroll', () => {
-            if (window.innerWidth >= 640) return;
-            const width = hardwareTrack.clientWidth || 1;
-            hardwareActiveIndex = Math.round(hardwareTrack.scrollLeft / width);
-        }, { passive: true });
-    }
-
-    if (hardwarePrevMobile) {
-        hardwarePrevMobile.addEventListener('click', () => {
-            hardwareActiveIndex = scrollToHardware(hardwareActiveIndex - 1);
-        });
-    }
-
-    if (hardwareNextMobile) {
-        hardwareNextMobile.addEventListener('click', () => {
-            hardwareActiveIndex = scrollToHardware(hardwareActiveIndex + 1);
-        });
-    }
-
-    const scrollHardwareDesktop = (direction) => {
-        if (!hardwareTrack || !hardwareItems.length || window.innerWidth < 1024) return;
-        const firstCardWidth = hardwareItems[0].getBoundingClientRect().width;
-        const step = firstCardWidth + 32;
-        hardwareTrack.scrollBy({ left: direction * step, behavior: 'smooth' });
-    };
-
-    if (hardwarePrevDesktop) {
-        hardwarePrevDesktop.addEventListener('click', () => {
-            scrollHardwareDesktop(-1);
-        });
-    }
-
-    if (hardwareNextDesktop) {
-        hardwareNextDesktop.addEventListener('click', () => {
-            scrollHardwareDesktop(1);
-        });
-    }
-
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenuPanel = document.getElementById('mobile-menu-panel');
 
@@ -728,20 +626,141 @@
             mobileMenuToggle.setAttribute('aria-expanded', (!expanded).toString());
         });
     }
+</script>
+
+<!-- Main JS: feature panel, architecture slider, hardware carousel -->
+<script>
+    const featureItems = Array.from(document.querySelectorAll('.feature-item'));
+    const featureImage = document.getElementById('feature-image');
+    const featureTitle = document.getElementById('feature-title');
+    const featureDescription = document.getElementById('feature-description');
+    const mobileCardTitle = document.getElementById('feature-mobile-card-title');
+    const mobileCardSummary = document.getElementById('feature-mobile-card-summary');
+    const mobilePrevBtn = document.getElementById('feature-prev-mobile');
+    const mobileNextBtn = document.getElementById('feature-next-mobile');
+
+    if (featureItems.length && featureImage && featureTitle && featureDescription) {
+        const setActiveFeature = (index) => {
+            const safeIndex = (index + featureItems.length) % featureItems.length;
+            const item = featureItems[safeIndex];
+
+            featureItems.forEach((node) => {
+                node.classList.remove('bg-[#fcc603]', 'text-[#231f0f]');
+                node.classList.add('bg-slate-800/50', 'text-white');
+                const desc = node.querySelector('p');
+                if (desc) desc.classList.add('text-slate-400');
+                if (desc) desc.classList.remove('opacity-90');
+            });
+
+            item.classList.remove('bg-slate-800/50', 'text-white');
+            item.classList.add('bg-[#fcc603]', 'text-[#231f0f]');
+
+            const selectedDesc = item.querySelector('p');
+            const selectedTitle = item.querySelector('h4');
+            if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
+            if (selectedDesc) selectedDesc.classList.add('opacity-90');
+
+            featureImage.src = item.dataset.featureImage;
+            featureTitle.textContent = item.dataset.featureTitle;
+            featureDescription.textContent = item.dataset.featureDescription;
+
+            if (mobileCardTitle && selectedTitle) mobileCardTitle.textContent = selectedTitle.textContent;
+            if (mobileCardSummary && selectedDesc) mobileCardSummary.textContent = selectedDesc.textContent;
+
+            return safeIndex;
+        };
+
+        let activeFeatureIndex = setActiveFeature(0);
+
+        featureItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(index);
+            });
+        });
+
+        if (mobilePrevBtn) {
+            mobilePrevBtn.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(activeFeatureIndex - 1);
+            });
+        }
+
+        if (mobileNextBtn) {
+            mobileNextBtn.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(activeFeatureIndex + 1);
+            });
+        }
+    }
 
     const architectureImages = Array.from(document.querySelectorAll('#architecture-image-sources [data-src]')).map((img) => img.dataset.src);
-    let architectureIndex = 0;
+    const architecturePrev = document.getElementById('architecture-prev');
+    const architectureNext = document.getElementById('architecture-next');
     const architectureImage = document.getElementById('architecture-image');
+    let architectureIndex = 0;
 
-    document.getElementById('architecture-prev').addEventListener('click', () => {
-        architectureIndex = (architectureIndex - 1 + architectureImages.length) % architectureImages.length;
-        architectureImage.src = architectureImages[architectureIndex];
-    });
+    if (architectureImages.length && architecturePrev && architectureNext && architectureImage) {
+        architecturePrev.addEventListener('click', () => {
+            architectureIndex = (architectureIndex - 1 + architectureImages.length) % architectureImages.length;
+            architectureImage.src = architectureImages[architectureIndex];
+        });
 
-    document.getElementById('architecture-next').addEventListener('click', () => {
-        architectureIndex = (architectureIndex + 1) % architectureImages.length;
-        architectureImage.src = architectureImages[architectureIndex];
-    });
+        architectureNext.addEventListener('click', () => {
+            architectureIndex = (architectureIndex + 1) % architectureImages.length;
+            architectureImage.src = architectureImages[architectureIndex];
+        });
+    }
+
+    const hardwareTrack = document.getElementById('hardware-track');
+    const hardwareItems = hardwareTrack ? Array.from(hardwareTrack.querySelectorAll('.hardware-item')) : [];
+    const hardwarePrevMobile = document.getElementById('hardware-prev-mobile');
+    const hardwareNextMobile = document.getElementById('hardware-next-mobile');
+    const hardwarePrevDesktop = document.getElementById('hardware-prev-desktop');
+    const hardwareNextDesktop = document.getElementById('hardware-next-desktop');
+    let hardwareActiveIndex = 0;
+
+    if (hardwareTrack && hardwareItems.length) {
+        const scrollToHardware = (index) => {
+            const safeIndex = (index + hardwareItems.length) % hardwareItems.length;
+            hardwareItems[safeIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+            return safeIndex;
+        };
+
+        hardwareTrack.addEventListener('scroll', () => {
+            if (window.innerWidth >= 640) return;
+            const width = hardwareTrack.clientWidth || 1;
+            hardwareActiveIndex = Math.round(hardwareTrack.scrollLeft / width);
+        }, { passive: true });
+
+        if (hardwarePrevMobile) {
+            hardwarePrevMobile.addEventListener('click', () => {
+                hardwareActiveIndex = scrollToHardware(hardwareActiveIndex - 1);
+            });
+        }
+
+        if (hardwareNextMobile) {
+            hardwareNextMobile.addEventListener('click', () => {
+                hardwareActiveIndex = scrollToHardware(hardwareActiveIndex + 1);
+            });
+        }
+
+        const scrollHardwareDesktop = (direction) => {
+            if (window.innerWidth < 1024) return;
+            const firstCardWidth = hardwareItems[0].getBoundingClientRect().width;
+            const step = firstCardWidth + 32;
+            hardwareTrack.scrollBy({ left: direction * step, behavior: 'smooth' });
+        };
+
+        if (hardwarePrevDesktop) {
+            hardwarePrevDesktop.addEventListener('click', () => {
+                scrollHardwareDesktop(-1);
+            });
+        }
+
+        if (hardwareNextDesktop) {
+            hardwareNextDesktop.addEventListener('click', () => {
+                scrollHardwareDesktop(1);
+            });
+        }
+    }
 </script>
 
 </body>
