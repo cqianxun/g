@@ -118,11 +118,11 @@
 </div>
 </section>
 <section class="bg-background-dark text-white overflow-hidden">
-<div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row min-h-[560px]">
-<div class="lg:w-2/5 p-5 sm:p-6 lg:p-7 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
+<div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row lg:h-[560px] lg:max-h-[560px]">
+<div class="order-1 lg:order-1 lg:w-2/5 p-5 sm:p-6 lg:p-7 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
 <div class="h-full flex flex-col">
 <h2 class="text-2xl sm:text-3xl font-bold mb-6 shrink-0">Advanced Features</h2>
-<div class="space-y-3 overflow-y-auto pr-2 sm:pr-3 custom-scrollbar flex-grow" id="feature-tabs">
+<div class="hidden lg:flex gap-3 overflow-x-auto lg:overflow-y-auto lg:overflow-x-hidden lg:flex-col pb-2 pr-1 lg:pr-3 custom-scrollbar flex-grow max-h-[260px] sm:max-h-[300px] lg:max-h-none" id="feature-tabs">
 <div class="feature-item p-4 rounded-lg bg-primary text-background-dark cursor-pointer transition-all" data-feature-title="Real-time Processing at the Edge" data-feature-description="Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8">
 <h4 class="font-bold text-lg mb-1">Edge Computing</h4>
 <p class="text-sm opacity-90">Localized data processing for zero-latency response.</p>
@@ -147,25 +147,43 @@
 <h4 class="font-bold text-lg mb-1">Mesh Connectivity</h4>
 <p class="text-sm text-slate-400">Self-organizing network for robust data delivery.</p>
 </div>
+<div class="feature-item p-4 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Digital Twin Grid Simulation" data-feature-description="Build a real-time digital twin of your network to test operating strategies, validate upgrades, and safely model extreme demand scenarios before deployment." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDXj8iKfo-U04vWtgzR4n8uDOdkfF_mjeOV0xvYBzNE0kqep8GWlONMvgq2mUCwW8Dfk57mLtytdqfV2TEqk9WWPNR9vOe-34xcMvg2wpaM2WhYUy5JQbIIw3W2jG8n3lI5X6I5zvQgKBh7n9hTVegH1psR3gYa_7BmxzBLKf7Ck23_S6a4YfYxQ_Zsl1qeqxFP0uMwWqm5pGEd7Vjryr9tN8t7hX3-5AXewM9-zH8bnJ2LEmT4rS7pVqM3g2yLQ0zXHXyxkUQX5xJCMvI">
+<h4 class="font-bold text-lg mb-1">Digital Twin</h4>
+<p class="text-sm text-slate-400">Simulate operations before applying changes live.</p>
 </div>
-<div class="flex items-center gap-2 mt-4 text-primary/50 text-xs font-bold uppercase tracking-widest">
+<div class="feature-item p-4 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Adaptive Demand Response" data-feature-description="Automatically balance peak periods with dynamic demand response events that notify customers, shift flexible loads, and avoid expensive spot-market purchases." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuC31Ev8eG7mQudvTvhFy3k8N2i_W7WfQmDVtpN7wNqk6j2QG6WQ6e4k7g6zJd9bLtwlkLwHDw2NQfQdPU4W2v5vB0WkNhxUzDL5jgvTi8Jb8U1R8-JWQ5kFhV-9TMJYoOnh43hDW3xqvDK1AQuT4bxN39m_C4e0RUvj6W8W2d0DfTTEVt3bq7nVPPVvD0Wv2bG0urSCG0_DlSPAR2KmeR-4piPgPoclfk8ZWXfV7gyn2yUEV73Y3hXw6uB5tY4YlM88gQo0xweN8">
+<h4 class="font-bold text-lg mb-1">Demand Response</h4>
+<p class="text-sm text-slate-400">Peak shaving strategies that protect margins.</p>
+</div>
+<div class="feature-item p-4 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Asset Lifecycle Intelligence" data-feature-description="Track component health, maintenance records, and replacement priorities in one timeline so field teams can proactively optimize long-term CAPEX and reliability." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuD2r5YE4u-20f7KQDJ5R69Wv0poIliI3YNY08y4sP1NmB09nDBQ4k5W2pC6T_mL29JU4H9zB4nObRWJ_gAZm_V7xQYgR4xW7p2PzM3hVGsQawP0L9mST-4kz3v74G2V7AewrsYH1EIkabTps6qW09I2Mg6WAgPj4jsW4Wa9oU0NlaCSkL9eiwphb7wQX4xZMB9m6H4zSVOvR_MjDP8A5lFNvDg0A34y4Siz6S4n1P7Ecv9pG80h8xDCMTeGoxXV7PGJXkLu8Ao9MA">
+<h4 class="font-bold text-lg mb-1">Lifecycle Intelligence</h4>
+<p class="text-sm text-slate-400">Optimize maintenance and replacement decisions.</p>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-2 mt-4 text-primary/50 text-xs font-bold uppercase tracking-widest">
 <span class="material-symbols-outlined text-sm">unfold_more</span>
                     Scroll for more
                 </div>
 </div>
-<div class="flex gap-4 pt-8">
-<button class="size-12 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
-<span class="material-symbols-outlined">expand_less</span>
+<div class="lg:hidden mt-4 rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+<div class="flex items-center justify-between gap-3">
+<button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" id="feature-prev-mobile">
+<span class="material-symbols-outlined">chevron_left</span>
 </button>
-<button class="size-12 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all">
-<span class="material-symbols-outlined">expand_more</span>
+<div class="text-center flex-1">
+<h4 class="font-bold text-base text-primary" id="feature-mobile-card-title">Edge Computing</h4>
+<p class="text-xs text-slate-300 mt-1" id="feature-mobile-card-summary">Localized data processing for zero-latency response.</p>
+</div>
+<button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" id="feature-next-mobile">
+<span class="material-symbols-outlined">chevron_right</span>
 </button>
 </div>
 </div>
-<div class="lg:w-3/5 min-h-[320px] lg:min-h-0 flex items-center justify-center p-5 sm:p-6 lg:p-10 bg-slate-950">
-<div class="relative w-full max-w-4xl aspect-[16/10] rounded-2xl overflow-hidden border border-slate-800">
-<img alt="Feature Details" class="w-full h-full object-cover" id="feature-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
-<div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-4 sm:p-6 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+</div>
+<div class="order-2 lg:order-2 lg:w-3/5 min-h-[260px] sm:min-h-[320px] lg:min-h-0 flex items-center justify-center p-5 sm:p-6 lg:p-10 bg-slate-950">
+<div class="relative w-full max-w-4xl rounded-2xl overflow-hidden border border-slate-800">
+<img alt="Feature Details" class="w-full aspect-[16/10] object-cover" id="feature-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
+<div class="p-4 sm:p-6 bg-slate-950 lg:bg-black/60 lg:backdrop-blur-md rounded-xl border-t border-slate-800 lg:border lg:border-white/10 lg:absolute lg:bottom-4 lg:left-4 lg:right-4">
 <h3 class="text-xl sm:text-2xl font-bold mb-3 text-primary" id="feature-title">Real-time Processing at the Edge</h3>
 <p class="text-slate-300 leading-relaxed text-base sm:text-lg" id="feature-description">
                     Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands.
@@ -485,32 +503,66 @@
 </footer>
 
 <script>
-    const featureItems = document.querySelectorAll('.feature-item');
+    const featureItems = Array.from(document.querySelectorAll('.feature-item'));
     const featureImage = document.getElementById('feature-image');
     const featureTitle = document.getElementById('feature-title');
     const featureDescription = document.getElementById('feature-description');
+    const mobileCardTitle = document.getElementById('feature-mobile-card-title');
+    const mobileCardSummary = document.getElementById('feature-mobile-card-summary');
+    const mobilePrevBtn = document.getElementById('feature-prev-mobile');
+    const mobileNextBtn = document.getElementById('feature-next-mobile');
 
-    featureItems.forEach((item) => {
+    const setActiveFeature = (index) => {
+        const safeIndex = (index + featureItems.length) % featureItems.length;
+        const item = featureItems[safeIndex];
+
+        featureItems.forEach((node) => {
+            node.classList.remove('bg-primary', 'text-background-dark');
+            node.classList.add('bg-slate-800/50', 'text-white');
+            const desc = node.querySelector('p');
+            if (desc) desc.classList.add('text-slate-400');
+            if (desc) desc.classList.remove('opacity-90');
+        });
+
+        item.classList.remove('bg-slate-800/50', 'text-white');
+        item.classList.add('bg-primary', 'text-background-dark');
+
+        const selectedDesc = item.querySelector('p');
+        const selectedTitle = item.querySelector('h4');
+        if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
+        if (selectedDesc) selectedDesc.classList.add('opacity-90');
+
+        featureImage.src = item.dataset.featureImage;
+        featureTitle.textContent = item.dataset.featureTitle;
+        featureDescription.textContent = item.dataset.featureDescription;
+
+        if (mobileCardTitle && selectedTitle) mobileCardTitle.textContent = selectedTitle.textContent;
+        if (mobileCardSummary && selectedDesc) mobileCardSummary.textContent = selectedDesc.textContent;
+
+        return safeIndex;
+    };
+
+    let activeFeatureIndex = 0;
+
+    featureItems.forEach((item, index) => {
         item.addEventListener('click', () => {
-            featureItems.forEach((node) => {
-                node.classList.remove('bg-primary', 'text-background-dark');
-                node.classList.add('bg-slate-800/50', 'text-white');
-                const desc = node.querySelector('p');
-                if (desc) desc.classList.add('text-slate-400');
-                if (desc) desc.classList.remove('opacity-90');
-            });
-
-            item.classList.remove('bg-slate-800/50', 'text-white');
-            item.classList.add('bg-primary', 'text-background-dark');
-            const selectedDesc = item.querySelector('p');
-            if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
-            if (selectedDesc) selectedDesc.classList.add('opacity-90');
-
-            featureImage.src = item.dataset.featureImage;
-            featureTitle.textContent = item.dataset.featureTitle;
-            featureDescription.textContent = item.dataset.featureDescription;
+            activeFeatureIndex = setActiveFeature(index);
         });
     });
+
+    if (mobilePrevBtn) {
+        mobilePrevBtn.addEventListener('click', () => {
+            activeFeatureIndex = setActiveFeature(activeFeatureIndex - 1);
+        });
+    }
+
+    if (mobileNextBtn) {
+        mobileNextBtn.addEventListener('click', () => {
+            activeFeatureIndex = setActiveFeature(activeFeatureIndex + 1);
+        });
+    }
+
+    activeFeatureIndex = setActiveFeature(activeFeatureIndex);
 
     const architectureImages = [
         'https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY',
