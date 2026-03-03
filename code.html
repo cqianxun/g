@@ -45,7 +45,7 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
 <header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-[1600px] mx-auto px-10 py-4 flex items-center justify-between">
+<div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between">
 <div class="flex items-center gap-3">
 <div class="size-10 bg-primary flex items-center justify-center rounded-lg">
 <span class="material-symbols-outlined text-background-dark font-bold">bolt</span>
@@ -64,29 +64,29 @@
         </button>
 </div>
 </header>
-<main class="max-w-[1600px] mx-auto">
-<section class="relative h-[800px] w-full flex items-center px-10 overflow-hidden">
+<main class="w-full">
+<section class="relative min-h-screen w-full flex items-center px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
 <img alt="Industrial Energy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
 </div>
-<div class="relative z-20 max-w-3xl text-white">
+<div class="relative z-20 max-w-3xl text-white py-20">
 <h2 class="text-primary font-bold tracking-widest uppercase mb-4">Industrial Grade Technology</h2>
-<h1 class="text-7xl font-bold leading-[1.1] mb-6">Smart Meter Solutions for Sustainable Energy</h1>
-<p class="text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">Smart Meter Solutions for Sustainable Energy</h1>
+<p class="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
                 Revolutionizing energy management with professional-grade smart meter technology and industrial-grade reliability. Real-time data for a greener future.
             </p>
-<div class="flex gap-4">
-<button class="bg-primary text-background-dark px-10 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform">
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-background-dark px-8 sm:px-10 py-4 rounded-lg font-bold text-base sm:text-lg hover:scale-105 transition-transform">
                     Consult Now
                 </button>
-<button class="border-2 border-white/30 backdrop-blur-sm text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all">
+<button class="border-2 border-white/30 backdrop-blur-sm text-white px-8 sm:px-10 py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-white/10 transition-all">
                     View Products
                 </button>
 </div>
 </div>
 </section>
-<section class="py-24 px-10 bg-white dark:bg-slate-900/50">
+<section class="py-24 px-4 sm:px-6 lg:px-10 bg-white dark:bg-slate-900/50">
 <div class="mb-16 text-center">
 <h2 class="text-4xl font-bold mb-4">Core Optimization</h2>
 <div class="h-1.5 w-20 bg-primary mx-auto"></div>
@@ -114,32 +114,32 @@
 </div>
 </div>
 </section>
-<section class="flex flex-col lg:flex-row h-[700px] bg-background-dark text-white overflow-hidden">
-<div class="lg:w-1/3 p-10 flex flex-col justify-between border-r border-slate-800">
+<section class="flex flex-col lg:flex-row min-h-[700px] bg-background-dark text-white overflow-hidden">
+<div class="lg:w-1/3 p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
 <div class="h-full flex flex-col">
 <h2 class="text-3xl font-bold mb-8 shrink-0">Advanced Features</h2>
-<div class="space-y-4 overflow-y-auto pr-4 custom-scrollbar flex-grow">
-<div class="p-6 rounded-lg bg-primary text-background-dark cursor-pointer transition-all">
+<div class="space-y-4 overflow-y-auto pr-2 sm:pr-4 custom-scrollbar flex-grow" id="feature-tabs">
+<div class="feature-item p-6 rounded-lg bg-primary text-background-dark cursor-pointer transition-all" data-feature-title="Real-time Processing at the Edge" data-feature-description="Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8">
 <h4 class="font-bold text-lg mb-1">Edge Computing</h4>
 <p class="text-sm opacity-90">Localized data processing for zero-latency response.</p>
 </div>
-<div class="p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30">
+<div class="feature-item p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Military-grade Secure Protocols" data-feature-description="Multi-layer encryption and secure key rotation keep every transmission protected end-to-end, even across distributed field deployments." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0">
 <h4 class="font-bold text-lg mb-1">Secure Protocols</h4>
 <p class="text-sm text-slate-400">AES-256 encrypted communication channels.</p>
 </div>
-<div class="p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30">
+<div class="feature-item p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Automated Billing Orchestration" data-feature-description="Automate billing cycles through ERP integrations, dynamic tariff engines, and verified consumption streams with audit-ready records." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY">
 <h4 class="font-bold text-lg mb-1">Automated Billing</h4>
 <p class="text-sm text-slate-400">Direct integration with ERP and financial systems.</p>
 </div>
-<div class="p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30">
+<div class="feature-item p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Predictive Fault Detection" data-feature-description="AI-assisted diagnostics detect anomalies early and trigger preventive maintenance workflows before outages occur." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA">
 <h4 class="font-bold text-lg mb-1">Fault Detection</h4>
 <p class="text-sm text-slate-400">Instant alerts for system anomalies and tampering.</p>
 </div>
-<div class="p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30">
+<div class="feature-item p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="High-accuracy Load Forecasting" data-feature-description="Forecast usage curves by region and season, enabling optimized procurement, dispatch planning, and demand response." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M">
 <h4 class="font-bold text-lg mb-1">Load Forecasting</h4>
 <p class="text-sm text-slate-400">Predict future energy demand with high accuracy.</p>
 </div>
-<div class="p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30">
+<div class="feature-item p-6 rounded-lg bg-slate-800/50 hover:bg-slate-800 cursor-pointer transition-all border border-transparent hover:border-primary/30" data-feature-title="Resilient Mesh Connectivity" data-feature-description="Self-healing mesh routes keep devices online in dense industrial sites, reducing downtime and improving telemetry quality." data-feature-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJfZP9N-pzS2haDYAxXr9v_zMNqVNfRhZDKHJBf7Mk5UQzXa_w3rWHTFBws09If3JJK1d_v3a85WiWuTVzzq-RzlyiBeMuQaxYMBF97oza2C0u2EzceOAQTel3ja905MNQGhP0mNxiu3-mHhUZSZJgctuYq1u7b-wbE86KLIpRDEzGKldtEhc8d-0SOZ4Ykmu6gQAt0y6Kinyvze66w56Gpp4K5OCc8DoZVXPzvZ8zrNJ4BPWo04_H2RyNagtvB95kzXGZhmVgDo">
 <h4 class="font-bold text-lg mb-1">Mesh Connectivity</h4>
 <p class="text-sm text-slate-400">Self-organizing network for robust data delivery.</p>
 </div>
@@ -158,17 +158,17 @@
 </button>
 </div>
 </div>
-<div class="lg:w-2/3 relative">
-<img alt="Feature Details" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
+<div class="lg:w-2/3 relative min-h-[420px] lg:min-h-0">
+<img alt="Feature Details" class="w-full h-full object-cover" id="feature-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
 <div class="absolute bottom-10 left-10 right-10 p-10 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
-<h3 class="text-2xl font-bold mb-4 text-primary">Real-time Processing at the Edge</h3>
-<p class="text-slate-300 leading-relaxed text-lg">
+<h3 class="text-2xl font-bold mb-4 text-primary" id="feature-title">Real-time Processing at the Edge</h3>
+<p class="text-slate-300 leading-relaxed text-lg" id="feature-description">
                     Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands.
                 </p>
 </div>
 </div>
 </section>
-<section class="py-24 px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+<section class="py-24 px-4 sm:px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 <div class="relative rounded-2xl overflow-hidden min-h-[600px] group">
 <img alt="Impact Case Study" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBM6tsIT7S95q3lQEJoazvb1dD4e_TNaFeMTXfCmLSzxhD2bjuui4-BHk2nRR1tTr1dqtdflRlx7gjcDjq7dzsGXvAa0duFJyNLcaUP77s5DT2GvCdRkijn_iZDke27VsPSix6WnCMOud6pulTL_R1bcxbKaS9qPQEG0KqSsW8UPp9K23aVjz4W5_EMBSCstrAxKP3Vqhot7ZIIQrz87oZmLJCa4CZ2frbwzQHOnViyDmjTz2I987ObNdJdYGpKxfFYfHfNY31Z0c"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
@@ -212,39 +212,36 @@
 </div>
 </div>
 </section>
-<section class="py-24 px-10 bg-slate-50 dark:bg-slate-900/40">
+<section class="py-24 px-4 sm:px-6 lg:px-10 bg-slate-50 dark:bg-slate-900/40">
 <div class="mb-16 flex justify-between items-end">
 <div>
 <h2 class="text-4xl font-bold mb-4">System Architecture</h2>
 <p class="text-slate-500 max-w-xl text-lg">Deep dive into our technical topology and secure cloud integration diagrams.</p>
 </div>
 <div class="flex gap-4">
-<button class="size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-background-dark transition-all">
+<button class="size-12 sm:size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-background-dark transition-all" id="architecture-prev" type="button">
 <span class="material-symbols-outlined text-3xl">arrow_back</span>
 </button>
-<button class="size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-background-dark transition-all">
+<button class="size-12 sm:size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-background-dark transition-all" id="architecture-next" type="button">
 <span class="material-symbols-outlined text-3xl">arrow_forward</span>
 </button>
 </div>
 </div>
 <div class="relative group">
-<div class="flex gap-8 overflow-x-hidden pb-4">
-<div class="min-w-full lg:min-w-[calc(66.66%-2rem)] aspect-[21/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700 flex-shrink-0">
-<img alt="Architecture 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
-</div>
-<div class="min-w-full lg:min-w-[calc(33.33%-1rem)] aspect-square lg:aspect-auto bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700 flex-shrink-0">
-<img alt="Architecture 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+<div class="pb-4">
+<div class="w-full aspect-[21/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
+<img alt="Architecture Diagram" class="w-full h-full object-cover" id="architecture-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
 </div>
 </div>
 </div>
 <div class="mt-16 text-center">
-<button class="inline-flex items-center gap-3 px-10 py-4 bg-transparent border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold rounded-lg hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-all text-lg">
+<button class="inline-flex items-center gap-3 px-4 sm:px-6 lg:px-10 py-4 bg-transparent border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold rounded-lg hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-all text-lg">
                 View Full Documentation 
                 <span class="material-symbols-outlined">open_in_new</span>
 </button>
 </div>
 </section>
-<section class="py-24 px-10 overflow-hidden">
+<section class="py-24 px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="flex items-center justify-between mb-16">
 <h2 class="text-4xl font-bold">Hardware Catalog</h2>
 <div class="flex gap-3">
@@ -315,7 +312,7 @@
 </div>
 </div>
 </section>
-<section class="py-24 px-10 bg-background-light dark:bg-slate-900/20">
+<section class="py-24 px-4 sm:px-6 lg:px-10 bg-background-light dark:bg-slate-900/20">
 <div class="text-center mb-16">
 <h2 class="text-4xl font-bold mb-4">Technical Advantages</h2>
 <p class="text-slate-500">Why industry leaders choose our hardware ecosystem</p>
@@ -365,7 +362,7 @@
 </div>
 </div>
 </section>
-<section class="py-24 px-10">
+<section class="py-24 px-4 sm:px-6 lg:px-10">
 <div class="bg-primary/10 rounded-3xl p-16 flex flex-col lg:flex-row gap-16 items-center">
 <div class="lg:w-1/2">
 <h2 class="text-5xl font-bold mb-6">Ready to optimize your grid?</h2>
@@ -385,7 +382,7 @@
 </div>
 <div class="lg:w-1/2 w-full">
 <form class="bg-white dark:bg-slate-800 p-10 rounded-2xl shadow-xl space-y-6">
-<div class="grid grid-cols-2 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Full Name</label>
 <input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg focus:ring-2 focus:ring-primary py-3" placeholder="John Doe" type="text"/>
@@ -411,7 +408,7 @@
 </div>
 </section>
 </main>
-<footer class="bg-background-dark text-slate-400 py-16 px-10 border-t border-slate-800">
+<footer class="bg-background-dark text-slate-400 py-16 px-4 sm:px-6 lg:px-10 border-t border-slate-800">
 <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
 <div class="space-y-6">
 <div class="flex items-center gap-3 text-white">
@@ -459,5 +456,51 @@
 </div>
 </div>
 </footer>
+
+<script>
+    const featureItems = document.querySelectorAll('.feature-item');
+    const featureImage = document.getElementById('feature-image');
+    const featureTitle = document.getElementById('feature-title');
+    const featureDescription = document.getElementById('feature-description');
+
+    featureItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            featureItems.forEach((node) => {
+                node.classList.remove('bg-primary', 'text-background-dark');
+                node.classList.add('bg-slate-800/50', 'text-white');
+                const desc = node.querySelector('p');
+                if (desc) desc.classList.add('text-slate-400');
+                if (desc) desc.classList.remove('opacity-90');
+            });
+
+            item.classList.remove('bg-slate-800/50', 'text-white');
+            item.classList.add('bg-primary', 'text-background-dark');
+            const selectedDesc = item.querySelector('p');
+            if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
+            if (selectedDesc) selectedDesc.classList.add('opacity-90');
+
+            featureImage.src = item.dataset.featureImage;
+            featureTitle.textContent = item.dataset.featureTitle;
+            featureDescription.textContent = item.dataset.featureDescription;
+        });
+    });
+
+    const architectureImages = [
+        'https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY',
+        'https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA'
+    ];
+    let architectureIndex = 0;
+    const architectureImage = document.getElementById('architecture-image');
+
+    document.getElementById('architecture-prev').addEventListener('click', () => {
+        architectureIndex = (architectureIndex - 1 + architectureImages.length) % architectureImages.length;
+        architectureImage.src = architectureImages[architectureIndex];
+    });
+
+    document.getElementById('architecture-next').addEventListener('click', () => {
+        architectureIndex = (architectureIndex + 1) % architectureImages.length;
+        architectureImage.src = architectureImages[architectureIndex];
+    });
+</script>
 
 </body></html>
