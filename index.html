@@ -274,19 +274,19 @@
 <div class="max-w-[1600px] mx-auto">
 <div class="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mb-12 sm:mb-16 gap-4">
 <h2 class="text-3xl sm:text-4xl font-bold text-center w-full sm:w-auto">Hardware Catalog（硬件目录）</h2>
-<div class="hidden sm:flex gap-3">
-<button class="size-12 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-100 transition-colors">
+<div class="hidden lg:flex gap-3">
+<button class="size-12 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-100 transition-colors" id="hardware-prev-desktop" type="button">
 <span aria-hidden="true" class="text-xl leading-none">&#8249;</span>
 </button>
-<button class="size-12 rounded-lg bg-primary flex items-center justify-center hover:brightness-110 transition-colors">
+<button class="size-12 rounded-lg bg-primary flex items-center justify-center hover:brightness-110 transition-colors" id="hardware-next-desktop" type="button">
 <span aria-hidden="true" class="text-xl leading-none text-background-dark font-bold">&#8250;</span>
 </button>
 </div>
 </div>
-<div class="flex lg:grid lg:grid-cols-4 gap-0 sm:gap-8 overflow-x-auto lg:overflow-visible pb-8 hide-scrollbar snap-x snap-mandatory sm:snap-none lg:snap-none" id="hardware-track">
+<div class="flex gap-0 sm:gap-8 overflow-x-auto lg:overflow-hidden pb-8 hide-scrollbar snap-x snap-mandatory sm:snap-none" id="hardware-track">
 
 
-<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-0 lg:w-full snap-center shrink-0 lg:shrink mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
 <div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
 <img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
 </div>
@@ -301,23 +301,7 @@
 </div>
 </div>
 
-<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-0 lg:w-full snap-center shrink-0 lg:shrink mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
-<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
-<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
-</div>
-<div>
-<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Series X</span>
-<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
-<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
-<div class="flex justify-between items-center">
-<span class="text-lg font-bold">$1,299</span>
-<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
-</div>
-</div>
-</div>
-
-
-<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-0 lg:w-full snap-center shrink-0 lg:shrink mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
 <div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
 <img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
 </div>
@@ -333,8 +317,7 @@
 </div>
 
 
-
-<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-0 lg:w-full snap-center shrink-0 lg:shrink mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
 <div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
 <img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
 </div>
@@ -351,6 +334,53 @@
 
 
 
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div>
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Series X</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
+<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,299</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Gateway G200" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+</div>
+<div>
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Series G</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Edge Gateway G200</h3>
+<p class="text-slate-500 text-sm mb-6">Secure field gateway for high-density meter aggregation.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,899</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+<div class="hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Sensor Node S50" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
+<div>
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Series S</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Remote Sensor Node S50</h3>
+<p class="text-slate-500 text-sm mb-6">Low-power node for environmental and load telemetry.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$799</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
 </div>
 <div class="flex sm:hidden justify-center gap-3">
 <button class="size-11 rounded-lg border border-slate-300 dark:border-slate-700 flex items-center justify-center" id="hardware-prev-mobile" type="button">
@@ -576,6 +606,8 @@
     const hardwareItems = hardwareTrack ? Array.from(hardwareTrack.querySelectorAll('.hardware-item')) : [];
     const hardwarePrevMobile = document.getElementById('hardware-prev-mobile');
     const hardwareNextMobile = document.getElementById('hardware-next-mobile');
+    const hardwarePrevDesktop = document.getElementById('hardware-prev-desktop');
+    const hardwareNextDesktop = document.getElementById('hardware-next-desktop');
     let hardwareActiveIndex = 0;
 
     const scrollToHardware = (index) => {
@@ -602,6 +634,25 @@
     if (hardwareNextMobile) {
         hardwareNextMobile.addEventListener('click', () => {
             hardwareActiveIndex = scrollToHardware(hardwareActiveIndex + 1);
+        });
+    }
+
+    const scrollHardwareDesktop = (direction) => {
+        if (!hardwareTrack || !hardwareItems.length || window.innerWidth < 1024) return;
+        const firstCardWidth = hardwareItems[0].getBoundingClientRect().width;
+        const step = firstCardWidth + 32;
+        hardwareTrack.scrollBy({ left: direction * step, behavior: 'smooth' });
+    };
+
+    if (hardwarePrevDesktop) {
+        hardwarePrevDesktop.addEventListener('click', () => {
+            scrollHardwareDesktop(-1);
+        });
+    }
+
+    if (hardwareNextDesktop) {
+        hardwareNextDesktop.addEventListener('click', () => {
+            scrollHardwareDesktop(1);
         });
     }
 
