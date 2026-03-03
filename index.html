@@ -21,6 +21,7 @@
                         "display": ["Space Grotesk"]
                     },
                     borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    maxWidth: {"ultra": "1600px"},
                 },
             },
         }
@@ -45,24 +46,76 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
-<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between">
+<div class="bg-background-dark text-white text-sm py-2 border-b border-gray-800">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2 hover:text-primary transition-colors" href="tel:+1234567890">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>+1 (555) 123-4567</span>
+</a>
+<a class="items-center gap-2 hover:text-primary transition-colors hidden sm:flex" href="mailto:info@smartmeter.inc">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>info@smartmeter.inc</span>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3 border-r border-gray-700 pr-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+</div>
+<div class="flex items-center gap-2 font-medium">
+<button class="hover:text-primary transition-colors">EN</button>
+<span class="text-gray-600">|</span>
+<button class="hover:text-primary transition-colors">CN</button>
+</div>
+</div>
+</div>
+</div>
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="size-10 bg-primary flex items-center justify-center rounded-lg">
-<span class="material-symbols-outlined text-background-dark font-bold">bolt</span>
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-black">
+<span class="material-symbols-outlined text-3xl">bolt</span>
 </div>
-<h1 class="text-2xl font-bold tracking-tight">Energy Solutions</h1>
+<h1 class="text-3xl font-bold tracking-tight">SmartMeter <span class="text-primary">Inc.</span></h1>
 </div>
-<nav class="hidden lg:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Core Optimization</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Features</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Architecture</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Products</a>
+<nav class="hidden lg:flex items-center gap-10 font-medium text-lg">
+<a class="relative group py-2" href="#">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Solutions
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Products
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Advantages
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    About Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    News
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
 </nav>
-<button class="bg-primary text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm hover:brightness-110 transition-all">
-            Consult Now
-        </button>
+<div class="flex items-center gap-5">
+<button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<a class="hidden lg:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
+                    Get Quote
+                </a>
+</div>
 </div>
 </header>
 <main class="w-full">
@@ -492,51 +545,73 @@
 </div>
 </section>
 </main>
-<footer class="bg-background-dark text-slate-400 py-16 px-4 sm:px-6 lg:px-10 border-t border-slate-800">
-<div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="space-y-6">
-<div class="flex items-center gap-3 text-white">
-<span class="material-symbols-outlined text-primary text-3xl font-bold">bolt</span>
-<span class="text-xl font-bold">Energy Solutions</span>
+<footer class="bg-background-dark text-gray-400 pt-24 pb-12 border-t-8 border-primary" id="contact">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<div>
+<div class="flex items-center gap-3 mb-8 text-white">
+<div class="w-10 h-10 bg-primary rounded flex items-center justify-center text-black">
+<span class="material-symbols-outlined text-2xl">bolt</span>
 </div>
-<p class="text-sm leading-relaxed">
-                The world leader in advanced metering infrastructure and grid optimization technology.
-            </p>
+<h2 class="text-3xl font-bold">SmartMeter Inc.</h2>
+</div>
+<p class="mb-8 leading-relaxed text-lg">
+                        Leading the world in smart energy measurement solutions. Precision, reliability, and innovation for a sustainable future.
+                    </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+</div>
 </div>
 <div>
-<h5 class="text-white font-bold mb-6">Solutions</h5>
-<ul class="space-y-4 text-sm">
-<li><a class="hover:text-primary transition-colors" href="#">Residential Smart Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Industrial Power Grid</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">IoT Network Hubs</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Security Protocols</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-white font-bold mb-6">Company</h5>
-<ul class="space-y-4 text-sm">
+<h4 class="text-white text-xl font-bold mb-8">Quick Links</h4>
+<ul class="space-y-4 text-lg">
 <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">News &amp; Press</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Support Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
 </ul>
 </div>
 <div>
-<h5 class="text-white font-bold mb-6">Newsletter</h5>
-<p class="text-sm mb-4">Stay updated with latest industry insights.</p>
-<div class="flex">
-<input class="bg-slate-800 border-none rounded-l-lg py-2 px-4 focus:ring-1 focus:ring-primary w-full text-sm" placeholder="Email address" type="text"/>
-<button class="bg-primary text-background-dark px-4 rounded-r-lg">
-<span class="material-symbols-outlined">send</span>
-</button>
+<h4 class="text-white text-xl font-bold mb-8">Product Series</h4>
+<ul class="space-y-4 text-lg">
+<li><a class="hover:text-primary transition-colors" href="#">Single Phase Meters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Three Phase Meters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Industrial Meters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Smart Water Meters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">AMI Systems</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white text-xl font-bold mb-8">Contact Us</h4>
+<ul class="space-y-6 text-lg">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<span>123 Innovation Drive, Tech Park,<br>Silicon Valley, CA 94025, USA</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>+1 (555) 123-4567</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>sales@smartmeter.inc</span>
+</li>
+</ul>
 </div>
 </div>
-</div>
-<div class="max-w-[1600px] mx-auto mt-16 pt-8 border-t border-slate-800 text-xs flex justify-between">
-<p>© 2024 Energy Solutions Inc. All rights reserved.</p>
-<div class="flex gap-6">
+<div class="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+<p>© 2023 SmartMeter Inc. All rights reserved.</p>
+<div class="flex gap-8">
 <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
 <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Sitemap</a>
+</div>
 </div>
 </div>
 </footer>
