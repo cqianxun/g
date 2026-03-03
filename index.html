@@ -44,25 +44,6 @@
         }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        .social-pill {
-            @apply bg-primary text-black rounded-md px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors;
-        }
-        .social-pill:hover {
-            @apply bg-white text-black;
-        }
-        .social-fa::before {
-            font-family: "Font Awesome 6 Brands";
-            font-weight: 400;
-            display: inline-block;
-            font-size: 14px;
-            line-height: 1;
-        }
-        .social-linkedin::before { content: "\f0e1"; }
-        .social-youtube::before { content: "\f167"; }
-        .social-twitter::before { content: "\f099"; }
-        .social-instagram::before { content: "\f16d"; }
-        .social-facebook::before { content: "\f39e"; }
-        .social-tiktok::before { content: "\e07b"; }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
@@ -572,12 +553,12 @@
 <div class="bg-background-dark border-t border-gray-800 py-4">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
 <div class="max-w-3xl mx-auto grid grid-cols-3 gap-2 sm:gap-3 md:flex md:flex-wrap md:justify-center">
-<a class="social-pill" href="#"><span class="social-fa social-linkedin"></span>LinkedIn</a>
-<a class="social-pill" href="#"><span class="social-fa social-youtube"></span>YouTube</a>
-<a class="social-pill" href="#"><span class="social-fa social-twitter"></span>Twitter</a>
-<a class="social-pill" href="#"><span class="social-fa social-instagram"></span>Instagram</a>
-<a class="social-pill" href="#"><span class="social-fa social-facebook"></span>Facebook</a>
-<a class="social-pill" href="#"><span class="social-fa social-tiktok"></span>TikTok</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-linkedin-in text-sm"></i>LinkedIn</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-youtube text-sm"></i>YouTube</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-twitter text-sm"></i>Twitter</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-instagram text-sm"></i>Instagram</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-facebook-f text-sm"></i>Facebook</a>
+<a class="bg-primary text-black rounded-md lg:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-tiktok text-sm"></i>TikTok</a>
 </div>
 </div>
 </div>
