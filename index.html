@@ -47,8 +47,8 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
 <div class="bg-background-dark text-white text-sm py-2 border-b border-gray-800">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
-<div class="flex items-center gap-6">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-row justify-between items-center gap-2">
+<div class="flex items-center gap-3 sm:gap-6">
 <a class="flex items-center gap-2 hover:text-primary transition-colors" href="tel:+1234567890">
 <span class="material-symbols-outlined text-[18px]">call</span>
 <span>+1 (555) 123-4567</span>
@@ -72,12 +72,12 @@
 </div>
 </div>
 <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-24 flex items-center justify-between">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-16 sm:h-20 lg:h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-black">
-<span class="material-symbols-outlined text-3xl">bolt</span>
+<div class="w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 bg-primary rounded-lg flex items-center justify-center text-black">
+<span class="material-symbols-outlined text-2xl sm:text-3xl">bolt</span>
 </div>
-<h1 class="text-3xl font-bold tracking-tight">SmartMeter <span class="text-primary">Inc.</span></h1>
+<h1 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight">SmartMeter <span class="text-primary">Inc.</span></h1>
 </div>
 <nav class="hidden lg:flex items-center gap-10 font-medium text-lg">
 <a class="relative group py-2" href="#">
@@ -105,17 +105,25 @@
                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 </nav>
-<div class="flex items-center gap-5">
-<button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-<span class="material-symbols-outlined text-2xl">search</span>
-</button>
-<button class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
+<div class="flex items-center gap-3 sm:gap-5">
+<button class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors" id="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu-panel">
 <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 <a class="hidden lg:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
                     Get Quote
                 </a>
 </div>
+</div>
+<div class="lg:hidden hidden border-t border-gray-100" id="mobile-menu-panel">
+<nav class="px-4 py-3 bg-white flex flex-col gap-2 text-base font-medium">
+<a class="py-2 text-gray-700 hover:text-black" href="#">Home</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Solutions</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Products</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Advantages</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">About Us</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">News</a>
+<a class="mt-2 inline-flex justify-center bg-black text-white px-5 py-2.5 rounded-lg font-bold" href="#contact">Get Quote</a>
+</nav>
 </div>
 </header>
 <main class="w-full">
@@ -545,17 +553,17 @@
 </div>
 </section>
 </main>
-<footer class="bg-background-dark text-gray-400 pt-24 pb-12 border-t-8 border-primary" id="contact">
+<footer class="bg-background-dark text-gray-400 pt-14 sm:pt-20 lg:pt-24 pb-8 sm:pb-10 lg:pb-12 border-t-8 border-primary" id="contact">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-16 mb-12 sm:mb-16 lg:mb-20">
 <div>
-<div class="flex items-center gap-3 mb-8 text-white">
+<div class="flex items-center gap-3 mb-5 sm:mb-8 text-white">
 <div class="w-10 h-10 bg-primary rounded flex items-center justify-center text-black">
 <span class="material-symbols-outlined text-2xl">bolt</span>
 </div>
 <h2 class="text-3xl font-bold">SmartMeter Inc.</h2>
 </div>
-<p class="mb-8 leading-relaxed text-lg">
+<p class="mb-5 sm:mb-8 leading-relaxed text-base sm:text-lg">
                         Leading the world in smart energy measurement solutions. Precision, reliability, and innovation for a sustainable future.
                     </p>
 <div class="flex gap-4">
@@ -568,8 +576,8 @@
 </div>
 </div>
 <div>
-<h4 class="text-white text-xl font-bold mb-8">Quick Links</h4>
-<ul class="space-y-4 text-lg">
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Quick Links</h4>
+<ul class="space-y-2 sm:space-y-4 text-base sm:text-lg">
 <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
@@ -578,8 +586,8 @@
 </ul>
 </div>
 <div>
-<h4 class="text-white text-xl font-bold mb-8">Product Series</h4>
-<ul class="space-y-4 text-lg">
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Product Series</h4>
+<ul class="space-y-2 sm:space-y-4 text-base sm:text-lg">
 <li><a class="hover:text-primary transition-colors" href="#">Single Phase Meters</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Three Phase Meters</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Industrial Meters</a></li>
@@ -588,8 +596,8 @@
 </ul>
 </div>
 <div>
-<h4 class="text-white text-xl font-bold mb-8">Contact Us</h4>
-<ul class="space-y-6 text-lg">
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Contact Us</h4>
+<ul class="space-y-3 sm:space-y-6 text-base sm:text-lg">
 <li class="flex items-start gap-4">
 <span class="material-symbols-outlined text-primary mt-1">location_on</span>
 <span>123 Innovation Drive, Tech Park,<br>Silicon Valley, CA 94025, USA</span>
@@ -605,7 +613,7 @@
 </ul>
 </div>
 </div>
-<div class="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+<div class="border-t border-gray-800 pt-6 sm:pt-8 lg:pt-10 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-6 text-sm">
 <p>© 2023 SmartMeter Inc. All rights reserved.</p>
 <div class="flex gap-8">
 <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
@@ -729,6 +737,17 @@
     if (hardwareNextDesktop) {
         hardwareNextDesktop.addEventListener('click', () => {
             scrollHardwareDesktop(1);
+        });
+    }
+
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+
+    if (mobileMenuToggle && mobileMenuPanel) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuPanel.classList.toggle('hidden');
+            const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+            mobileMenuToggle.setAttribute('aria-expanded', (!expanded).toString());
         });
     }
 
