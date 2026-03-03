@@ -23,7 +23,7 @@
 </a>
 </div>
 <div class="flex items-center gap-4">
-<div class="flex items-center gap-3 border-r border-gray-700 pr-4">
+<div class="flex items-center gap-3">
 <a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
 <a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
 </div>
@@ -31,7 +31,7 @@
 </div>
 </div>
 </div>
-<header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+<header class="relative sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-16 sm:h-20 lg:h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
 <div class="w-9 h-9 sm:w-11 sm:h-11 lg:w-12 lg:h-12 bg-[#fcc603] rounded-lg flex items-center justify-center text-black">
@@ -74,7 +74,7 @@
                 </a>
 </div>
 </div>
-<div class="lg:hidden hidden border-t border-gray-100" id="mobile-menu-panel">
+<div class="lg:hidden hidden absolute top-full left-0 right-0 z-50 border-t border-gray-100 shadow-md" id="mobile-menu-panel">
 <nav class="px-4 py-3 bg-white flex flex-col gap-2 text-base font-medium">
 <a class="py-2 text-gray-700 hover:text-black" href="#">Home</a>
 <a class="py-2 text-gray-700 hover:text-black" href="#">Solutions</a>
@@ -281,6 +281,10 @@
 <div class="pb-4 max-w-5xl mx-auto">
 <div class="w-full aspect-[16/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
 <img alt="Architecture Diagram" class="w-full h-full object-cover" id="architecture-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+<div class="hidden" id="architecture-image-sources">
+<img data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+<img data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
 </div>
 </div>
 </div>
@@ -723,10 +727,7 @@
         });
     }
 
-    const architectureImages = [
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY',
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA'
-    ];
+    const architectureImages = Array.from(document.querySelectorAll('#architecture-image-sources [data-src]')).map((img) => img.dataset.src);
     let architectureIndex = 0;
     const architectureImage = document.getElementById('architecture-image');
 
