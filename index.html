@@ -10,7 +10,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-[#f8f8f5] dark:bg-[#231f0f] text-slate-900 dark:text-slate-100 [font-family:'Space_Grotesk',sans-serif]">
-<!-- Header: Top Contact Bar -->
+<!-- 顶部信息条（全端通用）：展示电话、邮箱与社交入口，便于用户快速联系 -->
 <div class="bg-[#231f0f] text-white text-sm py-2 border-b border-gray-800">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-row justify-between items-center gap-2">
 <div class="flex items-center gap-3 sm:gap-6">
@@ -32,7 +32,7 @@
 </div>
 </div>
 </div>
-<!-- Header: Main Navigation -->
+<!-- 主导航区：桌面端显示横向导航与CTA，移动端通过菜单按钮展开 -->
 <header class="relative sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
 <div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-16 sm:h-20 lg:h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
@@ -41,6 +41,7 @@
 </div>
 <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight">SmartMeter <span class="text-[#fcc603]">Inc.</span></h1>
 </div>
+<!-- 导航菜单（桌面端） -->
 <nav class="hidden lg:flex items-center gap-10 font-medium text-lg">
 <a class="relative group py-2" href="#">
                     Home
@@ -76,6 +77,7 @@
                 </a>
 </div>
 </div>
+<!-- 导航菜单（移动端）：点击右上角菜单按钮后展开 -->
 <div class="lg:hidden hidden absolute top-full left-0 right-0 z-50 border-t border-gray-100 shadow-md" id="mobile-menu-panel">
 <nav class="px-4 py-3 bg-white flex flex-col gap-2 text-base font-medium">
 <a class="py-2 text-gray-700 hover:text-black" href="#">Home</a>
@@ -88,13 +90,15 @@
 </nav>
 </div>
 </header>
-<!-- Main Content Start -->
+<!-- 主体内容开始 -->
 <main class="w-full">
-<!-- Main Section: Hero Banner -->
+<!-- 版块1：首屏横幅（Hero）｜桌面端与移动端使用不同背景图 -->
 <section class="relative h-[500px] lg:h-[700px] w-full flex items-center px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+<!-- Hero背景图（桌面端） -->
 <img alt="Industrial Energy Desktop" class="hidden lg:block w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
+<!-- Hero背景图（移动端） -->
 <img alt="Industrial Energy Mobile" class="block lg:hidden w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBM6tsIT7S95q3lQEJoazvb1dD4e_TNaFeMTXfCmLSzxhD2bjuui4-BHk2nRR1tTr1dqtdflRlx7gjcDjq7dzsGXvAa0duFJyNLcaUP77s5DT2GvCdRkijn_iZDke27VsPSix6WnCMOud6pulTL_R1bcxbKaS9qPQEG0KqSsW8UPp9K23aVjz4W5_EMBSCstrAxKP3Vqhot7ZIIQrz87oZmLJCa4CZ2frbwzQHOnViyDmjTz2I987ObNdJdYGpKxfFYfHfNY31Z0c"/>
 </div>
 <div class="relative z-20 max-w-3xl text-white py-20 pl-2 sm:pl-6 lg:pl-12">
@@ -113,7 +117,7 @@
 </div>
 </div>
 </section>
-<!-- Main Section: Why Choose Smart Meter -->
+<!-- 版块2：核心能力概览（Why Choose）｜统一卡片结构，便于后续循环渲染 -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-white dark:bg-slate-900/50">
 <div class="max-w-[1600px] mx-auto">
 <div class="mb-16 text-center">
@@ -144,12 +148,13 @@
 </div>
 </div>
 </section>
-<!-- Main Section: Core Feature Interaction -->
+<!-- 版块3：高级功能交互区（Advanced Features）｜左侧列表选择，右侧详情联动 -->
 <section class="bg-[#231f0f] text-white overflow-hidden">
 <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row lg:h-[560px] lg:max-h-[560px]">
 <div class="order-1 lg:order-1 lg:w-2/5 p-5 sm:p-6 lg:p-7 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
 <div class="h-full flex flex-col">
 <h2 class="text-2xl sm:text-3xl font-bold mb-6 shrink-0">Advanced Features</h2>
+<!-- Advanced Features 列表（桌面端）：纵向可滚动列表 -->
 <div class="hidden lg:flex gap-3 overflow-x-auto lg:overflow-y-auto lg:overflow-x-hidden lg:flex-col pb-2 pr-1 lg:pr-3 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-white/5 [&::-webkit-scrollbar-track]:rounded-[10px] [&::-webkit-scrollbar-thumb]:bg-[#fcc603] [&::-webkit-scrollbar-thumb]:rounded-[10px] flex-grow max-h-[260px] sm:max-h-[300px] lg:max-h-none" id="feature-tabs">
 <div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
 <div class="feature-item-layout flex items-center gap-3">
@@ -265,6 +270,7 @@
                     Scroll for more
                 </div>
 </div>
+<!-- Advanced Features 控制（移动端）：上一条/下一条切换卡片摘要 -->
 <div class="lg:hidden mt-4 rounded-xl border border-slate-800 bg-slate-900/70 p-4">
 <div class="flex items-center justify-between gap-3">
 <button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:text-[#231f0f] transition-all" id="feature-prev-mobile">
@@ -293,7 +299,7 @@
 </div>
 </div>
 </section>
-<!-- Main Section: Sustainability Case Study -->
+<!-- 版块4：可持续案例数据区（案例图 + 指标卡） -->
 <section class="py-24 px-4 sm:px-6 lg:px-10">
 <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 <div class="relative rounded-2xl overflow-hidden min-h-[600px] group">
@@ -340,7 +346,7 @@
 </div>
 </div>
 </section>
-<!-- Main Section: System Architecture -->
+<!-- 版块5：系统架构图切换区（System Architecture）｜支持前后切换 -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-slate-50 dark:bg-slate-900/40">
 <div class="max-w-[1600px] mx-auto">
 <div class="mb-16 flex justify-between items-end">
@@ -361,9 +367,14 @@
 <div class="pb-4 max-w-5xl mx-auto">
 <div class="w-full aspect-[16/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
 <img alt="Architecture Diagram" class="w-full h-full object-cover" id="architecture-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+<!-- 架构图数据源（统一循环标签容器）：每个条目使用 architecture-switch-item，内部用 img 标签承载图片 -->
 <div class="hidden" id="architecture-image-sources">
-<img class="js-architecture-source" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
-<img class="js-architecture-source" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+<div class="architecture-switch-item js-architecture-switch-item">
+<img alt="Architecture Switch 1" class="architecture-switch-image js-architecture-switch-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+</div>
+<div class="architecture-switch-item js-architecture-switch-item">
+<img alt="Architecture Switch 2" class="architecture-switch-image js-architecture-switch-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
 </div>
 </div>
 </div>
@@ -376,11 +387,12 @@
 </div>
 </div>
 </section>
-<!-- Main Section: Hardware Catalog -->
+<!-- 版块6：硬件目录（Hardware Catalog）｜桌面端与移动端采用不同操作控件 -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 overflow-hidden">
 <div class="max-w-[1600px] mx-auto">
 <div class="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mb-12 sm:mb-16 gap-4">
 <h2 class="text-3xl sm:text-4xl font-bold text-center w-full sm:w-auto">Hardware Catalog（硬件目录）</h2>
+<!-- 硬件目录翻页按钮（桌面端） -->
 <div class="hidden lg:flex gap-3">
 <button class="size-12 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-100 transition-colors" id="hardware-prev-desktop" type="button">
 <span aria-hidden="true" class="text-xl leading-none">&#8249;</span>
@@ -489,6 +501,7 @@
 </div>
 </div>
 </div>
+<!-- 硬件目录翻页按钮（移动端） -->
 <div class="flex sm:hidden justify-center gap-3">
 <button class="size-11 rounded-lg border border-slate-300 dark:border-slate-700 flex items-center justify-center" id="hardware-prev-mobile" type="button">
 <span aria-hidden="true" class="text-xl leading-none">&#8249;</span>
@@ -498,7 +511,7 @@
 </button>
 </div>
 </section>
-<!-- Main Section: Industry Solutions -->
+<!-- 版块7：技术优势列表（Industry Solutions） -->
 <section class="py-24 px-4 sm:px-6 lg:px-10 bg-[#f8f8f5] dark:bg-slate-900/20">
 <div class="max-w-[1600px] mx-auto">
 <div class="text-center mb-16">
@@ -551,7 +564,7 @@
 </div>
 </div>
 </section>
-<!-- Main Section: Contact CTA -->
+<!-- 版块8：联系转化区（Contact CTA） -->
 <section class="py-24 px-4 sm:px-6 lg:px-10">
 <div class="max-w-[1600px] mx-auto">
 <div class="bg-[#fcc603]/10 rounded-3xl p-6 sm:p-10 lg:p-16 flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-16 items-center">
@@ -612,7 +625,7 @@
 </div>
 </div>
 </div>
-<!-- Footer Start -->
+<!-- 页脚区域开始：公司信息、快捷链接、产品系列、联系方式 -->
 <footer class="bg-[#231f0f] text-gray-400 pt-14 sm:pt-20 lg:pt-24 pb-8 sm:pb-10 lg:pb-12 border-t-8 border-[#fcc603]" id="contact">
 <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-16 mb-12 sm:mb-16 lg:mb-20">
@@ -686,7 +699,7 @@
 </div>
 </footer>
 
-<!-- Header JS: mobile navigation only -->
+<!-- 头部脚本：仅处理移动端菜单展开/收起 -->
 <script>
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenuPanel = document.getElementById('mobile-menu-panel');
@@ -700,7 +713,7 @@
     }
 </script>
 
-<!-- Main JS: feature panel, architecture slider, hardware carousel -->
+<!-- 主体脚本：功能列表联动 + 架构图切换 + 硬件轮播 -->
 <script>
     const featureItems = Array.from(document.querySelectorAll('.js-feature-item'));
     const featureImage = document.getElementById('feature-image');
@@ -766,7 +779,8 @@
         }
     }
 
-    const architectureImages = Array.from(document.querySelectorAll('#architecture-image-sources .js-architecture-source')).map((img) => img.dataset.src);
+    // 架构图切换数据（统一从标签<img>读取src，便于后续循环模板渲染）
+    const architectureImages = Array.from(document.querySelectorAll('#architecture-image-sources .js-architecture-switch-image')).map((img) => img.getAttribute('src')).filter(Boolean);
     const architecturePrev = document.getElementById('architecture-prev');
     const architectureNext = document.getElementById('architecture-next');
     const architectureImage = document.getElementById('architecture-image');
