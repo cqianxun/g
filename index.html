@@ -366,14 +366,13 @@
 <div class="relative group">
 <div class="pb-4 max-w-5xl mx-auto">
 <div class="w-full aspect-[16/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
-<img alt="Architecture Diagram" class="w-full h-full object-cover" id="architecture-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
-<!-- 架构图数据源（统一循环标签容器）：每个条目使用 architecture-switch-item，内部用 img 标签承载图片 -->
-<div class="hidden" id="architecture-image-sources">
-<div class="architecture-switch-item js-architecture-switch-item">
-<img alt="Architecture Switch 1" class="architecture-switch-image js-architecture-switch-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+<!-- 架构图循环渲染容器：不再使用单独展示img，所有图片都在循环项内 -->
+<div class="w-full h-full relative" id="architecture-image-sources">
+<div class="architecture-switch-item js-architecture-switch-item w-full h-full">
+<img alt="Architecture Switch 1" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
 </div>
-<div class="architecture-switch-item js-architecture-switch-item">
-<img alt="Architecture Switch 2" class="architecture-switch-image js-architecture-switch-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+<div class="architecture-switch-item js-architecture-switch-item w-full h-full absolute inset-0 hidden">
+<img alt="Architecture Switch 2" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
 </div>
 </div>
 </div>
@@ -779,22 +778,30 @@
         }
     }
 
-    // 架构图切换数据（统一从标签<img>读取src，便于后续循环模板渲染）
-    const architectureImages = Array.from(document.querySelectorAll('#architecture-image-sources .js-architecture-switch-image')).map((img) => img.getAttribute('src')).filter(Boolean);
+    // 架构图切换数据（统一循环项驱动：不使用单独展示img）
+    const architectureItems = Array.from(document.querySelectorAll('#architecture-image-sources .js-architecture-switch-item'));
     const architecturePrev = document.getElementById('architecture-prev');
     const architectureNext = document.getElementById('architecture-next');
-    const architectureImage = document.getElementById('architecture-image');
     let architectureIndex = 0;
 
-    if (architectureImages.length && architecturePrev && architectureNext && architectureImage) {
+    const setArchitectureActive = (index) => {
+        if (!architectureItems.length) return 0;
+        const safeIndex = (index + architectureItems.length) % architectureItems.length;
+        architectureItems.forEach((item, itemIndex) => {
+            item.classList.toggle('hidden', itemIndex != safeIndex);
+        });
+        return safeIndex;
+    };
+
+    if (architectureItems.length && architecturePrev && architectureNext) {
+        architectureIndex = setArchitectureActive(0);
+
         architecturePrev.addEventListener('click', () => {
-            architectureIndex = (architectureIndex - 1 + architectureImages.length) % architectureImages.length;
-            architectureImage.src = architectureImages[architectureIndex];
+            architectureIndex = setArchitectureActive(architectureIndex - 1);
         });
 
         architectureNext.addEventListener('click', () => {
-            architectureIndex = (architectureIndex + 1) % architectureImages.length;
-            architectureImage.src = architectureImages[architectureIndex];
+            architectureIndex = setArchitectureActive(architectureIndex + 1);
         });
     }
 
