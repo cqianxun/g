@@ -156,6 +156,7 @@
 <h2 class="text-2xl sm:text-3xl font-bold mb-6 shrink-0">Advanced Features</h2>
 <!-- Advanced Features 列表（桌面端）：纵向可滚动列表 -->
 <div class="hidden lg:flex gap-3 overflow-x-auto lg:overflow-y-auto lg:overflow-x-hidden lg:flex-col pb-2 pr-1 lg:pr-3 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-white/5 [&::-webkit-scrollbar-track]:rounded-[10px] [&::-webkit-scrollbar-thumb]:bg-[#fcc603] [&::-webkit-scrollbar-thumb]:rounded-[10px] flex-grow max-h-[260px] sm:max-h-[300px] lg:max-h-none" id="feature-tabs">
+<!-- Advanced Features 循环项：第1条数据（循环开始） -->
 <div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
 <div class="feature-item-layout flex items-center gap-3">
 <img alt="Edge Computing" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
@@ -168,6 +169,7 @@
 <p class="feature-detail-description-source hidden">Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands.</p>
 <img alt="Real-time Processing at the Edge" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
 </div>
+<!-- Advanced Features 循环项：第2条数据（后续条目按相同结构循环） -->
 <div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
 <div class="feature-item-layout flex items-center gap-3">
 <img alt="Secure Protocols" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
@@ -277,8 +279,8 @@
 <span class="material-symbols-outlined">chevron_left</span>
 </button>
 <div class="text-center flex-1">
-<h4 class="font-bold text-base text-[#fcc603]" id="feature-mobile-card-title">Edge Computing</h4>
-<p class="text-xs text-slate-300 mt-1" id="feature-mobile-card-summary">Localized data processing for zero-latency response.</p>
+<h4 class="font-bold text-base text-[#fcc603]" id="feature-mobile-card-title"></h4>
+<p class="text-xs text-slate-300 mt-1" id="feature-mobile-card-summary"></p>
 </div>
 <button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:text-[#231f0f] transition-all" id="feature-next-mobile">
 <span class="material-symbols-outlined">chevron_right</span>
@@ -288,11 +290,11 @@
 </div>
 <div class="order-2 lg:order-2 lg:w-3/5 min-h-[260px] sm:min-h-[320px] lg:min-h-0 flex items-center justify-center p-5 sm:p-6 lg:p-10 bg-slate-950">
 <div class="relative w-full max-w-4xl rounded-2xl overflow-hidden border border-slate-800">
-<img alt="Feature Details" class="w-full aspect-[16/10] object-cover" id="feature-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
+<img alt="Feature Details" class="w-full aspect-[16/10] object-cover" id="feature-image" src=""/>
 <div class="p-4 sm:p-6 bg-slate-950 lg:bg-black/60 lg:backdrop-blur-md rounded-xl border-t border-slate-800 lg:border lg:border-white/10 lg:absolute lg:bottom-4 lg:left-4 lg:right-4">
-<h3 class="text-xl sm:text-2xl font-bold mb-3 text-[#fcc603]" id="feature-title">Real-time Processing at the Edge</h3>
+<h3 class="text-xl sm:text-2xl font-bold mb-3 text-[#fcc603]" id="feature-title"></h3>
 <p class="text-slate-300 leading-relaxed text-base sm:text-lg" id="feature-description">
-                    Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands.
+
                 </p>
 </div>
 </div>
@@ -368,10 +370,12 @@
 <div class="w-full aspect-[16/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
 <!-- 架构图循环渲染容器：不再使用单独展示img，所有图片都在循环项内 -->
 <div class="w-full h-full relative" id="architecture-image-sources">
+<!-- 架构图循环项：第1条数据（循环开始） -->
 <div class="architecture-switch-item js-architecture-switch-item w-full h-full">
 <img alt="Architecture Switch 1" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
 </div>
-<div class="architecture-switch-item js-architecture-switch-item w-full h-full absolute inset-0 hidden">
+<!-- 架构图循环项：第2条数据（后续条目与此结构保持一致循环追加） -->
+<div class="architecture-switch-item js-architecture-switch-item w-full h-full">
 <img alt="Architecture Switch 2" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
 </div>
 </div>
@@ -402,8 +406,7 @@
 </div>
 </div>
 <div class="flex gap-0 sm:gap-8 overflow-x-auto lg:overflow-hidden pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none] snap-x snap-mandatory sm:snap-none" id="hardware-track">
-
-
+<!-- Hardware 循环项：第1条数据（循环开始） -->
 <div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
 <div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
 <img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
@@ -419,6 +422,7 @@
 </div>
 </div>
 
+<!-- Hardware 循环项：第2条数据（后续条目按相同结构循环） -->
 <div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] lg:min-w-[calc((100%-6rem)/4)] lg:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
 <div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
 <img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
