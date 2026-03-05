@@ -1,861 +1,214 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SmartMeter Inc. - Ultra-Wide Corporate Homepage</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#fcc603",
-                        "primary-dark": "#e5b402",
-                        "background-light": "#ffffff",
-                        "background-dark": "#181710",
-                        "text-main": "#181710",
-                        "text-muted": "#6b7280",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"],
-                        "body": ["Space Grotesk", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    screens: {
-                        '3xl': '1600px',
-                    },
-                    maxWidth: {
-                        'ultra': '1600px',
-                    }
-                },
-            },
-        }
-    </script>
-<style>
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            overflow-x: hidden;
-        }.no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartMeter Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <style>
+    body { font-family: 'Space Grotesk', sans-serif; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
 </head>
-<body class="bg-background-light text-text-main antialiased selection:bg-primary selection:text-black">
-<div class="bg-background-dark text-white text-sm py-2 border-b border-gray-800">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
-<div class="flex items-center gap-6">
-<a class="flex items-center gap-2 hover:text-primary transition-colors" href="tel:+1234567890">
-<span class="material-symbols-outlined text-[18px]">call</span>
-<span>+1 (555) 123-4567</span>
-</a>
-<a class="flex items-center gap-2 hover:text-primary transition-colors hidden sm:flex" href="mailto:info@smartmeter.inc">
-<span class="material-symbols-outlined text-[18px]">mail</span>
-<span>info@smartmeter.inc</span>
-</a>
-</div>
-<div class="flex items-center gap-4">
-<div class="flex items-center gap-3 border-r border-gray-700 pr-4">
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
-</div>
-<div class="flex items-center gap-2 font-medium">
-<button class="hover:text-primary transition-colors">EN</button>
-<span class="text-gray-600">|</span>
-<button class="hover:text-primary transition-colors">CN</button>
-</div>
-</div>
-</div>
-</div>
-<header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-24 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-black">
-<span class="material-symbols-outlined text-3xl">bolt</span>
-</div>
-<h1 class="text-3xl font-bold tracking-tight">SmartMeter <span class="text-primary">Inc.</span></h1>
-</div>
-<nav class="hidden lg:flex items-center gap-10 font-medium text-lg">
-<a class="relative group py-2" href="#">
-                    Home
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-100 transition-transform origin-left"></span>
-</a>
-<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
-                    Solutions
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-</a>
-<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
-                    Products
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-</a>
-<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
-                    Advantages
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-</a>
-<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
-                    About Us
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-</a>
-<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
-                    News
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-</a>
-</nav>
-<div class="flex items-center gap-5">
-<button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-<span class="material-symbols-outlined text-2xl">search</span>
-</button>
-<button class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-<a class="hidden lg:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
-                    Get Quote
-                </a>
-</div>
-</div>
-</header>
-<section class="relative h-[90vh] min-h-[700px] w-full overflow-hidden bg-gray-900 group" id="hero-carousel">
-<div class="absolute inset-0 z-0 w-full h-full" id="hero-slide-track">
-<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center transition-transform duration-[10s] hover:scale-105" data-alt="Industrial technician examining smart meter array in high-tech facility" id="hero-slide-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y');"></div>
-</div>
-<div class="relative z-20 max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-full flex flex-col justify-center text-white">
-<div class="max-w-4xl animate-fade-in-up">
-<span class="inline-block py-2 px-4 border border-primary text-primary font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
-                    Global Leader in AMI
-                </span>
-<h2 class="text-6xl md:text-8xl font-bold leading-tight mb-8" id="hero-slide-title">
-                    Precision Metering <br/>
-<span class="text-primary">For Smart Cities</span>
-</h2>
-<p class="text-xl md:text-3xl text-gray-200 mb-12 max-w-3xl font-light leading-relaxed" id="hero-slide-description">
-                    Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.
-                </p>
-<div class="flex flex-wrap gap-6">
-<button class="bg-primary hover:bg-white text-black px-10 py-5 rounded-lg text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-                        View Solutions
-                        <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-10 py-5 rounded-lg text-xl font-bold transition-all duration-300">
-                        Contact Sales
-                    </button>
-</div>
-</div>
-</div>
-<button class="absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-prev" type="button">
-<span class="material-symbols-outlined text-4xl">chevron_left</span>
-</button>
-<button class="absolute right-8 md:right-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-next" type="button">
-<span class="material-symbols-outlined text-4xl">chevron_right</span>
-</button>
-<div class="absolute bottom-16 left-1/2 -translate-x-1/2 z-30 flex gap-4" id="hero-pagination">
-<button aria-label="Go to slide 1" class="w-16 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" data-hero-dot="0" type="button"></button>
-<button aria-label="Go to slide 2" class="w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="1" type="button"></button>
-<button aria-label="Go to slide 3" class="w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="2" type="button"></button>
-</div>
-</section>
-<section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-3xl">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Our Expertise</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main leading-tight">Comprehensive Energy Solutions</h2>
-<p class="text-xl text-gray-500 mt-6 max-w-2xl">From residential metering to grid-scale management, our technologies power the future of energy distribution with precision and connectivity.</p>
-</div>
-<div class="hidden md:block">
-<a class="inline-flex items-center gap-3 text-lg font-bold hover:text-primary transition-colors border-b-2 border-black hover:border-primary pb-1" href="#">
-                    Explore All Solutions <span class="material-symbols-outlined">arrow_outward</span>
-</a>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern residential building symbolizing smart home metering" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHjOLXjsrIsDIY7IpG4Bxwe2lXXtWTC504aoYicJjVvrYmFp9Cif-1Zdz8iKtD6PR3Nk7GdSzgfJP13Gr0SBr8e2AqkGMQ9HFGrfusfrWoF8A9trNzxOA1IEwdf8UrOsFHAd_gxwkDtKPexzjvNsZOFQfuzoxW4rSfd5lnshKdHbAzXIc3C2lRCV5OC2hW8FYn69Jf9rjDOn9Iybz9HeF3pfPGQzsTqWF9ArFg2PbZ6q1KVExzFEFBX6dbEBkOjtmW_H0ooZowBVY');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Residential</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">IoT</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Smart Home Metering</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Empower homeowners with real-time usage data and cost-saving insights through our precision residential meters.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="City skyline at night representing urban grid management" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Grid</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Stable</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Commercial Grid</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Robust solutions for commercial energy distribution, ensuring stability and accurate billing for businesses.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Industrial factory floor with machinery" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY51kTCc8EJyP_ThL9KmrVwUuDlm0FAOOdDpRHRmsqdHrO-D1EZstBYkXQ_-JoK6vYnKuAxZ4JUxoRh89NdgimkhFL1OPDPA2OTGjXPW9rh2zivXTxVvj8ieI2J1hN92BFOKlrFAinL-H1iyAZAMn9s5yx4qTeFR1SbLbGs-Ulfzk8F3cRQtLFCkls0_HmYCbnJdmh481_krM5H8LH4ei4zWS6JsfeGv1pEyxb6QJsguMtUlOKS-DuDIzxeZWsg6hMwo2OQZli6aI');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Industrial</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">High Load</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Industrial IoT</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Heavy-duty metering for industrial complexes, integrated with IoT for predictive maintenance and efficiency.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Water treatment plant pipes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1WwgTHVeavPCO4ueUxFleHuonTEYQ8Kx_LKKhrw8yjx_qsyAH5u02zMvO8k-pDpPJ2snrZIQTBFpsPvWcnyAm9F4aYIhopqWbi5oIbdQ0gp7E7kwd_j52POnjXnX5BeTy0gZc833w-zuGtfWd4OA3P24eAexfiz9YWvR26Zwz14XhUYpSi8r23Yiv7YTSkXQyVasDYNub_vpTg78zZbEB_0qPkKdrVw-CByVyS9IqVcl1ceG7xe6WquOdGaZNY9eilZ0Jg4830gQ');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Water</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Flow</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Water Management</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Smart water meters detecting leaks and managing flow with unprecedented accuracy.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Solar panels on a roof" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Renewable</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Solar</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Renewable Integration</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Bidirectional metering designed for solar and wind energy prosumers.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of computer server rack lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJbCGw6KmPDgLw9eYaAqcnHaxyFNwtN_NEIMcQldP9PzLeSG1kgiAzs-5N50fQzRPRA4BXSBMOxMhatBIEhB_vU_HHL1XU0dY7A5jAUQ9rF0lLttdxE6eiz5OHGIGEGmOTQ-TLoPoIQvm1YMvf7__hTBl418B9DNtQr_lmJFY-tc3aYHcKmkx80BIFf-s3KcctOrswbUZtz1XTGGodc_iwC497_RTAz1Ppq99YdeXkQekTiEdgVYf_8ae4AZkQ5mXy-Woth-TYTP8');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Data</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Analytics</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">AMI Infrastructure</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Complete Advanced Metering Infrastructure setups for utility companies.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Electric car charging station" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbgKTNG5g31NSLJmW7ai1eza1JpBO1dKQfr3nQ0xX0qs5em83Mjfu0EFx7vD9X4p6FLZSlwsoOWf0XSYWzi8hOiFNN2PuIAptUiRKRSCUc1B4FTo_TLo7kHayKQScwL2MQ_B-HrCaVvOjm2xUb_DAlqGRftzf1OfwwJ77q7yBfKleyR7DNlIdnoHnyZpAWYi00xNDlCr1Jx3oxf8f0vaM3lPFj1KNzjT33n5wZj3It4HYRjOxssLQdcRqHvR1NbByFsBU2GvJb6yc');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">EV</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Charging</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">EV Metering</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Precise sub-metering solutions for electric vehicle charging stations and fleets.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
-<div class="relative h-64 overflow-hidden rounded-2xl">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Digital dashboard showing graphs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEs7Wvd8-Q1kPfl8ULz2z6Ke2ThXZ0uexSO8YWQ_apnOxGlElTJ3IdASpYAzRskyyG_2tjG5jzX6kgL55R7zKsXiPfHMMgcl4JqCwTLtK_xuIuKhPbPuPP_bA8aW0AUT07zg31bNqVbg9ztpiFYJAbk6xmUmHNsUt-M00znpGB0q0_hRZx9g0SNySGOgTq_qEm7IQdhlTJrixAjiDC3zIJUhzXF_Lg-21-tbefPHALXAfd5JCvBU-uMRZIwGADxVQ6MYBBrwNDKTM');"></div>
-</div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Software</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">SaaS</span>
-</div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Energy Mgmt Software</h4>
-<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
-                        Cloud-based platforms to visualize, analyze, and optimize energy consumption.
-                    </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
-                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-gray-50 border-y border-gray-100">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Featured Products</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Cutting-Edge Hardware</h2>
-</div>
-<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-primary transition-colors mt-4 md:mt-0" href="#">
-                    View All Products <span class="material-symbols-outlined">arrow_right_alt</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Smart Meter X1 Product Image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAdFTGcrXWLNEByOR5EOvOXUojQFqnBOO_IONQtuG4-HccO2kOVqv4lTsT1MjgmyTh7te0WMzc8HYsJuTGn2C2sVe8c9ORxQObVlMQQ3aOu9Vsq6w6VMY2GaXssskcQM8TqaNnpBoiPatbWm8uf6B5TBBesNnmjXg_al0GTjOTX0ULLhSvcr_4YrEkcJZn-CmJmOv0ZT6H8zDSHuRj54_B2o3U2p8_aP8wSTILj7dT3Ax3-2ZNxAOGc-7NKmha7oA2yYH-FW-wGnA');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Three-Phase Meter X200</h4>
-<p class="text-base text-gray-500 mb-6">Commercial grade accuracy class 0.5s</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Smart Meter I-40 Product Image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWVs5lAKzkmz9ZnKkKxxqxe7I4WxMg55BS5iaNIIZjHWOyIzei3AvFVkRibPBnMxwYiyquIF1G7Ach08VimrN4ZVmsKihe3qRvEj7LwfMjUG9GL-E-MMoebVMYlDXmJn0qyVJxE2iajTF3OAHfXnn7AtVWZwaISVJw93-ibRElYUkn0_70ES5PNKGWi1THW4X6mZSvJhqhTsPK8PDI087YUbmhDG8TmAWVk8I6v5SGvCDWg1hADWyE_K1YUgyu_m675eTOuN_-xjM');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Industrial Meter I-40</h4>
-<p class="text-base text-gray-500 mb-6">Heavy duty with PLC communication</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Residential Smart Meter S1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_WM-y_xgwkfrK5jyV598wLE1XRu3k05ay96bQCiqSXLNfCo6e41CmhIyYQr52f-M9w0RBl0pTvHwmK0sQjZZdZkNv1BQOwB1f1b3DYGgepGipwtpnnlU0LchvnLzEPrqBQvSjeiGf4Pix10MPQEq7Gmxr7jGW-oM9b63eZZSQALfFqvhkq3_9Igs_lJ2nuy3H5hA-zAiZUGBW9GIzEMI0M45PzxmLJ_lSAILI6pDHnonnhs-fect2cNZnDE5UI26_4NjC8i_X8qI');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Residential S1 Single Phase</h4>
-<p class="text-base text-gray-500 mb-6">Compact design for modern homes</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                           Request Price
-                       </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Smart Water Meter W5" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuConlr0WyKpS1OZN4XS4HLdh8x8P6pZcdDMKj5prN8Ud0ppuTXzTArBmPXOrvWulzL8AsCtR9Pto2H5divCqm_dJ-G3N4EWdCb3xEPzmPBnzjSz6FR_Bb5QfErmV3hmzjMSP7UZ_nMDSMSA3OovDmE_1LLZnWB5U3JGer3wmUxXaZLZh1AsYqtLttUW4odWWw9tyH9llVpKu1Ky1csr1cmFLuPtAeMV9K8IruCxvh-Lvy-Nzl1swf9q4RjbogyIYNWfm22REmqNPmk');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Water Meter W5</h4>
-<p class="text-base text-gray-500 mb-6">Ultrasonic flow measurement</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Data Concentrator DC-100" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBG2o-TeWbIw4aqiEuBz3ooyvkqdJ-LwVOp0g0j7qYvdM_2TDB08BinidnYdIfrAk_KhXbzrYvvUIJacTNGJSrLJXmPYpJYQ549ZuiJR6n2OXOARePUZe1Sr_6S1tEO9rLOGKohvPFfsp6fo3kuYd_0LiCX7J4qdrWeGFuHdGR0a6zRy91sOUEwXmsyJHVFhgQKZrFD8TLOqXoaj0KgwUX7_HX3eKV-GiP0acutsSZ92wHb_JjXuCuc-HbuRitps8sgvy8yZ3QzQYA');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Data Concentrator DC-100</h4>
-<p class="text-base text-gray-500 mb-6">Aggregates up to 1000 meters</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Prepayment Keypad Meter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcNaPZFw4quayjS_0WG8bgqpGukSJZWqhHK3gjKFW5dx0oXtGqbP_LKPAhNEvNwEUAlYw0lZduah7FiSJgyQrtB0UQcxFVPEa4wRPOpRHXd2INkA4hVFPLfeNUHIrpbO9OP00fj-LHLQfNlJX54WuvJz2YcmkqEX5TMSpkgbE9IMDnEKhWnuf1W50aWWX2lfCUKkpqOeMWdnGiEinssL-Q9AiHyAHl7UxD2I8alvQgreXd50gTGy2chAkASQA-oYWLCh_uOSH7JQI');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Prepayment Keypad Meter</h4>
-<p class="text-base text-gray-500 mb-6">STS compliant split meter</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Smart Gas Meter G3" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZA093jkJNIrSfs4zVYKQwe7wMeg6mluZhl6UJLfb5416CmLsexdbUgYVoXv8CYfT_MHSdw69NNR9UsIjdlKmvbPXptA1g0KTGG_BWEBHsyyg4SYaQO3bITccoEzr9_Dsyvl57xdBNpOmf_odCQCaV8KyrlQTlo8mxHUlz94g3I5X43fDTIi-Y8pxeonsbOEcgW9_dEJCXa0xAzYCPttsiRQ_o25oq-Njv13-1Sz7OGOODlss_IZAnfIFOrG4GiEr6XsU5DjLLbjU');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Gas Meter G3</h4>
-<p class="text-base text-gray-500 mb-6">Diaphragm gas meter with GPRS</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                           Request Price
-                       </button>
-</div>
-</div>
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Load Control Switch" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmf2FFqesOTAIW5xmSuMMUi-BNY5_X75pMQRRFfuE_RvCpd5tkfiirsoxhCIyWXs8b3ZibsXvItyllaIvfiJdmdhEwBOAKNWDGqFH1Q1tEpxiqisdrJfAfPrTQU6z50IgPg5I8vS3dEE_AdufpbBFiaXkkSH5x6QGV4GOMu2XPOuSKWEYMcOVYmM6InQH8fl2NYdyyeutyJI0Lgf2QCoe1A6fhjvUg1YkVXZ0-212P6DqbN6PCB9to8SMW1tsXp7hiJHmN4m0pkbg');"></div>
-</div>
-<div class="p-8 flex-grow flex flex-col justify-between">
-<div>
-<h4 class="text-2xl font-bold mb-3 text-gray-900">Load Control Switch</h4>
-<p class="text-base text-gray-500 mb-6">Remote disconnect/reconnect module</p>
-</div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
-                            Request Price
-                        </button>
-</div>
-</div>
-</div>
-<div class="mt-12 text-center md:hidden">
-<a class="inline-flex items-center gap-2 font-bold hover:text-primary transition-colors" href="#">
-                    View All Products <span class="material-symbols-outlined">arrow_right_alt</span>
-</a>
-</div>
-</div>
-</section>
-<section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="text-center mb-20">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Why Choose Us</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Global Engineering Excellence</h2>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Scientists working in R&amp;D Lab" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPdHXWtiWj7HRS0UG5hlHW4bESbAH-AyVBET-JbEknrHz8cDuUz_4GR6RQURc4713shlWwR6S_wHSzRpRgC4HFRsHV9OFwf6-kTtcp39rntMtWHOyV1zk1ChE_xYbfnkhqaUECDojdDORvLHjEUISmMbGmDF4rKheTvn5A9qCMnwgmS_SIt92h_nbgrsepHVFwyO8N3XhpSDygFrtlI5aDNfOqXBXQPxfUcs2LMqE3uUkpi4_1oEyc5oaCybhaQl63Ro-1JoxDLFc');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">science</span>
-<h4 class="text-2xl font-bold mb-3">In-House R&amp;D</h4>
-<p class="text-gray-600 text-base leading-relaxed">Over 200 dedicated engineers innovating daily to bring you the best.</p>
-</div>
-<div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Automated production line" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsnB28DNkANW0G4Pf9UrlWwmwM6MJ81U_db0Mtfw4vTSl-iXEoYcJ88I-iyLl4-SEq_OdQM0bQEW3uLeP3L7MutAMkFYGavaPtNHrExpMkFisKKjTmial7nBZG5LkzEWkSVsSLiLPkAxaIExFzOwUR3gwkdZWVRUvM34r1uTOlH34HhfddD7A5DE1AestWlFD8ilnAbOOkbToSITcIrA6rBeeceIAbB1bjL6clyToC-yPr5O-xGoi5DRzwfO4-dhGkkdKBXw1h98M');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">precision_manufacturing</span>
-<h4 class="text-2xl font-bold mb-3">Automated Production</h4>
-<p class="text-gray-600 text-base leading-relaxed">State-of-the-art robotic assembly lines ensuring precision.</p>
-</div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">verified</span>
-<h4 class="text-2xl font-bold mb-3">Quality Control</h4>
-<p class="text-gray-600 text-base leading-relaxed">100% testing on every unit shipped for maximum reliability.</p>
-</div>
-<div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Quality control inspector with clipboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNEeMSOw5R7-veSsJ2lnjWgL-DpBD7dlu3perk1VTX91cqAhOzqNIboo8tP5dcJOrpA6i96RCBirVY-OyQR071P37LwnhZNuwQxQ2i-WNof77Li7b5ve6zHOKj2w0y-Su4Xhp4txfFbglu2etICFhmgVVQR3JYJ8QyUp6ZrdLDRBIfSM5LT51yWcuWSqhNP04s59StVxuNSulvTa2NZIo_4LWo-CQrpy0TarWouVz8mEAVydWCxavAfU4GSvo2s8381S3NZJdT1gA');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">public</span>
-<h4 class="text-2xl font-bold mb-3">Global Support</h4>
-<p class="text-gray-600 text-base leading-relaxed">24/7 technical assistance worldwide, whenever you need us.</p>
-</div>
-<div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Global team meeting in conference room" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxDSJvdsQ1zjubDpNJtBeoqfyezimVgXs9kr5Ya-g6qJR-iej5Riyp1nHQHG7UZ2VdWdo4GXlF5DrT2L8bIijE1cU43tXKPbbTC9eHCnERuYrGy5Y8sSQWSkH3BWPcRy2RP9L2jUfDAYsj5BG1X_1hARuVzXyHCZ1au-paeicKeBXJRxiG1lM4Z9PtU5jV1YKXmwbv4N1UbdKNIcI7gCJIWV2OC82YkIKEEYzfkmp7dMUcoE0DUNwap_SMKbiNU9ah_65FhbBiNSo');"></div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-background-dark text-white overflow-hidden relative">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 relative z-10">
-<div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-<div class="w-full lg:w-1/2 relative group cursor-pointer">
-<div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden relative border border-gray-700 shadow-2xl">
-<div class="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-60 transition-opacity duration-300" data-alt="Corporate head office building" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwilHbbfXC2x67tplTbopnrPOqw70INXlIRk0NVOwBSeVR3tJyynqTfxmmJXwI5zWhTExxpxNuP1Rk0eRselvUuB6-FtvFbKp_FMs0YiEShx8PmixNTzESqgkQ1QMComIc8_DQsnvXmHcxs1oO7S_kjdbnkcoVMa0UcmjlFNv6OeaQnW_rROqcJj9vE8WGyRBFPPWgejNaWVeTixOuAfH1Ryi8HJjU9WD73LdRQMBM0EbC6WDb8egW_N3eaBE4gBeQXQZVamndmis');"></div>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="w-24 h-24 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[0_0_30px_rgba(252,198,3,0.4)]">
-<span class="material-symbols-outlined text-black text-5xl ml-2">play_arrow</span>
-</div>
-</div>
-</div>
-<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-primary/30 rounded-tl-3xl -z-10"></div>
-<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-primary/30 rounded-br-3xl -z-10"></div>
-</div>
-<div class="w-full lg:w-1/2 flex flex-col justify-center">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-6 text-lg">About SmartMeter Inc.</h3>
-<h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">Pioneering the Future of Energy</h2>
-<p class="text-gray-300 text-xl mb-8 leading-relaxed font-light">
-                        Founded in 2005, SmartMeter Inc. has grown from a specialized lab to a global leader in AMI infrastructure. We combine precision engineering with advanced IoT connectivity to help utility providers manage resources more efficiently.
-                    </p>
-<p class="text-gray-400 mb-12 leading-relaxed text-lg">
-                        With deployments in over 50 countries, our mission is to create a sustainable, energy-efficient world through smarter measurement technology.
-                    </p>
-<a class="inline-flex items-center gap-3 text-primary text-lg font-bold hover:text-white transition-colors border-b-2 border-primary pb-2 w-fit" href="#">
-                        Read Our Full Story <span class="material-symbols-outlined text-base">arrow_outward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-gray-50 border-b border-gray-200 overflow-hidden">
-<div class="max-w-[1700px] mx-auto relative px-12 md:px-20">
-<div class="flex justify-center items-center mb-16">
-<h3 class="text-3xl font-bold text-text-main">Certifications &amp; Awards</h3>
-</div>
-<div class="relative group">
-<button class="absolute -left-4 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-prev" type="button">
-<span class="material-symbols-outlined text-3xl">chevron_left</span>
-</button>
-<div class="flex gap-10 overflow-x-auto no-scrollbar py-8 px-4 scroll-smooth snap-x snap-mandatory" id="cert-track">
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="ISO 9001 Certificate" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUEJJy4WiArk0x880kxeYUA30yE-aABjM1HeLokfmtn-b-CshTASpp0rdeoSGaeWNTy_WwEOmY9cuq4mSmjcsxPb7eVESeIO4BcKYQjtJQrKNanp4lnsuVtv93gpG6M-QdbSa53ymDIlrex6kSISpD-54wW2qalYib8H0x1dcpA8sOqdEQD05IbdB-g-qs6aWwsMAAG_Vt6YBA07K2gzvTVjYsK9xcpC8O06wIMKX_2YgPSwj0Ljy_BuuF6jO-ig-C1p1bqwPXog"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="ISO 14001 Certificate" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAwqacEWst3ospW1Ir2PgaV_E02RIgV35zUIyLwTbgDxPANkuSY5ooMT_iUYHuWrlDpyZw-8N3hUl7I0wDxKxTHsGR7euPgd5wHJ9fpeSN-ztUdFigllJF_VR9oRcpsou_SIiRl-wyzHp80-CeX3rsQBIi9ys77rzY3mnhl70BXIk9p-bzJdurOjH0Rk81yaLi3QG9mcLcXld88anE00nsG-O65sldffp6dXOa0DTjO9BI_Fqho0MTvO9ATDOM5Xd9_zVv_G3lggk"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="MID Approval" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc9hmXBquyey4FV-vBCFU6Yt9_y5JX5x_MlP_xJNRvgbe5skQw8jOEwSkQt217iEWyrcCRFGJDuu3wskPZxr4ENJWKdJnXroQ5ksCvUGCJWbIB97Bt2cLNDEfr4iIOg_kXxBffjY2svMYd82LUt81xeVFqjjQiSo7Hx4sG4mDQEMNR4oxmsMnxaz-BhAs91yi7HekWI6FenYVebcMrHoLGksQie_8SkFIO27UDoq9xE5fgJIgbqe-s-S2xGeUBYUUTys9F3nHCyko"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="UL Listed" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-2wMyMG4p2sBvf28nHFzVL0fxx-qVUa6U6dPz7icKeGUqIOoEQ-WLsi0B_UfJCgf3ZmVsq9FPt2FEurFw3smoEYKeo1l_RNuuEgtiO7wPb2xI6ptWRc9PXEDzdMByzpbKZAeSqV2XLn7ROSwOyewUvP8G0Uw6IIZxmEWwH5OQlnf6tfgiJ6aaw2D8pXSyssGsXfMXDQi8K0J2YbGQXRLsV4pdqS8RbZRrxBO_eh576unGuPFn8Pp1-lfy5-1fhzmQ7JI2yojTrk"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="CE Mark" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx928oAHl1M-RlJ-yfQixms6wsvpGfHFXBhAx-oEpfPdPHvQvRhknD5y3zCJqgIvAr5i628HxLepPt2iWA-BlwA8uzKJ5zBMuYylbAYYPtUlwo1rQWVaeGToE_rhZ9CTn45_bvxo2-bI-VKOLg_KsKkehbUD73Jt6GilIW-eV5hcC_qg7LQbtScNoCKYAd2WWARFNo6AqaA27tupzm1OMhHsT6uYBCMQ30ZEzCG3Jp21H2BwIDtroFeG4o23VIZuX_XzVUcXfb9Vs"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="DLMS COSEM" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBollW6cS_yAir322NDfxqI6BgDoV7mKMonBMydSkxZ3D3zAujt3088QfqAeD0jdkL1nQODArk-wbSWz5kvOGecJjY9j6ToItdWbvHf-RqJaY2ZT4QZNbscyWN2k8qDdWgQbCVMfsqTmV-DNS1bABmYgxq0wLf9u913udoSgwIdDYNU7ncPjHfH3qJrMaO88Fz0Qnv43kaEQlXX10w6clk-sGn-n1Tejkt_MH1QU-dFoKC1a1-YvUye2VZyxb8BfZMntGQpdwUzxsA"/>
-</div>
-<div class="flex-shrink-0 w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
-<img alt="STS Association" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTjPeQlYzpCiPHH3mnzjOJEehm48si3SyhevBOYfZa5J7Qhu6NgOzz86jU21JJR3U8_O-gYFUSpQbvVoj46MC_nWhE1rjwxOFPJSOxO-C-Q5_VAuYPFeK9YT7evBBHB9kDbd09h5WkOMdwtyCJC-YtJew1-eM3dSeMj9pSTDDXTXB_pkLjLhoFiEz2Mu-NqHUidnXgr23ZGlIBk1RJo0S-BK80rHPXnoCB9I7FBJ0hm42K_u05CtfgVcxYlTRYERYTUWXpnGmVRs"/>
-</div>
-</div>
-<button class="absolute -right-4 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-next" type="button">
-<span class="material-symbols-outlined text-3xl">chevron_right</span>
-</button>
-</div>
-</div>
-</section>
-<section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="flex justify-between items-end mb-20">
-<div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">News &amp; Insights</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Latest Updates</h2>
-</div>
-<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-primary transition-colors" href="#">
-                    View All News <span class="material-symbols-outlined">arrow_right_alt</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-<article class="flex flex-col gap-6 group cursor-pointer">
-<div class="h-64 overflow-hidden rounded-xl shadow-md">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Business chart analysis" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaDZxX5PzQ70gGbunnPEsUszWkbERn-ep8hc-1QVknLHGEdwo3FbZquiSlqOf4wPrSLvQMsCy3rbgMHt3UU8BNq3qKnHUsFHmkJRFd5CjibRsljapdtnJ-KqcT50y0Eqeown16vb1_8SLOdqoL8AEu0oC8qv8jeH1aO1eKSKNeCplN_CSkogSosX_tOo_rBs-4LfCoXIr-oaWY7x_ke6ibHTl45TEwL3zSKCVR7jp-sDFWPRaE55Xt-S6hvGWmPGy1bBMLwuUgEfQ');"></div>
-</div>
-<div>
-<div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Oct 24, 2023</span>
-</div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Q3 Sustainability Report Released: 20% Growth</h4>
-<p class="text-gray-600 mb-4 line-clamp-2">Our latest financial and environmental impact report shows significant strides in green energy adoption across...</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
-</div>
-</article>
-<article class="flex flex-col gap-6 group cursor-pointer">
-<div class="h-64 overflow-hidden rounded-xl shadow-md">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Handshake at conference" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-_sSPZus5LptWZeQX6XRkWzoCkBeLS78BQDhWNSGzmOVDGlmbzD28buN9nRaPNnLK9_ygtWPJ3Hek9kr3_AJ5Pdif495OveZHrCJMPMTzrWvy7PYwtk3bI4ODiI8g6pIWUCPGlozpueNc9A51MxZDKI56HXWT6-FUlSjCO1XIr83zWU2tI3Kae5YmUZWpffoaPTH6K6uwh9M1_z0ByMKStZb3FAqx8IscKZHz84sbL0yVq3JnCqzlVYQTHWjVhTTy5v0W_Ss_sgI');"></div>
-</div>
-<div>
-<div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Sep 15, 2023</span>
-</div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">SmartMeter Inc. Partners with EuroGrid for IoT Expansion</h4>
-<p class="text-gray-600 mb-4 line-clamp-2">A strategic partnership to deploy next-gen IoT meters across the European grid network starting next quarter.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
-</div>
-</article>
-<article class="flex flex-col gap-6 group cursor-pointer">
-<div class="h-64 overflow-hidden rounded-xl shadow-md">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Engineer working on circuit board" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvjtps1BaEr-6t2czWuqS_aqs1-HamWpjB3PuFn7ImBmgbVKJ93rqCOL1mNJ0tB4SDiqzrX5X3SU0GoksfKSktnzeho42DoPGwZbUcA4mj9Rs2IUDruHlkFz5OmBXNh2K8ENmcHdeVhyZF7HrmhxK6Oj-xlO-Byinj3TlfzgOlcYpoKz6VD0Klpfpc0zyzF6Y4AjMZo1YLBn0UBc5XVy1iR076fk99A9c90ZhepL24zCwg0ExOQwyFnz2RwIP7WuCJg1g3u7YOZj4');"></div>
-</div>
-<div>
-<div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Aug 02, 2023</span>
-</div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">New X200 Series Achieves Highest Accuracy Certification</h4>
-<p class="text-gray-600 mb-4 line-clamp-2">The X200 series has been awarded the prestigious Class 0.2s accuracy rating by international standards bodies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
-</div>
-</article>
-<article class="flex flex-col gap-6 group cursor-pointer">
-<div class="h-64 overflow-hidden rounded-xl shadow-md">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Team looking at documents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtz12sqLzHibmVBStdkvS3siTAiu4D0EgVXjumX8IYITwqpGjJFtGWbLX6o-46bxgUS7at-V8WjmB_bG3zDIA6mPv2FEh6Tjob3oZ3TaiPI5cJi580xT30ld3169Ia5icGn-WqFxEqtyptQXqvygK0O18JyIDYIzJFQ4iKn8c3N-c8vDDjvh3YjW8ocXL2axAT8hn25KqAfClaCLNZhlnFA4oDlDeg1p1UsnzY3jcZfXZEcf9I3gN8JK4BtaHYG-NhPmfihSuZ2eA');"></div>
-</div>
-<div>
-<div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Jul 10, 2023</span>
-</div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Upcoming Webinar: The Future of Smart Grid Metering</h4>
-<p class="text-gray-600 mb-4 line-clamp-2">Join our Chief Technology Officer as he discusses the upcoming trends in AMI and smart grid technologies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<footer class="bg-background-dark text-gray-400 pt-24 pb-12 border-t-8 border-primary" id="contact">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
-<div>
-<div class="flex items-center gap-3 mb-8 text-white">
-<div class="w-10 h-10 bg-primary rounded flex items-center justify-center text-black">
-<span class="material-symbols-outlined text-2xl">bolt</span>
-</div>
-<h2 class="text-3xl font-bold">SmartMeter Inc.</h2>
-</div>
-<p class="mb-8 leading-relaxed text-lg">
-                        Leading the world in smart energy measurement solutions. Precision, reliability, and innovation for a sustainable future.
-                    </p>
-<div class="flex gap-4">
-<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
-</a>
-<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
-<span class="material-symbols-outlined text-xl">public</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="text-white text-xl font-bold mb-8">Quick Links</h4>
-<ul class="space-y-4 text-lg">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Support Center</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-white text-xl font-bold mb-8">Product Series</h4>
-<ul class="space-y-4 text-lg">
-<li><a class="hover:text-primary transition-colors" href="#">Single Phase Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Three Phase Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Industrial Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Smart Water Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">AMI Systems</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-white text-xl font-bold mb-8">Contact Us</h4>
-<ul class="space-y-6 text-lg">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1">location_on</span>
-<span>123 Innovation Drive, Tech Park,<br/>Silicon Valley, CA 94025, USA</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">call</span>
-<span>+1 (555) 123-4567</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">mail</span>
-<span>sales@smartmeter.inc</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
-<p>© 2023 SmartMeter Inc. All rights reserved.</p>
-<div class="flex gap-8">
-<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-<a class="hover:text-white transition-colors" href="#">Sitemap</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
+<body class="bg-white text-[#181710] antialiased selection:bg-[#fcc603] selection:text-black">
+
+  <main>
+    <section id="hero-carousel" class="module-hero bg-[#181710] py-8 md:py-12">
+      <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+        <div class="module-hero__media relative rounded-2xl overflow-hidden bg-black">
+          <img class="module-hero__image w-full h-[240px] md:h-[420px] xl:h-[620px] object-cover" data-hero-image="0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y" alt="Hero slide 1" />
+          <img class="module-hero__image hidden w-full h-[240px] md:h-[420px] xl:h-[620px] object-cover" data-hero-image="1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg" alt="Hero slide 2" />
+          <img class="module-hero__image hidden w-full h-[240px] md:h-[420px] xl:h-[620px] object-cover" data-hero-image="2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4" alt="Hero slide 3" />
+        </div>
+
+        <div class="module-hero__content mt-6 md:mt-8 text-white">
+          <span id="hero-slide-tag" class="inline-block py-1.5 px-3 border border-[#fcc603] text-[#fcc603] font-bold uppercase tracking-widest rounded">Global Leader in AMI</span>
+          <h1 id="hero-slide-title" class="mt-4 text-3xl md:text-5xl xl:text-6xl font-bold leading-tight">Precision Metering <span class="text-[#fcc603]">For Smart Cities</span></h1>
+          <p id="hero-slide-description" class="mt-4 text-base md:text-xl text-gray-200 max-w-4xl">Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.</p>
+
+          <div class="mt-6 flex items-center gap-3" id="hero-pagination">
+            <button id="hero-prev" type="button" class="w-10 h-10 rounded-full border border-white/30 bg-black/40 hover:bg-[#fcc603] hover:text-black flex items-center justify-center"><span class="material-symbols-outlined">chevron_left</span></button>
+            <button data-hero-dot="0" type="button" class="w-12 h-1.5 rounded-full bg-[#fcc603]"></button>
+            <button data-hero-dot="1" type="button" class="w-12 h-1.5 rounded-full bg-white/30"></button>
+            <button data-hero-dot="2" type="button" class="w-12 h-1.5 rounded-full bg-white/30"></button>
+            <button id="hero-next" type="button" class="w-10 h-10 rounded-full border border-white/30 bg-black/40 hover:bg-[#fcc603] hover:text-black flex items-center justify-center"><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold">Solutions 方案</h2>
+            <p class="mt-3 text-gray-500">按轮播方式分组查看方案卡片。</p>
+          </div>
+        </div>
+
+        <div id="solutions-track" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <article class="module-solution-card solution-card bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+            <img class="solution-card__media w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHjOLXjsrIsDIY7IpG4Bxwe2lXXtWTC504aoYicJjVvrYmFp9Cif-1Zdz8iKtD6PR3Nk7GdSzgfJP13Gr0SBr8e2AqkGMQ9HFGrfusfrWoF8A9trNzxOA1IEwdf8UrOsFHAd_gxwkDtKPexzjvNsZOFQfuzoxW4rSfd5lnshKdHbAzXIc3C2lRCV5OC2hW8FYn69Jf9rjDOn9Iybz9HeF3pfPGQzsTqWF9ArFg2PbZ6q1KVExzFEFBX6dbEBkOjtmW_H0ooZowBVY" alt="Smart Home" />
+            <div class="solution-card__body p-5">
+              <h3 class="solution-card__title text-2xl font-bold">Smart Home Metering</h3>
+              <p class="solution-card__desc mt-2 text-gray-600">实时家庭电表监测方案。</p>
+              <a href="#" class="solution-card__cta mt-4 inline-flex items-center gap-1 font-bold text-[#181710] hover:text-[#fcc603]">Learn more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="module-solution-card solution-card bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+            <img class="solution-card__media w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg" alt="Commercial Grid" />
+            <div class="solution-card__body p-5">
+              <h3 class="solution-card__title text-2xl font-bold">Commercial Grid</h3>
+              <p class="solution-card__desc mt-2 text-gray-600">商用配电网络稳定计量。</p>
+              <a href="#" class="solution-card__cta mt-4 inline-flex items-center gap-1 font-bold text-[#181710] hover:text-[#fcc603]">Learn more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="module-solution-card solution-card bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+            <img class="solution-card__media w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwilHbbfXC2x67tplTbopnrPOqw70INXlIRk0NVOwBSeVR3tJyynqTfxmmJXwI5zWhTExxpxNuP1Rk0eRselvUuB6-FtvFbKp_FMs0YiEShx8PmixNTzESqgkQ1QMComIc8_DQsnvXmHcxs1oO7S_kjdbnkcoVMa0UcmjlFNv6OeaQnW_rROqcJj9vE8WGyRBFPPWgejNaWVeTixOuAfH1Ryi8HJjU9WD73LdRQMBM0EbC6WDb8egW_N3eaBE4gBeQXQZVamndmis" alt="Industrial IoT" />
+            <div class="solution-card__body p-5">
+              <h3 class="solution-card__title text-2xl font-bold">Industrial IoT</h3>
+              <p class="solution-card__desc mt-2 text-gray-600">工业级远程抄表与分析。</p>
+              <a href="#" class="solution-card__cta mt-4 inline-flex items-center gap-1 font-bold text-[#181710] hover:text-[#fcc603]">Learn more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="module-solution-card solution-card bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+            <img class="solution-card__media w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsnB28DNkANW0G4Pf9UrlWwmwM6MJ81U_db0Mtfw4vTSl-iXEoYcJ88I-iyLl4-SEq_OdQM0bQEW3uLeP3L7MutAMkFYGavaPtNHrExpMkFisKKjTmial7nBZG5LkzEWkSVsSLiLPkAxaIExFzOwUR3gwkdZWVRUvM34r1uTOlH34HhfddD7A5DE1AestWlFD8ilnAbOOkbToSITcIrA6rBeeceIAbB1bjL6clyToC-yPr5O-xGoi5DRzwfO4-dhGkkdKBXw1h98M" alt="Water Management" />
+            <div class="solution-card__body p-5">
+              <h3 class="solution-card__title text-2xl font-bold">Water Management</h3>
+              <p class="solution-card__desc mt-2 text-gray-600">智能水务抄表与漏损控制。</p>
+              <a href="#" class="solution-card__cta mt-4 inline-flex items-center gap-1 font-bold text-[#181710] hover:text-[#fcc603]">Learn more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+            </div>
+          </article>
+
+          <article class="module-solution-card solution-card bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+            <img class="solution-card__media w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpQvf4SJ5nYv6dPGU2bCP6qR9tVndLrJ-H5kW1GPYB9M9hYdwX5xYQ6hujr6x1Rf6m8j_H6k8XnBEhQf6W8jfg2iSP9v7m3Gi2CvQzQhI77K7d8kzjcwZP2Vjffm6B5W0QG98ZQW2P0Kp7wS9V0m47rjWWpT3NPwxmDwVPrJoD0JeUGR3rN3wdm8ymWSc54fN0n36MbC0h0Jm2H0" alt="Renewable" />
+            <div class="solution-card__body p-5">
+              <h3 class="solution-card__title text-2xl font-bold">Renewable Integration</h3>
+              <p class="solution-card__desc mt-2 text-gray-600">新能源并网计量与稳定控制。</p>
+              <a href="#" class="solution-card__cta mt-4 inline-flex items-center gap-1 font-bold text-[#181710] hover:text-[#fcc603]">Learn more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div id="solutions-pagination" class="mt-8 flex justify-center gap-3">
+          <button id="solutions-prev" type="button" class="px-4 py-2 rounded border border-gray-300">上一组</button>
+          <button id="solutions-next" type="button" class="px-4 py-2 rounded border border-gray-300">下一组</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-y border-gray-100">
+      <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          <article class="module-product-card product-card bg-white rounded-2xl border border-gray-100 p-5">
+            <img class="product-card__media w-full h-48 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxDSJvdsQ1zjubDpNJtBeoqfyezimVgXs9kr5Ya-g6qJR-iej5Riyp1nHQHG7UZ2VdWdo4GXlF5DrT2L8bIijE1cU43tXKPbbTC9eHCnERuYrGy5Y8sSQWSkH3BWPcRy2RP9L2jUfDAYsj5BG1X_1hARuVzXyHCZ1au-paeicKeBXJRxiG1lM4Z9PtU5jV1YKXmwbv4N1UbdKNIcI7gCJIWV2OC82YkIKEEYzfkmp7dMUcoE0DUNwap_SMKbiNU9ah_65FhbBiNSo" alt="X100" />
+            <h3 class="product-card__title mt-4 text-xl font-bold">X100 Residential Meter</h3>
+            <p class="product-card__desc mt-2 text-gray-600">高性价比家庭用电计量设备。</p>
+          </article>
+          <article class="module-product-card product-card bg-white rounded-2xl border border-gray-100 p-5"><img class="product-card__media w-full h-48 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNEeMSOw5R7-veSsJ2lnjWgL-DpBD7dlu3perk1VTX91cqAhOzqNIboo8tP5dcJOrpA6i96RCBirVY-OyQR071P37LwnhZNuwQxQ2i-WNof77Li7b5ve6zHOKj2w0y-Su4Xhp4txfFbglu2etICFhmgVVQR3JYJ8QyUp6ZrdLDRBIfSM5LT51yWcuWSqhNP04s59StVxuNSulvTa2NZIo_4LWo-CQrpy0TarWouVz8mEAVydWCxavAfU4GSvo2s8381S3NZJdT1gA" alt="X200" /><h3 class="product-card__title mt-4 text-xl font-bold">X200 Commercial Meter</h3><p class="product-card__desc mt-2 text-gray-600">商用场景高精度计量。</p></article>
+          <article class="module-product-card product-card bg-white rounded-2xl border border-gray-100 p-5"><img class="product-card__media w-full h-48 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPdHXWtiWj7HRS0UG5hlHW4bESbAH-AyVBET-JbEknrHz8cDuUz_4GR6RQURc4713shlWwR6S_wHSzRpRgC4HFRsHV9OFwf6-kTtcp39rntMtWHOyV1zk1ChE_xYbfnkhqaUECDojdDORvLHjEUISmMbGmDF4rKheTvn5A9qCMnwgmS_SIt92h_nbgrsepHVFwyO8N3XhpSDygFrtlI5aDNfOqXBXQPxfUcs2LMqE3uUkpi4_1oEyc5oaCybhaQl63Ro-1JoxDLFc" alt="X300" /><h3 class="product-card__title mt-4 text-xl font-bold">X300 Industrial Meter</h3><p class="product-card__desc mt-2 text-gray-600">工厂与园区能源管理。</p></article>
+          <article class="module-product-card product-card bg-white rounded-2xl border border-gray-100 p-5"><img class="product-card__media w-full h-48 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaDZxX5PzQ70gGbunnPEsUszWkbERn-ep8hc-1QVknLHGEdwo3FbZquiSlqOf4wPrSLvQMsCy3rbgMHt3UU8BNq3qKnHUsFHmkJRFd5CjibRsljapdtnJ-KqcT50y0Eqeown16vb1_8SLOdqoL8AEu0oC8qv8jeH1aO1eKSKNeCplN_CSkogSosX_tOo_rBs-4LfCoXIr-oaWY7x_ke6ibHTl45TEwL3zSKCVR7jp-sDFWPRaE55Xt-S6hvGWmPGy1bBMLwuUgEfQ" alt="X500" /><h3 class="product-card__title mt-4 text-xl font-bold">X500 Data Gateway</h3><p class="product-card__desc mt-2 text-gray-600">数据采集与边缘网关。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Global Engineering Excellence</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="module-ge-item ge-item ge-item--media rounded-2xl overflow-hidden"><img class="ge-item__media w-full h-[260px] md:h-[320px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPdHXWtiWj7HRS0UG5hlHW4bESbAH-AyVBET-JbEknrHz8cDuUz_4GR6RQURc4713shlWwR6S_wHSzRpRgC4HFRsHV9OFwf6-kTtcp39rntMtWHOyV1zk1ChE_xYbfnkhqaUECDojdDORvLHjEUISmMbGmDF4rKheTvn5A9qCMnwgmS_SIt92h_nbgrsepHVFwyO8N3XhpSDygFrtlI5aDNfOqXBXQPxfUcs2LMqE3uUkpi4_1oEyc5oaCybhaQl63Ro-1JoxDLFc" alt="R&D" /></article>
+          <article class="module-ge-item ge-item ge-item--text rounded-2xl border border-gray-100 bg-gray-50 p-6 md:p-8"><h3 class="ge-item__title text-2xl font-bold">In-House R&D</h3><p class="ge-item__desc mt-3 text-gray-600">研发团队持续迭代核心计量技术。</p></article>
+          <article class="module-ge-item ge-item ge-item--text rounded-2xl border border-gray-100 bg-gray-50 p-6 md:p-8"><h3 class="ge-item__title text-2xl font-bold">Automated Production</h3><p class="ge-item__desc mt-3 text-gray-600">自动化产线保障一致品质与效率。</p></article>
+          <article class="module-ge-item ge-item ge-item--media rounded-2xl overflow-hidden"><img class="ge-item__media w-full h-[260px] md:h-[320px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsnB28DNkANW0G4Pf9UrlWwmwM6MJ81U_db0Mtfw4vTSl-iXEoYcJ88I-iyLl4-SEq_OdQM0bQEW3uLeP3L7MutAMkFYGavaPtNHrExpMkFisKKjTmial7nBZG5LkzEWkSVsSLiLPkAxaIExFzOwUR3gwkdZWVRUvM34r1uTOlH34HhfddD7A5DE1AestWlFD8ilnAbOOkbToSITcIrA6rBeeceIAbB1bjL6clyToC-yPr5O-xGoi5DRzwfO4-dhGkkdKBXw1h98M" alt="Production" /></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-y border-gray-200">
+      <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold">Certifications & Awards</h2>
+          <div class="flex gap-2">
+            <button id="cert-prev" type="button" class="w-10 h-10 rounded-full bg-white border border-gray-200 shadow flex items-center justify-center"><span class="material-symbols-outlined">chevron_left</span></button>
+            <button id="cert-next" type="button" class="w-10 h-10 rounded-full bg-white border border-gray-200 shadow flex items-center justify-center"><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+
+        <div id="cert-track" class="flex gap-6 overflow-x-auto no-scrollbar py-2">
+          <article class="module-cert-card cert-card shrink-0 w-64 h-40 bg-white rounded-xl border border-gray-100 flex items-center justify-center p-4"><img class="cert-card__media max-w-full max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUEJJy4WiArk0x880kxeYUA30yE-aABjM1HeLokfmtn-b-CshTASpp0rdeoSGaeWNTy_WwEOmY9cuq4mSmjcsxPb7eVESeIO4BcKYQjtJQrKNanp4lnsuVtv93gpG6M-QdbSa53ymDIlrex6kSISpD-54wW2qalYib8H0x1dcpA8sOqdEQD05IbdB-g-qs6aWwsMAAG_Vt6YBA07K2gzvTVjYsK9xcpC8O06wIMKX_2YgPSwj0Ljy_BuuF6jO-ig-C1p1bqwPXog" alt="ISO 9001" /></article>
+          <article class="module-cert-card cert-card shrink-0 w-64 h-40 bg-white rounded-xl border border-gray-100 flex items-center justify-center p-4"><img class="cert-card__media max-w-full max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAwqacEWst3ospW1Ir2PgaV_E02RIgV35zUIyLwTbgDxPANkuSY5ooMT_iUYHuWrlDpyZw-8N3hUl7I0wDxKxTHsGR7euPgd5wHJ9fpeSN-ztUdFigllJF_VR9oRcpsou_SIiRl-wyzHp80-CeX3rsQBIi9ys77rzY3mnhl70BXIk9p-bzJdurOjH0Rk81yaLi3QG9mcLcXld88anE00nsG-O65sldffp6dXOa0DTjO9BI_Fqho0MTvO9ATDOM5Xd9_zVv_G3lggk" alt="ISO 14001" /></article>
+          <article class="module-cert-card cert-card shrink-0 w-64 h-40 bg-white rounded-xl border border-gray-100 flex items-center justify-center p-4"><img class="cert-card__media max-w-full max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc9hmXBquyey4FV-vBCFU6Yt9_y5JX5x_MlP_xJNRvgbe5skQw8jOEwSkQt217iEWyrcCRFGJDuu3wskPZxr4ENJWKdJnXroQ5ksCvUGCJWbIB97Bt2cLNDEfr4iIOg_kXxBffjY2svMYd82LUt81xeVFqjjQiSo7Hx4sG4mDQEMNR4oxmsMnxaz-BhAs91yi7HekWI6FenYVebcMrHoLGksQie_8SkFIO27UDoq9xE5fgJIgbqe-s-S2xGeUBYUUTys9F3nHCyko" alt="MID" /></article>
+          <article class="module-cert-card cert-card shrink-0 w-64 h-40 bg-white rounded-xl border border-gray-100 flex items-center justify-center p-4"><img class="cert-card__media max-w-full max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-2wMyMG4p2sBvf28nHFzVL0fxx-qVUa6U6dPz7icKeGUqIOoEQ-WLsi0B_UfJCgf3ZmVsq9FPt2FEurFw3smoEYKeo1l_RNuuEgtiO7wPb2xI6ptWRc9PXEDzdMByzpbKZAeSqV2XLn7ROSwOyewUvP8G0Uw6IIZxmEWwH5OQlnf6tfgiJ6aaw2D8pXSyssGsXfMXDQi8K0J2YbGQXRLsV4pdqS8RbZRrxBO_eh576unGuPFn8Pp1-lfy5-1fhzmQ7JI2yojTrk" alt="UL" /></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
     (() => {
-        const heroSlides = [
-            {
-                tag: 'Global Leader in AMI',
-                title: 'Precision Metering <br><span class="text-primary">For Smart Cities</span>',
-                description: 'Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y'
-            },
-            {
-                tag: 'Trusted by 50+ Countries',
-                title: 'Reliable Infrastructure <br><span class="text-primary">Built to Scale</span>',
-                description: 'Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg'
-            },
-            {
-                tag: 'Sustainable by Design',
-                title: 'IoT Analytics <br><span class="text-primary">For Cleaner Energy</span>',
-                description: 'Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4'
-            }
-        ];
+      const heroSlides = [
+        { tag: 'Global Leader in AMI', title: 'Precision Metering <span class="text-[#fcc603]">For Smart Cities</span>', description: 'Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.' },
+        { tag: 'Trusted by 50+ Countries', title: 'Reliable Infrastructure <span class="text-[#fcc603]">Built to Scale</span>', description: 'Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.' },
+        { tag: 'Sustainable by Design', title: 'IoT Analytics <span class="text-[#fcc603]">For Cleaner Energy</span>', description: 'Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.' }
+      ];
 
-        const heroSection = document.getElementById('hero-carousel');
-        const heroImage = document.getElementById('hero-slide-image');
-        const heroTag = document.getElementById('hero-slide-tag');
-        const heroTitle = document.getElementById('hero-slide-title');
-        const heroDescription = document.getElementById('hero-slide-description');
-        const heroDots = Array.from(document.querySelectorAll('[data-hero-dot]'));
-        const heroPrev = document.getElementById('hero-prev');
-        const heroNext = document.getElementById('hero-next');
+      const heroImages = Array.from(document.querySelectorAll('[data-hero-image]'));
+      const heroTag = document.getElementById('hero-slide-tag');
+      const heroTitle = document.getElementById('hero-slide-title');
+      const heroDescription = document.getElementById('hero-slide-description');
+      const heroDots = Array.from(document.querySelectorAll('[data-hero-dot]'));
+      const heroPrev = document.getElementById('hero-prev');
+      const heroNext = document.getElementById('hero-next');
 
-        if (heroSection && heroImage && heroTag && heroTitle && heroDescription && heroDots.length) {
-            let heroIndex = 0;
-            let heroTimer = null;
-            const autoplayMs = 7000;
+      let heroIndex = 0;
+      const renderHero = (index) => {
+        heroIndex = (index + heroSlides.length) % heroSlides.length;
+        heroImages.forEach((img, i) => img.classList.toggle('hidden', i !== heroIndex));
+        heroTag.textContent = heroSlides[heroIndex].tag;
+        heroTitle.innerHTML = heroSlides[heroIndex].title;
+        heroDescription.textContent = heroSlides[heroIndex].description;
+        heroDots.forEach((dot, i) => dot.classList.toggle('bg-[#fcc603]', i === heroIndex));
+        heroDots.forEach((dot, i) => dot.classList.toggle('bg-white/30', i !== heroIndex));
+      };
 
-            const renderHero = (index) => {
-                const slide = heroSlides[index];
-                heroImage.style.backgroundImage = `url('${slide.image}')`;
-                heroTag.textContent = slide.tag;
-                heroTitle.innerHTML = slide.title;
-                heroDescription.textContent = slide.description;
+      heroPrev?.addEventListener('click', () => renderHero(heroIndex - 1));
+      heroNext?.addEventListener('click', () => renderHero(heroIndex + 1));
+      heroDots.forEach((dot, i) => dot.addEventListener('click', () => renderHero(i)));
+      renderHero(0);
 
-                heroDots.forEach((dot, dotIndex) => {
-                    const active = dotIndex === index;
-                    dot.classList.toggle('bg-primary', active);
-                    dot.classList.toggle('shadow-[0_0_10px_rgba(252,198,3,0.5)]', active);
-                    dot.classList.toggle('bg-white/30', !active);
-                    dot.setAttribute('aria-current', active ? 'true' : 'false');
-                });
-            };
-
-            const goToHero = (index) => {
-                heroIndex = (index + heroSlides.length) % heroSlides.length;
-                renderHero(heroIndex);
-            };
-
-            const stopHeroAutoPlay = () => {
-                if (heroTimer !== null) {
-                    window.clearInterval(heroTimer);
-                    heroTimer = null;
-                }
-            };
-
-            const startHeroAutoPlay = () => {
-                stopHeroAutoPlay();
-                heroTimer = window.setInterval(() => {
-                    goToHero(heroIndex + 1);
-                }, autoplayMs);
-            };
-
-            heroPrev?.addEventListener('click', () => {
-                goToHero(heroIndex - 1);
-                startHeroAutoPlay();
-            });
-
-            heroNext?.addEventListener('click', () => {
-                goToHero(heroIndex + 1);
-                startHeroAutoPlay();
-            });
-
-            heroDots.forEach((dot, dotIndex) => {
-                dot.addEventListener('click', () => {
-                    goToHero(dotIndex);
-                    startHeroAutoPlay();
-                });
-            });
-
-            heroSection.addEventListener('mouseenter', stopHeroAutoPlay);
-            heroSection.addEventListener('mouseleave', startHeroAutoPlay);
-
-            document.addEventListener('visibilitychange', () => {
-                if (document.hidden) {
-                    stopHeroAutoPlay();
-                } else {
-                    startHeroAutoPlay();
-                }
-            });
-
-            renderHero(heroIndex);
-            startHeroAutoPlay();
-        }
-
-        const certTrack = document.getElementById('cert-track');
-        const certPrev = document.getElementById('cert-prev');
-        const certNext = document.getElementById('cert-next');
-
-        const updateCertButtonState = () => {
-            if (!certTrack || !certPrev || !certNext) return;
-            const maxScroll = certTrack.scrollWidth - certTrack.clientWidth;
-            const atStart = certTrack.scrollLeft <= 2;
-            const atEnd = certTrack.scrollLeft >= maxScroll - 2;
-
-            certPrev.disabled = atStart;
-            certNext.disabled = atEnd;
-            certPrev.classList.toggle('opacity-40', atStart);
-            certNext.classList.toggle('opacity-40', atEnd);
-            certPrev.classList.toggle('cursor-not-allowed', atStart);
-            certNext.classList.toggle('cursor-not-allowed', atEnd);
+      const solutionsTrack = document.getElementById('solutions-track');
+      const solutionsPrev = document.getElementById('solutions-prev');
+      const solutionsNext = document.getElementById('solutions-next');
+      if (solutionsTrack && solutionsPrev && solutionsNext) {
+        const cards = Array.from(solutionsTrack.children);
+        let page = 0;
+        const pageSize = () => (window.innerWidth >= 1280 ? 4 : window.innerWidth >= 768 ? 2 : 1);
+        const pages = () => Math.ceil(cards.length / pageSize());
+        const renderSolutions = () => {
+          const size = pageSize();
+          if (page >= pages()) page = pages() - 1;
+          if (page < 0) page = 0;
+          cards.forEach((card, idx) => card.classList.toggle('hidden', Math.floor(idx / size) !== page));
         };
+        solutionsPrev.addEventListener('click', () => { page -= 1; renderSolutions(); });
+        solutionsNext.addEventListener('click', () => { page += 1; renderSolutions(); });
+        window.addEventListener('resize', renderSolutions);
+        renderSolutions();
+      }
 
-        const scrollCerts = (direction) => {
-            if (!certTrack) return;
-            const firstCard = certTrack.querySelector(':scope > div');
-            if (!firstCard) return;
-
-            const styles = window.getComputedStyle(certTrack);
-            const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
-            const cardWidth = firstCard.getBoundingClientRect().width;
-            const step = cardWidth + gap;
-
-            const baseOffset = firstCard.offsetLeft - certTrack.offsetLeft;
-            const currentIndex = Math.round((certTrack.scrollLeft - baseOffset) / step);
-            const maxIndex = Math.max(0, Math.round((certTrack.scrollWidth - certTrack.clientWidth - baseOffset) / step));
-            const targetIndex = Math.min(maxIndex, Math.max(0, currentIndex + direction));
-
-            certTrack.scrollTo({
-                left: baseOffset + (targetIndex * step),
-                behavior: 'smooth'
-            });
-        };
-
-        certPrev?.addEventListener('click', () => scrollCerts(-1));
-        certNext?.addEventListener('click', () => scrollCerts(1));
-        certTrack?.addEventListener('scroll', updateCertButtonState);
-        window.addEventListener('resize', updateCertButtonState);
-        updateCertButtonState();
+      const certTrack = document.getElementById('cert-track');
+      document.getElementById('cert-prev')?.addEventListener('click', () => certTrack?.scrollBy({ left: -280, behavior: 'smooth' }));
+      document.getElementById('cert-next')?.addEventListener('click', () => certTrack?.scrollBy({ left: 280, behavior: 'smooth' }));
     })();
-</script>
-</body></html>
+  </script>
+</body>
+</html>
