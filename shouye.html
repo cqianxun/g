@@ -7,79 +7,46 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#fcc603",
-                        "primary-dark": "#e5b402",
-                        "background-light": "#ffffff",
-                        "background-dark": "#181710",
-                        "text-main": "#181710",
-                        "text-muted": "#6b7280",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"],
-                        "body": ["Space Grotesk", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    screens: {
-                        '3xl': '1600px',
-                    },
-                    maxWidth: {
-                        'ultra': '1600px',
-                    }
-                },
-            },
-        }
-    </script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
-<body class="font-body overflow-x-hidden bg-background-light text-text-main antialiased selection:bg-primary selection:text-black">
+<body class="font-['Space_Grotesk'] overflow-x-hidden bg-white text-[#181710] antialiased selection:bg-[#fcc603] selection:text-black">
 <section class="relative w-full overflow-hidden bg-gray-900 group xl:h-[90vh] xl:min-h-[700px]" id="hero-carousel">
 <div class="relative z-0 w-full h-[55vh] min-h-[360px] xl:absolute xl:inset-0 xl:h-full" id="hero-slide-track">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
 <img alt="Industrial technician examining smart meter array in high-tech facility" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y"/>
 <img alt="City skyline at night representing urban grid management" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg"/>
 <img alt="Solar panels on a roof" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4"/>
-<button class="absolute left-4 md:left-8 xl:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-prev" type="button">
+<button class="absolute left-4 md:left-8 xl:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-[#fcc603] hover:border-[#fcc603] text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-prev" type="button">
 <span class="material-symbols-outlined text-3xl xl:text-4xl">chevron_left</span>
 </button>
-<button class="absolute right-4 md:right-8 xl:right-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-next" type="button">
+<button class="absolute right-4 md:right-8 xl:right-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-[#fcc603] hover:border-[#fcc603] text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-next" type="button">
 <span class="material-symbols-outlined text-3xl xl:text-4xl">chevron_right</span>
 </button>
 <div class="absolute bottom-6 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 flex gap-4" id="hero-pagination">
-<button aria-label="Go to slide 1" class="w-12 xl:w-16 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" type="button"></button>
+<button aria-label="Go to slide 1" class="w-12 xl:w-16 h-1.5 bg-[#fcc603] rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" type="button"></button>
 <button aria-label="Go to slide 2" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
 <button aria-label="Go to slide 3" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
 </div>
 <div class="hidden" id="hero-slide-meta">
-<div><span>Global Leader in AMI</span><h3>Precision Metering <br><span class='text-primary'>For Smart Cities</span></h3><p>Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.</p></div>
-<div><span>Trusted by 50+ Countries</span><h3>Reliable Infrastructure <br><span class='text-primary'>Built to Scale</span></h3><p>Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.</p></div>
-<div><span>Sustainable by Design</span><h3>IoT Analytics <br><span class='text-primary'>For Cleaner Energy</span></h3><p>Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.</p></div>
+<div><span>Global Leader in AMI</span><h3>Precision Metering <br><span class='text-[#fcc603]'>For Smart Cities</span></h3><p>Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.</p></div>
+<div><span>Trusted by 50+ Countries</span><h3>Reliable Infrastructure <br><span class='text-[#fcc603]'>Built to Scale</span></h3><p>Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.</p></div>
+<div><span>Sustainable by Design</span><h3>IoT Analytics <br><span class='text-[#fcc603]'>For Cleaner Energy</span></h3><p>Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.</p></div>
 </div>
 </div>
-<div class="relative z-20 max-w-ultra mx-auto px-4 md:px-8 xl:px-12 py-10 md:py-12 xl:h-full xl:py-0 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center text-white">
+<div class="relative z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 py-10 md:py-12 xl:h-full xl:py-0 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center text-white">
 <div class="max-w-4xl animate-fade-in-up xl:max-w-4xl max-w-3xl mx-auto xl:mx-0">
-<span class="inline-block py-2 px-4 border border-primary text-primary font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
+<span class="inline-block py-2 px-4 border border-[#fcc603] text-[#fcc603] font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
                     Global Leader in AMI
                 </span>
 <h2 class="text-4xl md:text-6xl xl:text-8xl font-bold leading-tight mb-6 xl:mb-8" id="hero-slide-title">
                     Precision Metering <br/>
-<span class="text-primary">For Smart Cities</span>
+<span class="text-[#fcc603]">For Smart Cities</span>
 </h2>
 <p class="text-lg md:text-2xl xl:text-3xl text-gray-200 mb-8 xl:mb-12 max-w-3xl font-light leading-relaxed" id="hero-slide-description">
                     Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.
                 </p>
 <div class="flex flex-wrap justify-center xl:justify-start gap-4 md:gap-6">
-<button class="bg-primary hover:bg-white text-black px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
+<button class="bg-[#fcc603] hover:bg-white text-black px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
                         View Solutions
                         <span class="material-symbols-outlined">arrow_forward</span>
 </button>
@@ -91,11 +58,11 @@
 </div>
 </section>
 <section class="py-20 md:py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="text-center mb-12 md:mb-16">
 <div class="max-w-3xl mx-auto">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Our Expertise</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-text-main leading-tight">Comprehensive Energy Solutions</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Our Expertise</h3>
+<h2 class="text-4xl md:text-6xl font-bold text-[#181710] leading-tight">Comprehensive Energy Solutions</h2>
 <p class="text-base md:text-xl text-gray-500 mt-4 md:mt-6 max-w-2xl mx-auto">From residential metering to grid-scale management, our technologies power the future of energy distribution with precision and connectivity.</p>
 </div>
 </div>
@@ -106,14 +73,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Residential</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Residential</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">IoT</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Smart Home Metering</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Smart Home Metering</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Empower homeowners with real-time usage data and cost-saving insights through our precision residential meters.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -124,14 +91,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Grid</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Grid</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Stable</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Commercial Grid</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Commercial Grid</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Robust solutions for commercial energy distribution, ensuring stability and accurate billing for businesses.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -142,14 +109,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Industrial</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Industrial</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">High Load</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Industrial IoT</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Industrial IoT</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Heavy-duty metering for industrial complexes, integrated with IoT for predictive maintenance and efficiency.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -160,14 +127,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Water</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Water</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Flow</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Water Management</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Water Management</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Smart water meters detecting leaks and managing flow with unprecedented accuracy.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -178,14 +145,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Renewable</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Renewable</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Solar</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Renewable Integration</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Renewable Integration</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Bidirectional metering designed for solar and wind energy prosumers.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -196,14 +163,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Data</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Data</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Analytics</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">AMI Infrastructure</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">AMI Infrastructure</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Complete Advanced Metering Infrastructure setups for utility companies.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -214,14 +181,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">EV</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">EV</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Charging</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">EV Metering</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">EV Metering</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Precise sub-metering solutions for electric vehicle charging stations and fleets.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -232,14 +199,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Software</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Software</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">SaaS</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Energy Mgmt Software</h4>
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Energy Mgmt Software</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Cloud-based platforms to visualize, analyze, and optimize energy consumption.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -247,16 +214,16 @@
 </div>
 </div>
 <div class="md:hidden flex justify-center gap-4 mt-3">
-<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-primary transition-colors" id="solution-prev" type="button"><span class="material-symbols-outlined">chevron_left</span></button>
-<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-primary transition-colors" id="solution-next" type="button"><span class="material-symbols-outlined">chevron_right</span></button>
+<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-[#fcc603] transition-colors" id="solution-prev" type="button"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-[#fcc603] transition-colors" id="solution-next" type="button"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 </section>
 <section class="py-20 md:py-32 bg-gray-50 border-y border-gray-100">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="text-center mb-16">
 <div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Featured Products</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-text-main">Cutting-Edge Hardware</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Featured Products</h3>
+<h2 class="text-4xl md:text-6xl font-bold text-[#181710]">Cutting-Edge Hardware</h2>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-10">
@@ -269,7 +236,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Smart Three-Phase Meter X200</h4>
 <p class="text-base text-gray-500 mb-6">Commercial grade accuracy class 0.5s</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -283,7 +250,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Industrial Meter I-40</h4>
 <p class="text-base text-gray-500 mb-6">Heavy duty with PLC communication</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -297,7 +264,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Residential S1 Single Phase</h4>
 <p class="text-base text-gray-500 mb-6">Compact design for modern homes</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                            Request Price
                        </button>
 </div>
@@ -311,7 +278,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Smart Water Meter W5</h4>
 <p class="text-base text-gray-500 mb-6">Ultrasonic flow measurement</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -325,7 +292,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Data Concentrator DC-100</h4>
 <p class="text-base text-gray-500 mb-6">Aggregates up to 1000 meters</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -339,7 +306,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Prepayment Keypad Meter</h4>
 <p class="text-base text-gray-500 mb-6">STS compliant split meter</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -353,7 +320,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Smart Gas Meter G3</h4>
 <p class="text-base text-gray-500 mb-6">Diaphragm gas meter with GPRS</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                            Request Price
                        </button>
 </div>
@@ -367,7 +334,7 @@
 <h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900">Load Control Switch</h4>
 <p class="text-base text-gray-500 mb-6">Remote disconnect/reconnect module</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-base md:text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg">
                             Request Price
                         </button>
 </div>
@@ -376,10 +343,10 @@
 </div>
 </section>
 <section class="py-20 md:py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="text-center mb-12 md:mb-16">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Why Choose Us</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-text-main">Global Engineering Excellence</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Why Choose Us</h3>
+<h2 class="text-4xl md:text-6xl font-bold text-[#181710]">Global Engineering Excellence</h2>
 </div>
 <div class="space-y-6 md:space-y-8 xl:hidden">
 <div class="grid grid-cols-2 gap-4 md:gap-8 items-stretch">
@@ -413,25 +380,25 @@
 </div>
 <div class="hidden xl:grid grid-cols-4 gap-6">
 <img alt="section image" class="bg-gray-100 rounded-xl h-80 object-contain shadow-md transform hover:-translate-y-2 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPdHXWtiWj7HRS0UG5hlHW4bESbAH-AyVBET-JbEknrHz8cDuUz_4GR6RQURc4713shlWwR6S_wHSzRpRgC4HFRsHV9OFwf6-kTtcp39rntMtWHOyV1zk1ChE_xYbfnkhqaUECDojdDORvLHjEUISmMbGmDF4rKheTvn5A9qCMnwgmS_SIt92h_nbgrsepHVFwyO8N3XhpSDygFrtlI5aDNfOqXBXQPxfUcs2LMqE3uUkpi4_1oEyc5oaCybhaQl63Ro-1JoxDLFc"/>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">science</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">science</span>
 <h4 class="text-xl md:text-2xl font-bold mb-3">In-House R&amp;D</h4>
 <p class="text-gray-600 text-base leading-relaxed">Over 200 dedicated engineers innovating daily to bring you the best.</p>
 </div>
 <img alt="section image" class="bg-gray-100 rounded-xl h-80 object-contain shadow-md transform hover:-translate-y-2 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsnB28DNkANW0G4Pf9UrlWwmwM6MJ81U_db0Mtfw4vTSl-iXEoYcJ88I-iyLl4-SEq_OdQM0bQEW3uLeP3L7MutAMkFYGavaPtNHrExpMkFisKKjTmial7nBZG5LkzEWkSVsSLiLPkAxaIExFzOwUR3gwkdZWVRUvM34r1uTOlH34HhfddD7A5DE1AestWlFD8ilnAbOOkbToSITcIrA6rBeeceIAbB1bjL6clyToC-yPr5O-xGoi5DRzwfO4-dhGkkdKBXw1h98M"/>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">precision_manufacturing</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">precision_manufacturing</span>
 <h4 class="text-xl md:text-2xl font-bold mb-3">Automated Production</h4>
 <p class="text-gray-600 text-base leading-relaxed">State-of-the-art robotic assembly lines ensuring precision.</p>
 </div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">verified</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">verified</span>
 <h4 class="text-xl md:text-2xl font-bold mb-3">Quality Control</h4>
 <p class="text-gray-600 text-base leading-relaxed">100% testing on every unit shipped for maximum reliability.</p>
 </div>
 <img alt="section image" class="bg-gray-100 rounded-xl h-80 object-contain shadow-md transform hover:-translate-y-2 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNEeMSOw5R7-veSsJ2lnjWgL-DpBD7dlu3perk1VTX91cqAhOzqNIboo8tP5dcJOrpA6i96RCBirVY-OyQR071P37LwnhZNuwQxQ2i-WNof77Li7b5ve6zHOKj2w0y-Su4Xhp4txfFbglu2etICFhmgVVQR3JYJ8QyUp6ZrdLDRBIfSM5LT51yWcuWSqhNP04s59StVxuNSulvTa2NZIo_4LWo-CQrpy0TarWouVz8mEAVydWCxavAfU4GSvo2s8381S3NZJdT1gA"/>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">public</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">public</span>
 <h4 class="text-xl md:text-2xl font-bold mb-3">Global Support</h4>
 <p class="text-gray-600 text-base leading-relaxed">24/7 technical assistance worldwide, whenever you need us.</p>
 </div>
@@ -439,8 +406,8 @@
 </div>
 </div>
 </section>
-<section class="py-32 bg-background-dark text-white overflow-hidden relative">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 relative z-10">
+<section class="py-32 bg-[#181710] text-white overflow-hidden relative">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 relative z-10">
 <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
 <div class="w-full lg:w-1/2 relative group cursor-pointer">
 <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden relative border border-gray-700 shadow-2xl">
@@ -448,11 +415,11 @@
 <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"/>
 </video>
 </div>
-<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-primary/30 rounded-tl-3xl -z-10"></div>
-<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-primary/30 rounded-br-3xl -z-10"></div>
+<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-[#fcc603]/30 rounded-tl-3xl -z-10"></div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-[#fcc603]/30 rounded-br-3xl -z-10"></div>
 </div>
 <div class="w-full lg:w-1/2 flex flex-col justify-center">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-6 text-base md:text-lg">About SmartMeter Inc.</h3>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-6 text-base md:text-lg">About SmartMeter Inc.</h3>
 <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">Pioneering the Future of Energy</h2>
 <p class="text-gray-300 text-base md:text-xl mb-6 md:mb-8 leading-relaxed font-light">
                         Founded in 2005, SmartMeter Inc. has grown from a specialized lab to a global leader in AMI infrastructure. We combine precision engineering with advanced IoT connectivity to help utility providers manage resources more efficiently.
@@ -460,7 +427,7 @@
 <p class="text-gray-400 mb-12 leading-relaxed text-base md:text-lg">
                         With deployments in over 50 countries, our mission is to create a sustainable, energy-efficient world through smarter measurement technology.
                     </p>
-<a class="inline-flex items-center gap-3 text-primary text-lg font-bold hover:text-white transition-colors border-b-2 border-primary pb-2 w-fit" href="#">
+<a class="inline-flex items-center gap-3 text-[#fcc603] text-lg font-bold hover:text-white transition-colors border-b-2 border-[#fcc603] pb-2 w-fit" href="#">
                         Read Our Full Story <span class="material-symbols-outlined text-base">arrow_outward</span>
 </a>
 </div>
@@ -470,10 +437,10 @@
 <section class="py-16 md:py-24 bg-gray-50 border-b border-gray-200 overflow-hidden">
 <div class="max-w-[1700px] mx-auto relative px-4 md:px-20">
 <div class="flex justify-center items-center mb-16">
-<h3 class="text-3xl font-bold text-text-main">Certifications &amp; Awards</h3>
+<h3 class="text-3xl font-bold text-[#181710]">Certifications &amp; Awards</h3>
 </div>
 <div class="relative group">
-<button class="absolute left-2 md:left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-prev" type="button">
+<button class="absolute left-2 md:left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-[#fcc603] transition-colors border border-gray-200" id="cert-prev" type="button">
 <span class="material-symbols-outlined text-3xl">chevron_left</span>
 </button>
 <div class="flex gap-0 md:gap-10 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-8 px-0 md:px-4 scroll-smooth snap-x snap-mandatory" id="cert-track">
@@ -499,20 +466,20 @@
 <img alt="STS Association" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTjPeQlYzpCiPHH3mnzjOJEehm48si3SyhevBOYfZa5J7Qhu6NgOzz86jU21JJR3U8_O-gYFUSpQbvVoj46MC_nWhE1rjwxOFPJSOxO-C-Q5_VAuYPFeK9YT7evBBHB9kDbd09h5WkOMdwtyCJC-YtJew1-eM3dSeMj9pSTDDXTXB_pkLjLhoFiEz2Mu-NqHUidnXgr23ZGlIBk1RJo0S-BK80rHPXnoCB9I7FBJ0hm42K_u05CtfgVcxYlTRYERYTUWXpnGmVRs"/>
 </div>
 </div>
-<button class="absolute right-2 md:right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-next" type="button">
+<button class="absolute right-2 md:right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-[#fcc603] transition-colors border border-gray-200" id="cert-next" type="button">
 <span class="material-symbols-outlined text-3xl">chevron_right</span>
 </button>
 </div>
 </div>
 </section>
 <section class="py-20 md:py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="flex justify-between items-end mb-20">
 <div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-base md:text-lg">News &amp; Insights</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-text-main">Latest Updates</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">News &amp; Insights</h3>
+<h2 class="text-4xl md:text-6xl font-bold text-[#181710]">Latest Updates</h2>
 </div>
-<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-primary transition-colors" href="#">
+<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-[#fcc603] transition-colors" href="#">
                     View All News <span class="material-symbols-outlined">arrow_right_alt</span>
 </a>
 </div>
@@ -523,12 +490,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Oct 24, 2023</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Q3 Sustainability Report Released: 20% Growth</h4>
+<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">Q3 Sustainability Report Released: 20% Growth</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">Our latest financial and environmental impact report shows significant strides in green energy adoption across...</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -537,12 +504,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Sep 15, 2023</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">SmartMeter Inc. Partners with EuroGrid for IoT Expansion</h4>
+<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">SmartMeter Inc. Partners with EuroGrid for IoT Expansion</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">A strategic partnership to deploy next-gen IoT meters across the European grid network starting next quarter.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -551,12 +518,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Aug 02, 2023</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">New X200 Series Achieves Highest Accuracy Certification</h4>
+<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">New X200 Series Achieves Highest Accuracy Certification</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">The X200 series has been awarded the prestigious Class 0.2s accuracy rating by international standards bodies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -565,12 +532,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Jul 10, 2023</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Upcoming Webinar: The Future of Smart Grid Metering</h4>
+<h4 class="text-xl md:text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">Upcoming Webinar: The Future of Smart Grid Metering</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">Join our Chief Technology Officer as he discusses the upcoming trends in AMI and smart grid technologies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 </div>
@@ -608,7 +575,7 @@
 
                 heroDots.forEach((dot, dotIndex) => {
                     const active = dotIndex === index;
-                    dot.classList.toggle('bg-primary', active);
+                    dot.classList.toggle('bg-[#fcc603]', active);
                     dot.classList.toggle('shadow-[0_0_10px_rgba(252,198,3,0.5)]', active);
                     dot.classList.toggle('bg-white/30', !active);
                     dot.setAttribute('aria-current', active ? 'true' : 'false');
