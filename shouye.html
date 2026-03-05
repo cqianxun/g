@@ -56,9 +56,14 @@
 <span class="material-symbols-outlined text-3xl xl:text-4xl">chevron_right</span>
 </button>
 <div class="absolute bottom-6 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 flex gap-4" id="hero-pagination">
-<button aria-label="Go to slide 1" class="w-12 xl:w-16 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" data-hero-dot="0" data-hero-tag="Global Leader in AMI" data-hero-title="Precision Metering <br><span class='text-primary'>For Smart Cities</span>" data-hero-description="Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management." type="button"></button>
-<button aria-label="Go to slide 2" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="1" data-hero-tag="Trusted by 50+ Countries" data-hero-title="Reliable Infrastructure <br><span class='text-primary'>Built to Scale</span>" data-hero-description="Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability." type="button"></button>
-<button aria-label="Go to slide 3" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="2" data-hero-tag="Sustainable by Design" data-hero-title="IoT Analytics <br><span class='text-primary'>For Cleaner Energy</span>" data-hero-description="Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation." type="button"></button>
+<button aria-label="Go to slide 1" class="w-12 xl:w-16 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" type="button"></button>
+<button aria-label="Go to slide 2" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
+<button aria-label="Go to slide 3" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
+</div>
+<div class="hidden" id="hero-slide-meta">
+<div><span>Global Leader in AMI</span><h3>Precision Metering <br><span class='text-primary'>For Smart Cities</span></h3><p>Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.</p></div>
+<div><span>Trusted by 50+ Countries</span><h3>Reliable Infrastructure <br><span class='text-primary'>Built to Scale</span></h3><p>Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.</p></div>
+<div><span>Sustainable by Design</span><h3>IoT Analytics <br><span class='text-primary'>For Cleaner Energy</span></h3><p>Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.</p></div>
 </div>
 </div>
 <div class="relative z-20 max-w-ultra mx-auto px-4 md:px-8 xl:px-12 py-10 md:py-12 xl:h-full xl:py-0 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center text-white">
@@ -581,11 +586,11 @@
         const heroTag = document.getElementById('hero-slide-tag');
         const heroTitle = document.getElementById('hero-slide-title');
         const heroDescription = document.getElementById('hero-slide-description');
-        const heroDots = Array.from(document.querySelectorAll('[data-hero-dot]'));
-        const heroSlides = heroDots.map((dot) => ({
-            tag: dot.dataset.heroTag || '',
-            title: dot.dataset.heroTitle || '',
-            description: dot.dataset.heroDescription || ''
+        const heroDots = Array.from(document.querySelectorAll('#hero-pagination button'));
+        const heroSlides = Array.from(document.querySelectorAll('#hero-slide-meta > div')).map((item) => ({
+            tag: item.querySelector('span')?.textContent || '',
+            title: item.querySelector('h3')?.innerHTML || '',
+            description: item.querySelector('p')?.textContent || ''
         }));
         const heroPrev = document.getElementById('hero-prev');
         const heroNext = document.getElementById('hero-next');
