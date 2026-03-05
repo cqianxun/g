@@ -8,39 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#fcc603",
-                        "primary-dark": "#e5b402",
-                        "background-light": "#ffffff",
-                        "background-dark": "#181710",
-                        "text-main": "#181710",
-                        "text-muted": "#6b7280",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"],
-                        "body": ["Space Grotesk", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    screens: {
-                        '3xl': '1600px',
-                    },
-                    maxWidth: {
-                        'ultra': '1600px',
-                    }
-                },
-            },
-        }
-    </script>
 <style>
         body {
             font-family: 'Space Grotesk', sans-serif;
@@ -54,74 +21,74 @@
         }
     </style>
 </head>
-<body class="bg-background-light text-text-main antialiased selection:bg-primary selection:text-black">
-<div class="bg-background-dark text-white text-sm py-2 border-b border-gray-800">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
+<body class="bg-white text-[#181710] antialiased selection:bg-[#fcc603] selection:text-black">
+<div class="bg-[#181710] text-white text-sm py-2 border-b border-gray-800">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 flex flex-col sm:flex-row justify-between items-center gap-2">
 <div class="flex items-center gap-6">
-<a class="flex items-center gap-2 hover:text-primary transition-colors" href="tel:+1234567890">
+<a class="flex items-center gap-2 hover:text-[#fcc603] transition-colors" href="tel:+1234567890">
 <span class="material-symbols-outlined text-[18px]">call</span>
 <span>+1 (555) 123-4567</span>
 </a>
-<a class="flex items-center gap-2 hover:text-primary transition-colors hidden sm:flex" href="mailto:info@smartmeter.inc">
+<a class="flex items-center gap-2 hover:text-[#fcc603] transition-colors hidden sm:flex" href="mailto:info@smartmeter.inc">
 <span class="material-symbols-outlined text-[18px]">mail</span>
 <span>info@smartmeter.inc</span>
 </a>
 </div>
 <div class="flex items-center gap-4">
 <div class="flex items-center gap-3 border-r border-gray-700 pr-4">
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+<a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
 </div>
 <div class="flex items-center gap-2 font-medium">
-<button class="hover:text-primary transition-colors">EN</button>
+<button class="hover:text-[#fcc603] transition-colors">EN</button>
 <span class="text-gray-600">|</span>
-<button class="hover:text-primary transition-colors">CN</button>
+<button class="hover:text-[#fcc603] transition-colors">CN</button>
 </div>
 </div>
 </div>
 </div>
 <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-24 flex items-center justify-between">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 h-24 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-black">
+<div class="w-12 h-12 bg-[#fcc603] rounded-lg flex items-center justify-center text-black">
 <span class="material-symbols-outlined text-3xl">bolt</span>
 </div>
-<h1 class="text-3xl font-bold tracking-tight">SmartMeter <span class="text-primary">Inc.</span></h1>
+<h1 class="text-3xl font-bold tracking-tight">SmartMeter <span class="text-[#fcc603]">Inc.</span></h1>
 </div>
-<nav class="hidden lg:flex items-center gap-10 font-medium text-lg">
+<nav class="hidden xl:flex items-center gap-10 font-medium text-lg">
 <a class="relative group py-2" href="#">
                     Home
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-100 transition-transform origin-left"></span>
 </a>
 <a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
                     Solutions
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 <a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
                     Products
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 <a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
                     Advantages
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 <a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
                     About Us
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 <a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
                     News
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
 </a>
 </nav>
 <div class="flex items-center gap-5">
 <button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
 <span class="material-symbols-outlined text-2xl">search</span>
 </button>
-<button class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
+<button class="xl:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
 <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
-<a class="hidden lg:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
+<a class="hidden xl:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-[#fcc603] hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
                     Get Quote
                 </a>
 </div>
@@ -132,20 +99,20 @@
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
 <div class="w-full h-full bg-cover bg-center transition-transform duration-[10s] hover:scale-105" data-alt="Industrial technician examining smart meter array in high-tech facility" id="hero-slide-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y');"></div>
 </div>
-<div class="relative z-20 max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-full flex flex-col justify-center text-white">
+<div class="relative z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 h-full flex flex-col justify-center text-white">
 <div class="max-w-4xl animate-fade-in-up">
-<span class="inline-block py-2 px-4 border border-primary text-primary font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
+<span class="inline-block py-2 px-4 border border-[#fcc603] text-[#fcc603] font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
                     Global Leader in AMI
                 </span>
 <h2 class="text-6xl md:text-8xl font-bold leading-tight mb-8" id="hero-slide-title">
                     Precision Metering <br/>
-<span class="text-primary">For Smart Cities</span>
+<span class="text-[#fcc603]">For Smart Cities</span>
 </h2>
 <p class="text-xl md:text-3xl text-gray-200 mb-12 max-w-3xl font-light leading-relaxed" id="hero-slide-description">
                     Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.
                 </p>
 <div class="flex flex-wrap gap-6">
-<button class="bg-primary hover:bg-white text-black px-10 py-5 rounded-lg text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
+<button class="bg-[#fcc603] hover:bg-white text-black px-10 py-5 rounded-lg text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
                         View Solutions
                         <span class="material-symbols-outlined">arrow_forward</span>
 </button>
@@ -155,28 +122,28 @@
 </div>
 </div>
 </div>
-<button class="absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-prev" type="button">
+<button class="absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-[#fcc603] hover:border-[#fcc603] text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-prev" type="button">
 <span class="material-symbols-outlined text-4xl">chevron_left</span>
 </button>
-<button class="absolute right-8 md:right-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-next" type="button">
+<button class="absolute right-8 md:right-12 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-[#fcc603] hover:border-[#fcc603] text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-50" id="hero-next" type="button">
 <span class="material-symbols-outlined text-4xl">chevron_right</span>
 </button>
 <div class="absolute bottom-16 left-1/2 -translate-x-1/2 z-30 flex gap-4" id="hero-pagination">
-<button aria-label="Go to slide 1" class="w-16 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" data-hero-dot="0" type="button"></button>
+<button aria-label="Go to slide 1" class="w-16 h-1.5 bg-[#fcc603] rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" data-hero-dot="0" type="button"></button>
 <button aria-label="Go to slide 2" class="w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="1" type="button"></button>
 <button aria-label="Go to slide 3" class="w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" data-hero-dot="2" type="button"></button>
 </div>
 </section>
 <section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
 <div class="max-w-3xl">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Our Expertise</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main leading-tight">Comprehensive Energy Solutions</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-lg">Our Expertise</h3>
+<h2 class="text-5xl md:text-6xl font-bold text-[#181710] leading-tight">Comprehensive Energy Solutions</h2>
 <p class="text-xl text-gray-500 mt-6 max-w-2xl">From residential metering to grid-scale management, our technologies power the future of energy distribution with precision and connectivity.</p>
 </div>
 <div class="hidden md:block">
-<a class="inline-flex items-center gap-3 text-lg font-bold hover:text-primary transition-colors border-b-2 border-black hover:border-primary pb-1" href="#">
+<a class="inline-flex items-center gap-3 text-lg font-bold hover:text-[#fcc603] transition-colors border-b-2 border-black hover:border-[#fcc603] pb-1" href="#">
                     Explore All Solutions <span class="material-symbols-outlined">arrow_outward</span>
 </a>
 </div>
@@ -188,14 +155,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Residential</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Residential</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">IoT</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Smart Home Metering</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Smart Home Metering</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Empower homeowners with real-time usage data and cost-saving insights through our precision residential meters.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -206,14 +173,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Grid</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Grid</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Stable</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Commercial Grid</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Commercial Grid</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Robust solutions for commercial energy distribution, ensuring stability and accurate billing for businesses.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -224,14 +191,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Industrial</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Industrial</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">High Load</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Industrial IoT</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Industrial IoT</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Heavy-duty metering for industrial complexes, integrated with IoT for predictive maintenance and efficiency.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -242,14 +209,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Water</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Water</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Flow</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Water Management</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Water Management</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Smart water meters detecting leaks and managing flow with unprecedented accuracy.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -260,14 +227,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Renewable</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Renewable</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Solar</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Renewable Integration</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Renewable Integration</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Bidirectional metering designed for solar and wind energy prosumers.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -278,14 +245,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Data</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Data</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Analytics</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">AMI Infrastructure</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">AMI Infrastructure</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Complete Advanced Metering Infrastructure setups for utility companies.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -296,14 +263,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">EV</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">EV</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Charging</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">EV Metering</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">EV Metering</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Precise sub-metering solutions for electric vehicle charging stations and fleets.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -314,14 +281,14 @@
 </div>
 <div class="pt-6 px-2 flex flex-col flex-grow">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-primary/10 text-primary-dark text-sm font-bold rounded-full border border-primary/20">Software</span>
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Software</span>
 <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">SaaS</span>
 </div>
-<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Energy Mgmt Software</h4>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Energy Mgmt Software</h4>
 <p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
                         Cloud-based platforms to visualize, analyze, and optimize energy consumption.
                     </p>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-primary transition-colors gap-2">
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
                         Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
@@ -330,20 +297,20 @@
 </div>
 </section>
 <section class="py-32 bg-gray-50 border-y border-gray-100">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
 <div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Featured Products</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Cutting-Edge Hardware</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-lg">Featured Products</h3>
+<h2 class="text-5xl md:text-6xl font-bold text-[#181710]">Cutting-Edge Hardware</h2>
 </div>
-<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-primary transition-colors mt-4 md:mt-0" href="#">
+<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-[#fcc603] transition-colors mt-4 md:mt-0" href="#">
                     View All Products <span class="material-symbols-outlined">arrow_right_alt</span>
 </a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
 <div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
 <div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
+<span class="absolute top-6 left-6 bg-[#fcc603] text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
 <div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Smart Meter X1 Product Image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAdFTGcrXWLNEByOR5EOvOXUojQFqnBOO_IONQtuG4-HccO2kOVqv4lTsT1MjgmyTh7te0WMzc8HYsJuTGn2C2sVe8c9ORxQObVlMQQ3aOu9Vsq6w6VMY2GaXssskcQM8TqaNnpBoiPatbWm8uf6B5TBBesNnmjXg_al0GTjOTX0ULLhSvcr_4YrEkcJZn-CmJmOv0ZT6H8zDSHuRj54_B2o3U2p8_aP8wSTILj7dT3Ax3-2ZNxAOGc-7NKmha7oA2yYH-FW-wGnA');"></div>
 </div>
 <div class="p-8 flex-grow flex flex-col justify-between">
@@ -351,7 +318,7 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Three-Phase Meter X200</h4>
 <p class="text-base text-gray-500 mb-6">Commercial grade accuracy class 0.5s</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
@@ -365,14 +332,14 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Industrial Meter I-40</h4>
 <p class="text-base text-gray-500 mb-6">Heavy duty with PLC communication</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
 <div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
+<span class="absolute top-6 left-6 bg-[#fcc603] text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
 <div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Residential Smart Meter S1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_WM-y_xgwkfrK5jyV598wLE1XRu3k05ay96bQCiqSXLNfCo6e41CmhIyYQr52f-M9w0RBl0pTvHwmK0sQjZZdZkNv1BQOwB1f1b3DYGgepGipwtpnnlU0LchvnLzEPrqBQvSjeiGf4Pix10MPQEq7Gmxr7jGW-oM9b63eZZSQALfFqvhkq3_9Igs_lJ2nuy3H5hA-zAiZUGBW9GIzEMI0M45PzxmLJ_lSAILI6pDHnonnhs-fect2cNZnDE5UI26_4NjC8i_X8qI');"></div>
 </div>
 <div class="p-8 flex-grow flex flex-col justify-between">
@@ -380,7 +347,7 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Residential S1 Single Phase</h4>
 <p class="text-base text-gray-500 mb-6">Compact design for modern homes</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                            Request Price
                        </button>
 </div>
@@ -394,7 +361,7 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Water Meter W5</h4>
 <p class="text-base text-gray-500 mb-6">Ultrasonic flow measurement</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
@@ -408,14 +375,14 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Data Concentrator DC-100</h4>
 <p class="text-base text-gray-500 mb-6">Aggregates up to 1000 meters</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
 <div class="relative p-10 flex items-center justify-center bg-gray-50 h-72 group-hover:bg-gray-100 transition-colors">
-<span class="absolute top-6 left-6 bg-primary text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
+<span class="absolute top-6 left-6 bg-[#fcc603] text-black text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">NEW</span>
 <div class="w-full h-full bg-contain bg-center bg-no-repeat transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-md" data-alt="Prepayment Keypad Meter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcNaPZFw4quayjS_0WG8bgqpGukSJZWqhHK3gjKFW5dx0oXtGqbP_LKPAhNEvNwEUAlYw0lZduah7FiSJgyQrtB0UQcxFVPEa4wRPOpRHXd2INkA4hVFPLfeNUHIrpbO9OP00fj-LHLQfNlJX54WuvJz2YcmkqEX5TMSpkgbE9IMDnEKhWnuf1W50aWWX2lfCUKkpqOeMWdnGiEinssL-Q9AiHyAHl7UxD2I8alvQgreXd50gTGy2chAkASQA-oYWLCh_uOSH7JQI');"></div>
 </div>
 <div class="p-8 flex-grow flex flex-col justify-between">
@@ -423,7 +390,7 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Prepayment Keypad Meter</h4>
 <p class="text-base text-gray-500 mb-6">STS compliant split meter</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
@@ -437,7 +404,7 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Smart Gas Meter G3</h4>
 <p class="text-base text-gray-500 mb-6">Diaphragm gas meter with GPRS</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                            Request Price
                        </button>
 </div>
@@ -451,46 +418,46 @@
 <h4 class="text-2xl font-bold mb-3 text-gray-900">Load Control Switch</h4>
 <p class="text-base text-gray-500 mb-6">Remote disconnect/reconnect module</p>
 </div>
-<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-primary hover:border-primary hover:text-black transition-all text-lg">
+<button class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-lg">
                             Request Price
                         </button>
 </div>
 </div>
 </div>
 <div class="mt-12 text-center md:hidden">
-<a class="inline-flex items-center gap-2 font-bold hover:text-primary transition-colors" href="#">
+<a class="inline-flex items-center gap-2 font-bold hover:text-[#fcc603] transition-colors" href="#">
                     View All Products <span class="material-symbols-outlined">arrow_right_alt</span>
 </a>
 </div>
 </div>
 </section>
 <section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="text-center mb-20">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">Why Choose Us</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Global Engineering Excellence</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-lg">Why Choose Us</h3>
+<h2 class="text-5xl md:text-6xl font-bold text-[#181710]">Global Engineering Excellence</h2>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
 <div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Scientists working in R&amp;D Lab" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPdHXWtiWj7HRS0UG5hlHW4bESbAH-AyVBET-JbEknrHz8cDuUz_4GR6RQURc4713shlWwR6S_wHSzRpRgC4HFRsHV9OFwf6-kTtcp39rntMtWHOyV1zk1ChE_xYbfnkhqaUECDojdDORvLHjEUISmMbGmDF4rKheTvn5A9qCMnwgmS_SIt92h_nbgrsepHVFwyO8N3XhpSDygFrtlI5aDNfOqXBXQPxfUcs2LMqE3uUkpi4_1oEyc5oaCybhaQl63Ro-1JoxDLFc');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">science</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">science</span>
 <h4 class="text-2xl font-bold mb-3">In-House R&amp;D</h4>
 <p class="text-gray-600 text-base leading-relaxed">Over 200 dedicated engineers innovating daily to bring you the best.</p>
 </div>
 <div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Automated production line" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsnB28DNkANW0G4Pf9UrlWwmwM6MJ81U_db0Mtfw4vTSl-iXEoYcJ88I-iyLl4-SEq_OdQM0bQEW3uLeP3L7MutAMkFYGavaPtNHrExpMkFisKKjTmial7nBZG5LkzEWkSVsSLiLPkAxaIExFzOwUR3gwkdZWVRUvM34r1uTOlH34HhfddD7A5DE1AestWlFD8ilnAbOOkbToSITcIrA6rBeeceIAbB1bjL6clyToC-yPr5O-xGoi5DRzwfO4-dhGkkdKBXw1h98M');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">precision_manufacturing</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">precision_manufacturing</span>
 <h4 class="text-2xl font-bold mb-3">Automated Production</h4>
 <p class="text-gray-600 text-base leading-relaxed">State-of-the-art robotic assembly lines ensuring precision.</p>
 </div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">verified</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">verified</span>
 <h4 class="text-2xl font-bold mb-3">Quality Control</h4>
 <p class="text-gray-600 text-base leading-relaxed">100% testing on every unit shipped for maximum reliability.</p>
 </div>
 <div class="bg-gray-100 rounded-xl h-80 bg-cover bg-center shadow-md transform hover:-translate-y-2 transition-transform duration-300" data-alt="Quality control inspector with clipboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNEeMSOw5R7-veSsJ2lnjWgL-DpBD7dlu3perk1VTX91cqAhOzqNIboo8tP5dcJOrpA6i96RCBirVY-OyQR071P37LwnhZNuwQxQ2i-WNof77Li7b5ve6zHOKj2w0y-Su4Xhp4txfFbglu2etICFhmgVVQR3JYJ8QyUp6ZrdLDRBIfSM5LT51yWcuWSqhNP04s59StVxuNSulvTa2NZIo_4LWo-CQrpy0TarWouVz8mEAVydWCxavAfU4GSvo2s8381S3NZJdT1gA');"></div>
-<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">public</span>
+<div class="bg-gray-50 p-10 rounded-xl h-80 flex flex-col justify-center border border-gray-100 hover:border-[#fcc603]/50 hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined text-5xl text-[#fcc603] mb-6">public</span>
 <h4 class="text-2xl font-bold mb-3">Global Support</h4>
 <p class="text-gray-600 text-base leading-relaxed">24/7 technical assistance worldwide, whenever you need us.</p>
 </div>
@@ -498,23 +465,23 @@
 </div>
 </div>
 </section>
-<section class="py-32 bg-background-dark text-white overflow-hidden relative">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 relative z-10">
-<div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-<div class="w-full lg:w-1/2 relative group cursor-pointer">
+<section class="py-32 bg-[#181710] text-white overflow-hidden relative">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 relative z-10">
+<div class="flex flex-col xl:flex-row gap-16 xl:gap-24 items-center">
+<div class="w-full xl:w-1/2 relative group cursor-pointer">
 <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden relative border border-gray-700 shadow-2xl">
 <div class="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-60 transition-opacity duration-300" data-alt="Corporate head office building" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwilHbbfXC2x67tplTbopnrPOqw70INXlIRk0NVOwBSeVR3tJyynqTfxmmJXwI5zWhTExxpxNuP1Rk0eRselvUuB6-FtvFbKp_FMs0YiEShx8PmixNTzESqgkQ1QMComIc8_DQsnvXmHcxs1oO7S_kjdbnkcoVMa0UcmjlFNv6OeaQnW_rROqcJj9vE8WGyRBFPPWgejNaWVeTixOuAfH1Ryi8HJjU9WD73LdRQMBM0EbC6WDb8egW_N3eaBE4gBeQXQZVamndmis');"></div>
 <div class="absolute inset-0 flex items-center justify-center">
-<div class="w-24 h-24 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[0_0_30px_rgba(252,198,3,0.4)]">
+<div class="w-24 h-24 bg-[#fcc603]/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[0_0_30px_rgba(252,198,3,0.4)]">
 <span class="material-symbols-outlined text-black text-5xl ml-2">play_arrow</span>
 </div>
 </div>
 </div>
-<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-primary/30 rounded-tl-3xl -z-10"></div>
-<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-primary/30 rounded-br-3xl -z-10"></div>
+<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-[#fcc603]/30 rounded-tl-3xl -z-10"></div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-[#fcc603]/30 rounded-br-3xl -z-10"></div>
 </div>
-<div class="w-full lg:w-1/2 flex flex-col justify-center">
-<h3 class="text-primary font-bold uppercase tracking-widest mb-6 text-lg">About SmartMeter Inc.</h3>
+<div class="w-full xl:w-1/2 flex flex-col justify-center">
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-6 text-lg">About SmartMeter Inc.</h3>
 <h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">Pioneering the Future of Energy</h2>
 <p class="text-gray-300 text-xl mb-8 leading-relaxed font-light">
                         Founded in 2005, SmartMeter Inc. has grown from a specialized lab to a global leader in AMI infrastructure. We combine precision engineering with advanced IoT connectivity to help utility providers manage resources more efficiently.
@@ -522,7 +489,7 @@
 <p class="text-gray-400 mb-12 leading-relaxed text-lg">
                         With deployments in over 50 countries, our mission is to create a sustainable, energy-efficient world through smarter measurement technology.
                     </p>
-<a class="inline-flex items-center gap-3 text-primary text-lg font-bold hover:text-white transition-colors border-b-2 border-primary pb-2 w-fit" href="#">
+<a class="inline-flex items-center gap-3 text-[#fcc603] text-lg font-bold hover:text-white transition-colors border-b-2 border-[#fcc603] pb-2 w-fit" href="#">
                         Read Our Full Story <span class="material-symbols-outlined text-base">arrow_outward</span>
 </a>
 </div>
@@ -532,10 +499,10 @@
 <section class="py-24 bg-gray-50 border-b border-gray-200 overflow-hidden">
 <div class="max-w-[1700px] mx-auto relative px-12 md:px-20">
 <div class="flex justify-center items-center mb-16">
-<h3 class="text-3xl font-bold text-text-main">Certifications &amp; Awards</h3>
+<h3 class="text-3xl font-bold text-[#181710]">Certifications &amp; Awards</h3>
 </div>
 <div class="relative group">
-<button class="absolute -left-4 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-prev" type="button">
+<button class="absolute -left-4 md:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-[#fcc603] transition-colors border border-gray-200" id="cert-prev" type="button">
 <span class="material-symbols-outlined text-3xl">chevron_left</span>
 </button>
 <div class="flex gap-10 overflow-x-auto no-scrollbar py-8 px-4 scroll-smooth snap-x snap-mandatory" id="cert-track">
@@ -561,36 +528,36 @@
 <img alt="STS Association" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTjPeQlYzpCiPHH3mnzjOJEehm48si3SyhevBOYfZa5J7Qhu6NgOzz86jU21JJR3U8_O-gYFUSpQbvVoj46MC_nWhE1rjwxOFPJSOxO-C-Q5_VAuYPFeK9YT7evBBHB9kDbd09h5WkOMdwtyCJC-YtJew1-eM3dSeMj9pSTDDXTXB_pkLjLhoFiEz2Mu-NqHUidnXgr23ZGlIBk1RJo0S-BK80rHPXnoCB9I7FBJ0hm42K_u05CtfgVcxYlTRYERYTUWXpnGmVRs"/>
 </div>
 </div>
-<button class="absolute -right-4 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-next" type="button">
+<button class="absolute -right-4 md:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-[#fcc603] transition-colors border border-gray-200" id="cert-next" type="button">
 <span class="material-symbols-outlined text-3xl">chevron_right</span>
 </button>
 </div>
 </div>
 </section>
 <section class="py-32 bg-white">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="flex justify-between items-end mb-20">
 <div>
-<h3 class="text-primary font-bold uppercase tracking-widest mb-4 text-lg">News &amp; Insights</h3>
-<h2 class="text-5xl md:text-6xl font-bold text-text-main">Latest Updates</h2>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-lg">News &amp; Insights</h3>
+<h2 class="text-5xl md:text-6xl font-bold text-[#181710]">Latest Updates</h2>
 </div>
-<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-primary transition-colors" href="#">
+<a class="hidden md:flex items-center gap-3 font-bold text-lg hover:text-[#fcc603] transition-colors" href="#">
                     View All News <span class="material-symbols-outlined">arrow_right_alt</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
 <article class="flex flex-col gap-6 group cursor-pointer">
 <div class="h-64 overflow-hidden rounded-xl shadow-md">
 <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Business chart analysis" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaDZxX5PzQ70gGbunnPEsUszWkbERn-ep8hc-1QVknLHGEdwo3FbZquiSlqOf4wPrSLvQMsCy3rbgMHt3UU8BNq3qKnHUsFHmkJRFd5CjibRsljapdtnJ-KqcT50y0Eqeown16vb1_8SLOdqoL8AEu0oC8qv8jeH1aO1eKSKNeCplN_CSkogSosX_tOo_rBs-4LfCoXIr-oaWY7x_ke6ibHTl45TEwL3zSKCVR7jp-sDFWPRaE55Xt-S6hvGWmPGy1bBMLwuUgEfQ');"></div>
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Oct 24, 2023</span>
 </div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Q3 Sustainability Report Released: 20% Growth</h4>
+<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">Q3 Sustainability Report Released: 20% Growth</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">Our latest financial and environmental impact report shows significant strides in green energy adoption across...</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -599,12 +566,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Sep 15, 2023</span>
 </div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">SmartMeter Inc. Partners with EuroGrid for IoT Expansion</h4>
+<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">SmartMeter Inc. Partners with EuroGrid for IoT Expansion</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">A strategic partnership to deploy next-gen IoT meters across the European grid network starting next quarter.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -613,12 +580,12 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Aug 02, 2023</span>
 </div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">New X200 Series Achieves Highest Accuracy Certification</h4>
+<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">New X200 Series Achieves Highest Accuracy Certification</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">The X200 series has been awarded the prestigious Class 0.2s accuracy rating by international standards bodies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 <article class="flex flex-col gap-6 group cursor-pointer">
@@ -627,23 +594,23 @@
 </div>
 <div>
 <div class="flex items-center gap-2 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-[#fcc603]"></span>
 <span class="text-sm text-gray-500 font-bold uppercase tracking-wide">Jul 10, 2023</span>
 </div>
-<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Upcoming Webinar: The Future of Smart Grid Metering</h4>
+<h4 class="text-2xl font-bold mb-3 leading-tight group-hover:text-[#fcc603] transition-colors">Upcoming Webinar: The Future of Smart Grid Metering</h4>
 <p class="text-gray-600 mb-4 line-clamp-2">Join our Chief Technology Officer as he discusses the upcoming trends in AMI and smart grid technologies.</p>
-<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-primary transition-all pb-1 inline-block" href="#">Read Full Article</a>
+<a class="text-base font-bold border-b-2 border-black/10 group-hover:border-[#fcc603] transition-all pb-1 inline-block" href="#">Read Full Article</a>
 </div>
 </article>
 </div>
 </div>
 </section>
-<footer class="bg-background-dark text-gray-400 pt-24 pb-12 border-t-8 border-primary" id="contact">
-<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<footer class="bg-[#181710] text-gray-400 pt-24 pb-12 border-t-8 border-[#fcc603]" id="contact">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16 mb-20">
 <div>
 <div class="flex items-center gap-3 mb-8 text-white">
-<div class="w-10 h-10 bg-primary rounded flex items-center justify-center text-black">
+<div class="w-10 h-10 bg-[#fcc603] rounded flex items-center justify-center text-black">
 <span class="material-symbols-outlined text-2xl">bolt</span>
 </div>
 <h2 class="text-3xl font-bold">SmartMeter Inc.</h2>
@@ -652,10 +619,10 @@
                         Leading the world in smart energy measurement solutions. Precision, reliability, and innovation for a sustainable future.
                     </p>
 <div class="flex gap-4">
-<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#fcc603] hover:text-black flex items-center justify-center transition-colors text-white" href="#">
 <span class="material-symbols-outlined text-xl">share</span>
 </a>
-<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-primary hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#fcc603] hover:text-black flex items-center justify-center transition-colors text-white" href="#">
 <span class="material-symbols-outlined text-xl">public</span>
 </a>
 </div>
@@ -663,36 +630,36 @@
 <div>
 <h4 class="text-white text-xl font-bold mb-8">Quick Links</h4>
 <ul class="space-y-4 text-lg">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Products</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Solutions</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Support Center</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Products</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Support Center</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Careers</a></li>
 </ul>
 </div>
 <div>
 <h4 class="text-white text-xl font-bold mb-8">Product Series</h4>
 <ul class="space-y-4 text-lg">
-<li><a class="hover:text-primary transition-colors" href="#">Single Phase Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Three Phase Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Industrial Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Smart Water Meters</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">AMI Systems</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Single Phase Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Three Phase Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Industrial Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Smart Water Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">AMI Systems</a></li>
 </ul>
 </div>
 <div>
 <h4 class="text-white text-xl font-bold mb-8">Contact Us</h4>
 <ul class="space-y-6 text-lg">
 <li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<span class="material-symbols-outlined text-[#fcc603] mt-1">location_on</span>
 <span>123 Innovation Drive, Tech Park,<br/>Silicon Valley, CA 94025, USA</span>
 </li>
 <li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">call</span>
+<span class="material-symbols-outlined text-[#fcc603]">call</span>
 <span>+1 (555) 123-4567</span>
 </li>
 <li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">mail</span>
+<span class="material-symbols-outlined text-[#fcc603]">mail</span>
 <span>sales@smartmeter.inc</span>
 </li>
 </ul>
@@ -713,19 +680,19 @@
         const heroSlides = [
             {
                 tag: 'Global Leader in AMI',
-                title: 'Precision Metering <br><span class="text-primary">For Smart Cities</span>',
+                title: 'Precision Metering <br><span class="text-[#fcc603]">For Smart Cities</span>',
                 description: 'Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.',
                 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y'
             },
             {
                 tag: 'Trusted by 50+ Countries',
-                title: 'Reliable Infrastructure <br><span class="text-primary">Built to Scale</span>',
+                title: 'Reliable Infrastructure <br><span class="text-[#fcc603]">Built to Scale</span>',
                 description: 'Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.',
                 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg'
             },
             {
                 tag: 'Sustainable by Design',
-                title: 'IoT Analytics <br><span class="text-primary">For Cleaner Energy</span>',
+                title: 'IoT Analytics <br><span class="text-[#fcc603]">For Cleaner Energy</span>',
                 description: 'Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.',
                 image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4'
             }
@@ -754,7 +721,7 @@
 
                 heroDots.forEach((dot, dotIndex) => {
                     const active = dotIndex === index;
-                    dot.classList.toggle('bg-primary', active);
+                    dot.classList.toggle('bg-[#fcc603]', active);
                     dot.classList.toggle('shadow-[0_0_10px_rgba(252,198,3,0.5)]', active);
                     dot.classList.toggle('bg-white/30', !active);
                     dot.setAttribute('aria-current', active ? 'true' : 'false');
