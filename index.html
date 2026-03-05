@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Energy Solutions - Advanced Smart Metering</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#f8f8f5] dark:bg-[#231f0f] text-slate-900 dark:text-slate-100 [font-family:'Space_Grotesk',sans-serif]">
+<!-- 顶部信息条（全端通用）：展示电话、邮箱与社交入口，便于用户快速联系 -->
+<div class="bg-[#231f0f] text-white text-sm py-2 border-b border-gray-800">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 flex flex-row justify-between items-center gap-2">
+<div class="flex items-center gap-3 sm:gap-6">
+<a class="flex items-center gap-2 hover:text-[#fcc603] transition-colors" href="tel:+1234567890">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>+1 (555) 123-4567</span>
+</a>
+<a class="items-center gap-2 hover:text-[#fcc603] transition-colors hidden sm:flex" href="mailto:info@smartmeter.inc">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>info@smartmeter.inc</span>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3">
+<a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="hover:text-[#fcc603] transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+</div>
+
+</div>
+</div>
+</div>
+<!-- 主导航区：桌面端显示横向导航与CTA，移动端通过菜单按钮展开 -->
+<header class="relative sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+<div class="max-w-ultra mx-auto px-4 md:px-8 xl:px-12 h-16 sm:h-20 xl:h-24 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 sm:w-11 sm:h-11 xl:w-12 xl:h-12 bg-[#fcc603] rounded-lg flex items-center justify-center text-black">
+<img alt="Brand Bolt Icon" class="w-5 h-5 sm:w-6 sm:h-6 object-contain" src="https://img.icons8.com/ios-filled/100/lightning-bolt.png"/>
+</div>
+<h1 class="text-xl sm:text-2xl xl:text-3xl font-bold tracking-tight">SmartMeter <span class="text-[#fcc603]">Inc.</span></h1>
+</div>
+<!-- 导航菜单（桌面端） -->
+<nav class="hidden xl:flex items-center gap-10 font-medium text-lg">
+<a class="relative group py-2" href="#">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Solutions
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Products
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    Advantages
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    About Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+<a class="relative group py-2 text-gray-600 hover:text-black transition-colors" href="#">
+                    News
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#fcc603] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</a>
+</nav>
+<div class="flex items-center gap-3 sm:gap-5">
+<button class="xl:hidden p-2 hover:bg-gray-100 rounded-full transition-colors" id="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu-panel">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<a class="hidden xl:inline-flex bg-black text-white px-8 py-3 rounded-lg font-bold hover:bg-[#fcc603] hover:text-black transition-all duration-300 shadow-md hover:shadow-lg" href="#contact">
+                    Get Quote
+                </a>
+</div>
+</div>
+<!-- 导航菜单（移动端）：点击右上角菜单按钮后展开 -->
+<div class="xl:hidden hidden absolute top-full left-0 right-0 z-50 border-t border-gray-100 shadow-md" id="mobile-menu-panel">
+<nav class="px-4 py-3 bg-white flex flex-col gap-2 text-base font-medium">
+<a class="py-2 text-gray-700 hover:text-black" href="#">Home</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Solutions</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Products</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">Advantages</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">About Us</a>
+<a class="py-2 text-gray-700 hover:text-black" href="#">News</a>
+<a class="mt-2 inline-flex justify-center bg-black text-white px-5 py-2.5 rounded-lg font-bold" href="#contact">Get Quote</a>
+</nav>
+</div>
+</header>
+<!-- 主体内容开始 -->
+<main class="w-full">
+<!-- 版块1：首屏横幅（Hero）｜桌面端与移动端使用不同背景图 -->
+<section class="relative h-[500px] xl:h-[700px] w-full flex items-center px-4 sm:px-6 xl:px-10 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+<!-- Hero背景图（桌面端） -->
+<img alt="Industrial Energy Desktop" class="hidden xl:block w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
+<!-- Hero背景图（移动端） -->
+<img alt="Industrial Energy Mobile" class="block xl:hidden w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBM6tsIT7S95q3lQEJoazvb1dD4e_TNaFeMTXfCmLSzxhD2bjuui4-BHk2nRR1tTr1dqtdflRlx7gjcDjq7dzsGXvAa0duFJyNLcaUP77s5DT2GvCdRkijn_iZDke27VsPSix6WnCMOud6pulTL_R1bcxbKaS9qPQEG0KqSsW8UPp9K23aVjz4W5_EMBSCstrAxKP3Vqhot7ZIIQrz87oZmLJCa4CZ2frbwzQHOnViyDmjTz2I987ObNdJdYGpKxfFYfHfNY31Z0c"/>
+</div>
+<div class="relative z-20 max-w-3xl text-white py-20 pl-2 sm:pl-6 xl:pl-12">
+<h2 class="text-[#fcc603] font-bold tracking-widest uppercase mb-4">Industrial Grade Technology</h2>
+<h1 class="text-4xl sm:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6">Smart Meter Solutions for Sustainable Energy</h1>
+<p class="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                Revolutionizing energy management with professional-grade smart meter technology and industrial-grade reliability. Real-time data for a greener future.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-[#fcc603] text-[#231f0f] px-8 sm:px-10 py-4 rounded-lg font-bold text-base sm:text-lg hover:scale-105 transition-transform">
+                    Consult Now
+                </button>
+<button class="border-2 border-white/30 backdrop-blur-sm text-white px-8 sm:px-10 py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-white/10 transition-all">
+                    View Products
+                </button>
+</div>
+</div>
+</section>
+<!-- 版块2：核心能力概览（Why Choose）｜统一卡片结构，便于后续循环渲染 -->
+<section class="py-24 px-4 sm:px-6 xl:px-10 bg-white dark:bg-slate-900/50">
+<div class="max-w-[1600px] mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl font-bold mb-4">Core Optimization</h2>
+<div class="h-1.5 w-20 bg-[#fcc603] mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<div class="p-8 rounded-xl border border-slate-100 dark:border-slate-800 bg-[#f8f8f5] dark:bg-[#231f0f] hover:shadow-xl transition-all group">
+<span class="material-symbols-outlined text-4xl text-[#fcc603] mb-6 block group-hover:scale-110 transition-transform">monitoring</span>
+<h3 class="text-xl font-bold mb-3">Real-time Monitoring</h3>
+<p class="text-slate-600 dark:text-slate-400">Monitor usage instantly across your entire grid with sub-second latency.</p>
+</div>
+<div class="p-8 rounded-xl border border-slate-100 dark:border-slate-800 bg-[#f8f8f5] dark:bg-[#231f0f] hover:shadow-xl transition-all group">
+<span class="material-symbols-outlined text-4xl text-[#fcc603] mb-6 block group-hover:scale-110 transition-transform">insights</span>
+<h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+<p class="text-slate-600 dark:text-slate-400">Deep insights into consumption patterns with AI-driven predictive modeling.</p>
+</div>
+<div class="p-8 rounded-xl border border-slate-100 dark:border-slate-800 bg-[#f8f8f5] dark:bg-[#231f0f] hover:shadow-xl transition-all group">
+<span class="material-symbols-outlined text-4xl text-[#fcc603] mb-6 block group-hover:scale-110 transition-transform">grid_view</span>
+<h3 class="text-xl font-bold mb-3">Grid Stability</h3>
+<p class="text-slate-600 dark:text-slate-400">Ensure power consistency and prevent outages with automated load balancing.</p>
+</div>
+<div class="p-8 rounded-xl border border-slate-100 dark:border-slate-800 bg-[#f8f8f5] dark:bg-[#231f0f] hover:shadow-xl transition-all group">
+<span class="material-symbols-outlined text-4xl text-[#fcc603] mb-6 block group-hover:scale-110 transition-transform">settings_remote</span>
+<h3 class="text-xl font-bold mb-3">Remote Control</h3>
+<p class="text-slate-600 dark:text-slate-400">Manage hardware parameters and firmware updates remotely from the cloud.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 版块3：高级功能交互区（Advanced Features）｜左侧列表选择，右侧详情联动 -->
+<section class="bg-[#231f0f] text-white overflow-hidden">
+<div class="max-w-[1600px] mx-auto flex flex-col xl:flex-row xl:h-[560px] xl:max-h-[560px]">
+<div class="order-1 xl:order-1 xl:w-2/5 p-5 sm:p-6 xl:p-7 flex flex-col justify-between border-b xl:border-b-0 xl:border-r border-slate-800">
+<div class="h-full flex flex-col">
+<h2 class="text-2xl sm:text-3xl font-bold mb-6 shrink-0">Advanced Features</h2>
+<!-- Advanced Features 列表（桌面端）：纵向可滚动列表 -->
+<div class="hidden xl:flex gap-3 overflow-x-auto xl:overflow-y-auto xl:overflow-x-hidden xl:flex-col pb-2 pr-1 xl:pr-3 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-white/5 [&::-webkit-scrollbar-track]:rounded-[10px] [&::-webkit-scrollbar-thumb]:bg-[#fcc603] [&::-webkit-scrollbar-thumb]:rounded-[10px] flex-grow max-h-[260px] sm:max-h-[300px] xl:max-h-none" id="feature-tabs">
+<!-- Advanced Features 循环项：第1条数据（循环开始） -->
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Edge Computing" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Edge Computing</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Localized data processing for zero-latency response.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Real-time Processing at the Edge</h5>
+<p class="feature-detail-description-source hidden">Our smart meters don't just send data—they understand it. By processing consumption patterns at the edge, we reduce network load by 80% and enable instant safety shut-offs without waiting for cloud commands.</p>
+<img alt="Real-time Processing at the Edge" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemLF_Y8pckjTZGTsLUQkiJAtACS_hy_a2CxfXjMJla_5QN-nGWC1CKigXFbOPrN5kI8dVibk68Or9fHpX0wBTnjBP7QABg-L51wD6SPimq3t47dScm5Wv_Y0GK-_7VtfsWULVan8PRlS6VeoF6IqtbtMzCEzaJyp3KutkJI-Ey7p-R2KbqizOLV2tj5ZMzA0Ks7-goWvZyvEE7h2sA49ooXp9vt8AhWs2dZxxPpsyi7anHpRqOcnOL841sCjSY2GbqwrpXgEqst8"/>
+</div>
+<!-- Advanced Features 循环项：第2条数据（后续条目按相同结构循环） -->
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Secure Protocols" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Secure Protocols</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">AES-256 encrypted communication channels.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Military-grade Secure Protocols</h5>
+<p class="feature-detail-description-source hidden">Multi-layer encryption and secure key rotation keep every transmission protected end-to-end, even across distributed field deployments.</p>
+<img alt="Military-grade Secure Protocols" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUtWNRjz8BrIUclvA0zbQWUOJJ1AFnH8_oYQOO-k549VzrTINTYLoe1ZkbDNsBL45m_vXNSYoJBdLk49mpnUkGfyTBBoWyfW5W_EgoqtoO2pTTz5TPDNzjNyraV6v2nrTIwayKIUobxAS9AqK1_6xNa3FF_Y39ShTo71ljRzlzWHvcOFozKiEze9UfImDFo78TW5d5SaPabT6LZaIPBzHfKEWtgHu1fclOLOHhKNghC5cAjZQ_w7M8HD_Ck_4CiR1AaEJkLOl2a0"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Automated Billing" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Automated Billing</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Direct integration with ERP and financial systems.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Automated Billing Orchestration</h5>
+<p class="feature-detail-description-source hidden">Automate billing cycles through ERP integrations, dynamic tariff engines, and verified consumption streams with audit-ready records.</p>
+<img alt="Automated Billing Orchestration" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Fault Detection" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Fault Detection</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Instant alerts for system anomalies and tampering.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Predictive Fault Detection</h5>
+<p class="feature-detail-description-source hidden">AI-assisted diagnostics detect anomalies early and trigger preventive maintenance workflows before outages occur.</p>
+<img alt="Predictive Fault Detection" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Load Forecasting" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Load Forecasting</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Predict future energy demand with high accuracy.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">High-accuracy Load Forecasting</h5>
+<p class="feature-detail-description-source hidden">Forecast usage curves by region and season, enabling optimized procurement, dispatch planning, and demand response.</p>
+<img alt="High-accuracy Load Forecasting" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Mesh Connectivity" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJfZP9N-pzS2haDYAxXr9v_zMNqVNfRhZDKHJBf7Mk5UQzXa_w3rWHTFBws09If3JJK1d_v3a85WiWuTVzzq-RzlyiBeMuQaxYMBF97oza2C0u2EzceOAQTel3ja905MNQGhP0mNxiu3-mHhUZSZJgctuYq1u7b-wbE86KLIpRDEzGKldtEhc8d-0SOZ4Ykmu6gQAt0y6Kinyvze66w56Gpp4K5OCc8DoZVXPzvZ8zrNJ4BPWo04_H2RyNagtvB95kzXGZhmVgDo"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Mesh Connectivity</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Self-organizing network for robust data delivery.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Resilient Mesh Connectivity</h5>
+<p class="feature-detail-description-source hidden">Self-healing mesh routes keep devices online in dense industrial sites, reducing downtime and improving telemetry quality.</p>
+<img alt="Resilient Mesh Connectivity" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJfZP9N-pzS2haDYAxXr9v_zMNqVNfRhZDKHJBf7Mk5UQzXa_w3rWHTFBws09If3JJK1d_v3a85WiWuTVzzq-RzlyiBeMuQaxYMBF97oza2C0u2EzceOAQTel3ja905MNQGhP0mNxiu3-mHhUZSZJgctuYq1u7b-wbE86KLIpRDEzGKldtEhc8d-0SOZ4Ykmu6gQAt0y6Kinyvze66w56Gpp4K5OCc8DoZVXPzvZ8zrNJ4BPWo04_H2RyNagtvB95kzXGZhmVgDo"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Digital Twin" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXj8iKfo-U04vWtgzR4n8uDOdkfF_mjeOV0xvYBzNE0kqep8GWlONMvgq2mUCwW8Dfk57mLtytdqfV2TEqk9WWPNR9vOe-34xcMvg2wpaM2WhYUy5JQbIIw3W2jG8n3lI5X6I5zvQgKBh7n9hTVegH1psR3gYa_7BmxzBLKf7Ck23_S6a4YfYxQ_Zsl1qeqxFP0uMwWqm5pGEd7Vjryr9tN8t7hX3-5AXewM9-zH8bnJ2LEmT4rS7pVqM3g2yLQ0zXHXyxkUQX5xJCMvI"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Digital Twin</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Simulate operations before applying changes live.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Digital Twin Grid Simulation</h5>
+<p class="feature-detail-description-source hidden">Build a real-time digital twin of your network to test operating strategies, validate upgrades, and safely model extreme demand scenarios before deployment.</p>
+<img alt="Digital Twin Grid Simulation" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXj8iKfo-U04vWtgzR4n8uDOdkfF_mjeOV0xvYBzNE0kqep8GWlONMvgq2mUCwW8Dfk57mLtytdqfV2TEqk9WWPNR9vOe-34xcMvg2wpaM2WhYUy5JQbIIw3W2jG8n3lI5X6I5zvQgKBh7n9hTVegH1psR3gYa_7BmxzBLKf7Ck23_S6a4YfYxQ_Zsl1qeqxFP0uMwWqm5pGEd7Vjryr9tN8t7hX3-5AXewM9-zH8bnJ2LEmT4rS7pVqM3g2yLQ0zXHXyxkUQX5xJCMvI"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Demand Response" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31Ev8eG7mQudvTvhFy3k8N2i_W7WfQmDVtpN7wNqk6j2QG6WQ6e4k7g6zJd9bLtwlkLwHDw2NQfQdPU4W2v5vB0WkNhxUzDL5jgvTi8Jb8U1R8-JWQ5kFhV-9TMJYoOnh43hDW3xqvDK1AQuT4bxN39m_C4e0RUvj6W8W2d0DfTTEVt3bq7nVPPVvD0Wv2bG0urSCG0_DlSPAR2KmeR-4piPgPoclfk8ZWXfV7gyn2yUEV73Y3hXw6uB5tY4YlM88gQo0xweN8"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Demand Response</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Peak shaving strategies that protect margins.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Adaptive Demand Response</h5>
+<p class="feature-detail-description-source hidden">Automatically balance peak periods with dynamic demand response events that notify customers, shift flexible loads, and avoid expensive spot-market purchases.</p>
+<img alt="Adaptive Demand Response" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31Ev8eG7mQudvTvhFy3k8N2i_W7WfQmDVtpN7wNqk6j2QG6WQ6e4k7g6zJd9bLtwlkLwHDw2NQfQdPU4W2v5vB0WkNhxUzDL5jgvTi8Jb8U1R8-JWQ5kFhV-9TMJYoOnh43hDW3xqvDK1AQuT4bxN39m_C4e0RUvj6W8W2d0DfTTEVt3bq7nVPPVvD0Wv2bG0urSCG0_DlSPAR2KmeR-4piPgPoclfk8ZWXfV7gyn2yUEV73Y3hXw6uB5tY4YlM88gQo0xweN8"/>
+</div>
+<div class="feature-item js-feature-item p-3 rounded-lg bg-slate-800/50 text-white cursor-pointer transition-all border border-transparent hover:border-[#fcc603]/30">
+<div class="feature-item-layout flex items-center gap-3">
+<img alt="Lifecycle Intelligence" class="feature-item-image w-14 h-14 rounded-md object-cover border border-slate-700 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2r5YE4u-20f7KQDJ5R69Wv0poIliI3YNY08y4sP1NmB09nDBQ4k5W2pC6T_mL29JU4H9zB4nObRWJ_gAZm_V7xQYgR4xW7p2PzM3hVGsQawP0L9mST-4kz3v74G2V7AewrsYH1EIkabTps6qW09I2Mg6WAgPj4jsW4Wa9oU0NlaCSkL9eiwphb7wQX4xZMB9m6H4zSVOvR_MjDP8A5lFNvDg0A34y4Siz6S4n1P7Ecv9pG80h8xDCMTeGoxXV7PGJXkLu8Ao9MA"/>
+<div class="feature-item-content min-w-0">
+<h4 class="feature-item-title font-bold text-base sm:text-lg mb-1">Lifecycle Intelligence</h4>
+<p class="feature-item-description text-xs sm:text-sm text-slate-400">Optimize maintenance and replacement decisions.</p>
+</div>
+</div>
+<h5 class="feature-detail-title-source hidden">Asset Lifecycle Intelligence</h5>
+<p class="feature-detail-description-source hidden">Track component health, maintenance records, and replacement priorities in one timeline so field teams can proactively optimize long-term CAPEX and reliability.</p>
+<img alt="Asset Lifecycle Intelligence" class="feature-detail-image-source hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2r5YE4u-20f7KQDJ5R69Wv0poIliI3YNY08y4sP1NmB09nDBQ4k5W2pC6T_mL29JU4H9zB4nObRWJ_gAZm_V7xQYgR4xW7p2PzM3hVGsQawP0L9mST-4kz3v74G2V7AewrsYH1EIkabTps6qW09I2Mg6WAgPj4jsW4Wa9oU0NlaCSkL9eiwphb7wQX4xZMB9m6H4zSVOvR_MjDP8A5lFNvDg0A34y4Siz6S4n1P7Ecv9pG80h8xDCMTeGoxXV7PGJXkLu8Ao9MA"/>
+</div>
+</div>
+<div class="hidden xl:flex items-center gap-2 mt-4 text-[#fcc603]/50 text-xs font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+                    Scroll for more
+                </div>
+</div>
+<!-- Advanced Features 控制（移动端）：上一条/下一条切换卡片摘要 -->
+<div class="xl:hidden mt-4 rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+<div class="flex items-center justify-between gap-3">
+<button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:text-[#231f0f] transition-all" id="feature-prev-mobile">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="text-center flex-1">
+<h4 class="font-bold text-base text-[#fcc603]" id="feature-mobile-card-title"></h4>
+<p class="text-xs text-slate-300 mt-1" id="feature-mobile-card-summary"></p>
+</div>
+<button class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:text-[#231f0f] transition-all" id="feature-next-mobile">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="order-2 xl:order-2 xl:w-3/5 min-h-[260px] sm:min-h-[320px] xl:min-h-0 flex items-center justify-center p-5 sm:p-6 xl:p-10 bg-slate-950">
+<div class="relative w-full max-w-4xl rounded-2xl overflow-hidden border border-slate-800">
+<img alt="Feature Details" class="w-full aspect-[16/10] object-cover" id="feature-image" src=""/>
+<div class="p-4 sm:p-6 bg-slate-950 xl:bg-black/60 xl:backdrop-blur-md rounded-xl border-t border-slate-800 xl:border xl:border-white/10 xl:absolute xl:bottom-4 xl:left-4 xl:right-4">
+<h3 class="text-xl sm:text-2xl font-bold mb-3 text-[#fcc603]" id="feature-title"></h3>
+<p class="text-slate-300 leading-relaxed text-base sm:text-lg" id="feature-description">
+
+                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 版块4：可持续案例数据区（案例图 + 指标卡） -->
+<section class="py-24 px-4 sm:px-6 xl:px-10">
+<div class="max-w-[1600px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-stretch">
+<div class="relative rounded-2xl overflow-hidden min-h-[600px] group">
+<img alt="Impact Case Study" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBM6tsIT7S95q3lQEJoazvb1dD4e_TNaFeMTXfCmLSzxhD2bjuui4-BHk2nRR1tTr1dqtdflRlx7gjcDjq7dzsGXvAa0duFJyNLcaUP77s5DT2GvCdRkijn_iZDke27VsPSix6WnCMOud6pulTL_R1bcxbKaS9qPQEG0KqSsW8UPp9K23aVjz4W5_EMBSCstrAxKP3Vqhot7ZIIQrz87oZmLJCa4CZ2frbwzQHOnViyDmjTz2I987ObNdJdYGpKxfFYfHfNY31Z0c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#231f0f] via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12 text-white">
+<h2 class="text-5xl font-bold mb-6">Driving Global Sustainability</h2>
+<p class="text-xl text-slate-300 leading-relaxed max-w-lg">How our infrastructure reduced energy waste for Metropolitan Power by 35% in just 12 months.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div class="p-6 sm:p-7 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col justify-between hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] text-5xl mb-6">eco</span>
+<div>
+<h4 class="text-3xl sm:text-4xl font-bold mb-2">35%</h4>
+<p class="text-base font-bold text-slate-500 uppercase tracking-widest">Carbon Reduction</p>
+<p class="mt-4 text-sm text-slate-400">Proven metrics across enterprise deployments.</p>
+</div>
+</div>
+<div class="p-6 sm:p-7 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col justify-between hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] text-5xl mb-6">payments</span>
+<div>
+<h4 class="text-3xl sm:text-4xl font-bold mb-2">$2.4M</h4>
+<p class="text-base font-bold text-slate-500 uppercase tracking-widest">Annual Savings</p>
+<p class="mt-4 text-sm text-slate-400">Direct ROI through optimized load management.</p>
+</div>
+</div>
+<div class="p-6 sm:p-7 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col justify-between hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] text-5xl mb-6">speed</span>
+<div>
+<h4 class="text-3xl sm:text-4xl font-bold mb-2">99.9%</h4>
+<p class="text-base font-bold text-slate-500 uppercase tracking-widest">Uptime Reliability</p>
+<p class="mt-4 text-sm text-slate-400">Critical infrastructure grade performance.</p>
+</div>
+</div>
+<div class="p-6 sm:p-7 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col justify-between hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] text-5xl mb-6">public</span>
+<div>
+<h4 class="text-3xl sm:text-4xl font-bold mb-2">150k+</h4>
+<p class="text-base font-bold text-slate-500 uppercase tracking-widest">Devices Deployed</p>
+<p class="mt-4 text-sm text-slate-400">Scalable technology for global utility grids.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 版块5：系统架构图切换区（System Architecture）｜支持前后切换 -->
+<section class="py-24 px-4 sm:px-6 xl:px-10 bg-slate-50 dark:bg-slate-900/40">
+<div class="max-w-[1600px] mx-auto">
+<div class="mb-16 flex justify-between items-end">
+<div>
+<h2 class="text-4xl font-bold mb-4">System Architecture</h2>
+<p class="text-slate-500 max-w-xl text-lg">Deep dive into our technical topology and secure cloud integration diagrams.</p>
+</div>
+<div class="flex gap-4">
+<button class="size-12 sm:size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-[#231f0f] transition-all" id="architecture-prev" type="button">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<button class="size-12 sm:size-16 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-[#231f0f] transition-all" id="architecture-next" type="button">
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative group">
+<div class="pb-4 max-w-5xl mx-auto">
+<div class="w-full aspect-[16/9] bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
+<!-- 架构图循环渲染容器：不再使用单独展示img，所有图片都在循环项内 -->
+<div class="w-full h-full relative" id="architecture-image-sources">
+<!-- 架构图循环项：第1条数据（循环开始） -->
+<div class="architecture-switch-item js-architecture-switch-item w-full h-full">
+<img alt="Architecture Switch 1" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+</div>
+<!-- 架构图循环项：第2条数据（后续条目与此结构保持一致循环追加） -->
+<div class="architecture-switch-item js-architecture-switch-item w-full h-full">
+<img alt="Architecture Switch 2" class="architecture-switch-image js-architecture-switch-image w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="inline-flex items-center gap-3 px-4 sm:px-6 xl:px-10 py-4 bg-transparent border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold rounded-lg hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-[#231f0f] transition-all text-lg">
+                View Full Documentation 
+                <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 版块6：硬件目录（Hardware Catalog）｜桌面端与移动端采用不同操作控件 -->
+<section class="py-24 px-4 sm:px-6 xl:px-10 overflow-hidden">
+<div class="max-w-[1600px] mx-auto">
+<div class="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mb-12 sm:mb-16 gap-4">
+<h2 class="text-3xl sm:text-4xl font-bold text-center w-full sm:w-auto">Hardware Catalog（硬件目录）</h2>
+<!-- 硬件目录翻页按钮（桌面端） -->
+<div class="hidden xl:flex gap-3">
+<button class="size-12 rounded-lg border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-100 transition-colors" id="hardware-prev-desktop" type="button">
+<span aria-hidden="true" class="text-xl leading-none">&#8249;</span>
+</button>
+<button class="size-12 rounded-lg bg-[#fcc603] flex items-center justify-center hover:brightness-110 transition-colors" id="hardware-next-desktop" type="button">
+<span aria-hidden="true" class="text-xl leading-none text-[#231f0f] font-bold">&#8250;</span>
+</button>
+</div>
+</div>
+<div class="flex gap-0 sm:gap-8 overflow-x-auto xl:overflow-hidden pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none] snap-x snap-mandatory sm:snap-none" id="hardware-track">
+<!-- Hardware 循环项：第1条数据（循环开始） -->
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series X</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
+<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,299</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+<!-- Hardware 循环项：第2条数据（后续条目按相同结构循环） -->
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series X</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
+<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,299</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series X</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
+<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,299</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Smart Meter X1" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZkPiW1rU8eEXNx7FUys0IG6dTFHbUScx06hNcJEr8jagYsxWS03HgqFFh169aERCGa071jkwSm7qkUnU6whydyo_1D_gxoWM_7eUQm8kM9nyJnmLvWNj-nir1U4gTncsnbAsVQvvx3LAYvmJRVsWxe1mfDnp5f__i5fXylPyVsrp8og6PZiOZXL6oLJ41igz2gK-vUsFu3kKnkyy_Q7A9_F6bv8oFcacvUa8sUuDcDZaqlXb40Acwho6JsgJb1uQ55E-UcTf9M"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series X</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Industrial Meter X100</h3>
+<p class="text-slate-500 text-sm mb-6">High-precision polyphase meter for industrial zones.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,299</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Gateway G200" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXescO0p8_GXEFJQnmRnJ3IIXyvSsgE-0j5zaPhVs28fv5ddwRUOMD85EgtGkVSLg8uNIE1XyckwKBsW5KiiCk9grfU2SfQYePAkGZdY2AYJJ5gctkDzfTGcj9iJUQUDd5QnpjfpnZjsHHiDipNm3Jm98OvQ06lxiMThdnuu6_0KZH0Q5t-rYB9lbF92NeZNpHWPphXFEa5HOC2pjrb_tjvmbjTuMYaFyz_-nJk2cLRUOysDp1YQglNFz6AYLGRtB190nOuF1fCY"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series G</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Edge Gateway G200</h3>
+<p class="text-slate-500 text-sm mb-6">Secure field gateway for high-density meter aggregation.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$1,899</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+
+<div class="hardware-item js-hardware-item w-full max-w-[350px] min-w-full sm:w-auto sm:max-w-none sm:min-w-[350px] xl:min-w-[calc((100%-6rem)/4)] xl:max-w-[calc((100%-6rem)/4)] snap-center shrink-0 mx-auto sm:mx-0 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col gap-6">
+<div class="h-64 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center p-10">
+<img alt="Sensor Node S50" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4JhlbQPvIfvrmrQF7OSo5J9LIPLFcXT7fI3w41XmrOszB59TNYD_W3-Ua_Rw4LzphNTVByG41zwZk_5X-kWsXYF3TccLUZqg8jslrc2Lp3WNk2qkupk9BvYrQWNBdLTyqZw-oiT2-Zj_DSZxT3cu3Hh3OpSxDDgKEKxr8LFm5BWzm8-Qxk83_kov3ZXoPxY4EbfFrDe-M2d-JwYIEKnjbzcPm1M5ubnOLL9R7ObBsDp-8BabUpV53kBEPEkh5GMu57fF5HH4AVA"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#fcc603] uppercase tracking-widest mb-2 block">Series S</span>
+<h3 class="text-xl font-bold mb-2 min-h-[3.5rem] leading-snug">Remote Sensor Node S50</h3>
+<p class="text-slate-500 text-sm mb-6">Low-power node for environmental and load telemetry.</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold">$799</span>
+<button class="text-slate-900 dark:text-white font-bold text-sm underline">Details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 硬件目录翻页按钮（移动端） -->
+<div class="flex sm:hidden justify-center gap-3">
+<button class="size-11 rounded-lg border border-slate-300 dark:border-slate-700 flex items-center justify-center" id="hardware-prev-mobile" type="button">
+<span aria-hidden="true" class="text-xl leading-none">&#8249;</span>
+</button>
+<button class="size-11 rounded-lg bg-[#fcc603] flex items-center justify-center" id="hardware-next-mobile" type="button">
+<span aria-hidden="true" class="text-xl leading-none text-[#231f0f] font-bold">&#8250;</span>
+</button>
+</div>
+</section>
+<!-- 版块7：技术优势列表（Industry Solutions） -->
+<section class="py-24 px-4 sm:px-6 xl:px-10 bg-[#f8f8f5] dark:bg-slate-900/20">
+<div class="max-w-[1600px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Technical Advantages</h2>
+<p class="text-slate-500">Why industry leaders choose our hardware ecosystem</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">Self-Healing Network</h4>
+<p class="text-sm text-slate-500">Auto-rerouting data paths ensures zero packet loss.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">IP68 Weatherproof</h4>
+<p class="text-sm text-slate-500">Designed for extreme industrial environments.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">15-Year Life Cycle</h4>
+<p class="text-sm text-slate-500">Durable components built for long-term deployment.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">Open API Support</h4>
+<p class="text-sm text-slate-500">Seamlessly integrate with existing SCADA systems.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">Over-the-Air Updates</h4>
+<p class="text-sm text-slate-500">Instant security patches without site visits.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-[#231f0f] rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:border-[#fcc603] transition-colors">
+<span class="material-symbols-outlined text-[#fcc603] font-bold">check_circle</span>
+<div>
+<h4 class="font-bold mb-2">Tamper Resistance</h4>
+<p class="text-sm text-slate-500">Physical and digital security protocols built-in.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 版块8：联系转化区（Contact CTA） -->
+<section class="py-24 px-4 sm:px-6 xl:px-10">
+<div class="max-w-[1600px] mx-auto">
+<div class="bg-[#fcc603]/10 rounded-3xl p-6 sm:p-10 xl:p-16 flex flex-col xl:flex-row gap-8 sm:gap-10 xl:gap-16 items-center">
+<div class="xl:w-1/2">
+<h2 class="text-5xl font-bold mb-6">Ready to optimize your grid?</h2>
+<p class="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    Request a comprehensive audit and product demonstration from our lead engineers. Custom solutions for large-scale utility deployments.
+                </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#fcc603]">call</span>
+<span class="font-bold">+1 (800) ENERGY-SYS</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#fcc603]">mail</span>
+<span class="font-bold">consult@energysolutions.io</span>
+</div>
+</div>
+</div>
+<div class="xl:w-1/2 w-full">
+<form class="bg-white dark:bg-slate-800 p-5 sm:p-8 xl:p-10 rounded-2xl shadow-xl space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-slate-500">Full Name</label>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg focus:ring-2 focus:ring-[#fcc603] py-3" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-slate-500">Company</label>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg focus:ring-2 focus:ring-[#fcc603] py-3" placeholder="Industrial Corp" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-slate-500">Work Email</label>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg focus:ring-2 focus:ring-[#fcc603] py-3" placeholder="john@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-slate-500">Message</label>
+<textarea class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg focus:ring-2 focus:ring-[#fcc603] py-3 h-32" placeholder="Tell us about your project requirements..."></textarea>
+</div>
+<button class="w-full bg-[#fcc603] text-[#231f0f] font-bold py-4 rounded-lg hover:brightness-110 transition-all text-lg" type="submit">
+                        Request Consultation
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class="bg-[#231f0f] border-t border-gray-800 py-4">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+<div class="max-w-3xl mx-auto grid grid-cols-3 gap-2 sm:gap-3 md:flex md:flex-wrap md:justify-center">
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-linkedin-in text-sm"></i>LinkedIn</a>
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-youtube text-sm"></i>YouTube</a>
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-twitter text-sm"></i>Twitter</a>
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-instagram text-sm"></i>Instagram</a>
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-facebook-f text-sm"></i>Facebook</a>
+<a class="bg-[#fcc603] text-black rounded-md xl:rounded-[30px] px-2 sm:px-3 py-2 inline-flex items-center justify-center gap-1 sm:gap-2 text-[11px] sm:text-sm font-medium transition-colors hover:bg-white hover:text-black" href="#"><i class="fa-brands fa-tiktok text-sm"></i>TikTok</a>
+</div>
+</div>
+</div>
+<!-- 页脚区域开始：公司信息、快捷链接、产品系列、联系方式 -->
+<footer class="bg-[#231f0f] text-gray-400 pt-14 sm:pt-20 xl:pt-24 pb-8 sm:pb-10 xl:pb-12 border-t-8 border-[#fcc603]" id="contact">
+<div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-12 xl:gap-16 mb-12 sm:mb-16 xl:mb-20">
+<div>
+<div class="flex items-center gap-3 mb-5 sm:mb-8 text-white">
+<div class="w-10 h-10 bg-[#fcc603] rounded flex items-center justify-center text-black">
+<img alt="Brand Bolt Icon" class="w-5 h-5 object-contain" src="https://img.icons8.com/ios-filled/100/lightning-bolt.png"/>
+</div>
+<h2 class="text-3xl font-bold">SmartMeter Inc.</h2>
+</div>
+<p class="mb-5 sm:mb-8 leading-relaxed text-base sm:text-lg">
+                        Leading the world in smart energy measurement solutions. Precision, reliability, and innovation for a sustainable future.
+                    </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#fcc603] hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#fcc603] hover:text-black flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6 sm:gap-8 md:contents">
+<div>
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Quick Links</h4>
+<ul class="space-y-2 sm:space-y-4 text-base sm:text-lg">
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Products</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Support Center</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Product Series</h4>
+<ul class="space-y-2 sm:space-y-4 text-base sm:text-lg">
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Single Phase Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Three Phase Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Industrial Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">Smart Water Meters</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors" href="#">AMI Systems</a></li>
+</ul>
+</div>
+</div>
+<div>
+<h4 class="text-white text-xl font-bold mb-5 sm:mb-8">Contact Us</h4>
+<ul class="space-y-3 sm:space-y-6 text-base sm:text-lg">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#fcc603] mt-1">location_on</span>
+<span>123 Innovation Drive, Tech Park,<br>Silicon Valley, CA 94025, USA</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#fcc603]">call</span>
+<span>+1 (555) 123-4567</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#fcc603]">mail</span>
+<span>sales@smartmeter.inc</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6 sm:pt-8 xl:pt-10 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-6 text-sm">
+<p>© 2023 SmartMeter Inc. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- 头部脚本：仅处理移动端菜单展开/收起 -->
+<script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+
+    if (mobileMenuToggle && mobileMenuPanel) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuPanel.classList.toggle('hidden');
+            const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+            mobileMenuToggle.setAttribute('aria-expanded', (!expanded).toString());
+        });
+    }
+</script>
+
+<!-- 主体脚本：功能列表联动 + 架构图切换 + 硬件轮播 -->
+<script>
+    const featureItems = Array.from(document.querySelectorAll('.js-feature-item'));
+    const featureImage = document.getElementById('feature-image');
+    const featureTitle = document.getElementById('feature-title');
+    const featureDescription = document.getElementById('feature-description');
+    const mobileCardTitle = document.getElementById('feature-mobile-card-title');
+    const mobileCardSummary = document.getElementById('feature-mobile-card-summary');
+    const mobilePrevBtn = document.getElementById('feature-prev-mobile');
+    const mobileNextBtn = document.getElementById('feature-next-mobile');
+
+    if (featureItems.length && featureImage && featureTitle && featureDescription) {
+        const setActiveFeature = (index) => {
+            const safeIndex = (index + featureItems.length) % featureItems.length;
+            const item = featureItems[safeIndex];
+
+            featureItems.forEach((node) => {
+                node.classList.remove('bg-[#fcc603]', 'text-[#231f0f]');
+                node.classList.add('bg-slate-800/50', 'text-white');
+                const desc = node.querySelector('.feature-item-description');
+                if (desc) desc.classList.add('text-slate-400');
+                if (desc) desc.classList.remove('opacity-90');
+            });
+
+            item.classList.remove('bg-slate-800/50', 'text-white');
+            item.classList.add('bg-[#fcc603]', 'text-[#231f0f]');
+
+            const selectedDesc = item.querySelector('.feature-item-description');
+            const selectedTitle = item.querySelector('.feature-item-title');
+            if (selectedDesc) selectedDesc.classList.remove('text-slate-400');
+            if (selectedDesc) selectedDesc.classList.add('opacity-90');
+
+            const detailImageSource = item.querySelector('.feature-detail-image-source');
+            if (detailImageSource) featureImage.src = detailImageSource.src;
+            const detailTitleSource = item.querySelector('.feature-detail-title-source');
+            if (detailTitleSource) featureTitle.textContent = detailTitleSource.textContent || "";
+            const detailDescriptionSource = item.querySelector('.feature-detail-description-source');
+            if (detailDescriptionSource) featureDescription.textContent = detailDescriptionSource.textContent || "";
+
+            if (mobileCardTitle && selectedTitle) mobileCardTitle.textContent = selectedTitle.textContent;
+            if (mobileCardSummary && selectedDesc) mobileCardSummary.textContent = selectedDesc.textContent;
+
+            return safeIndex;
+        };
+
+        let activeFeatureIndex = setActiveFeature(0);
+
+        featureItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(index);
+            });
+        });
+
+        if (mobilePrevBtn) {
+            mobilePrevBtn.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(activeFeatureIndex - 1);
+            });
+        }
+
+        if (mobileNextBtn) {
+            mobileNextBtn.addEventListener('click', () => {
+                activeFeatureIndex = setActiveFeature(activeFeatureIndex + 1);
+            });
+        }
+    }
+
+    // 架构图切换数据（统一循环项驱动：不使用单独展示img）
+    const architectureItems = Array.from(document.querySelectorAll('#architecture-image-sources .js-architecture-switch-item'));
+    const architecturePrev = document.getElementById('architecture-prev');
+    const architectureNext = document.getElementById('architecture-next');
+    let architectureIndex = 0;
+
+    const setArchitectureActive = (index) => {
+        if (!architectureItems.length) return 0;
+        const safeIndex = (index + architectureItems.length) % architectureItems.length;
+        architectureItems.forEach((item, itemIndex) => {
+            item.classList.toggle('hidden', itemIndex != safeIndex);
+        });
+        return safeIndex;
+    };
+
+    if (architectureItems.length && architecturePrev && architectureNext) {
+        architectureIndex = setArchitectureActive(0);
+
+        architecturePrev.addEventListener('click', () => {
+            architectureIndex = setArchitectureActive(architectureIndex - 1);
+        });
+
+        architectureNext.addEventListener('click', () => {
+            architectureIndex = setArchitectureActive(architectureIndex + 1);
+        });
+    }
+
+    const hardwareTrack = document.getElementById('hardware-track');
+    const hardwareItems = hardwareTrack ? Array.from(hardwareTrack.querySelectorAll('.js-hardware-item')) : [];
+    const hardwarePrevMobile = document.getElementById('hardware-prev-mobile');
+    const hardwareNextMobile = document.getElementById('hardware-next-mobile');
+    const hardwarePrevDesktop = document.getElementById('hardware-prev-desktop');
+    const hardwareNextDesktop = document.getElementById('hardware-next-desktop');
+    let hardwareActiveIndex = 0;
+
+    if (hardwareTrack && hardwareItems.length) {
+        const scrollToHardware = (index) => {
+            const safeIndex = (index + hardwareItems.length) % hardwareItems.length;
+            hardwareItems[safeIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+            return safeIndex;
+        };
+
+        hardwareTrack.addEventListener('scroll', () => {
+            if (window.innerWidth >= 640) return;
+            const width = hardwareTrack.clientWidth || 1;
+            hardwareActiveIndex = Math.round(hardwareTrack.scrollLeft / width);
+        }, { passive: true });
+
+        if (hardwarePrevMobile) {
+            hardwarePrevMobile.addEventListener('click', () => {
+                hardwareActiveIndex = scrollToHardware(hardwareActiveIndex - 1);
+            });
+        }
+
+        if (hardwareNextMobile) {
+            hardwareNextMobile.addEventListener('click', () => {
+                hardwareActiveIndex = scrollToHardware(hardwareActiveIndex + 1);
+            });
+        }
+
+        const scrollHardwareDesktop = (direction) => {
+            if (window.innerWidth < 1280) return;
+            const firstCardWidth = hardwareItems[0].getBoundingClientRect().width;
+            const step = firstCardWidth + 32;
+            hardwareTrack.scrollBy({ left: direction * step, behavior: 'smooth' });
+        };
+
+        if (hardwarePrevDesktop) {
+            hardwarePrevDesktop.addEventListener('click', () => {
+                scrollHardwareDesktop(-1);
+            });
+        }
+
+        if (hardwareNextDesktop) {
+            hardwareNextDesktop.addEventListener('click', () => {
+                scrollHardwareDesktop(1);
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
