@@ -41,24 +41,12 @@
             },
         }
     </script>
-<style>
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            overflow-x: hidden;
-        }.no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
 </head>
-<body class="bg-background-light text-text-main antialiased selection:bg-primary selection:text-black">
+<body class="font-body overflow-x-hidden bg-background-light text-text-main antialiased selection:bg-primary selection:text-black">
 <section class="relative w-full overflow-hidden bg-gray-900 group xl:h-[90vh] xl:min-h-[700px]" id="hero-carousel">
 <div class="relative z-0 w-full h-[55vh] min-h-[360px] xl:absolute xl:inset-0 xl:h-full" id="hero-slide-track">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center transition-transform duration-[10s] hover:scale-105" data-alt="Industrial technician examining smart meter array in high-tech facility" id="hero-slide-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y');"></div>
+<img alt="Industrial technician examining smart meter array in high-tech facility" class="w-full h-full object-cover transition-transform duration-[10s] hover:scale-105" data-hero-image-0="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y" data-hero-image-1="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg" data-hero-image-2="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4" id="hero-slide-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y"/>
 <button class="absolute left-4 md:left-8 xl:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-primary hover:border-primary text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-prev" type="button">
 <span class="material-symbols-outlined text-3xl xl:text-4xl">chevron_left</span>
 </button>
@@ -104,7 +92,7 @@
 <p class="text-base md:text-xl text-gray-500 mt-4 md:mt-6 max-w-2xl mx-auto">From residential metering to grid-scale management, our technologies power the future of energy distribution with precision and connectivity.</p>
 </div>
 </div>
-<div class="flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-8 overflow-x-auto no-scrollbar snap-x snap-mandatory md:overflow-visible" id="solution-track" style="scroll-padding-left: 0.5rem; scroll-padding-right: 0.5rem;">
+<div class="flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-8 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory md:overflow-visible" id="solution-track" style="scroll-padding-left: 0.5rem; scroll-padding-right: 0.5rem;">
 <div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300 flex-shrink-0 w-full snap-center md:w-auto">
 <div class="relative h-56 md:h-64 overflow-hidden rounded-2xl">
 <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern residential building symbolizing smart home metering" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHjOLXjsrIsDIY7IpG4Bxwe2lXXtWTC504aoYicJjVvrYmFp9Cif-1Zdz8iKtD6PR3Nk7GdSzgfJP13Gr0SBr8e2AqkGMQ9HFGrfusfrWoF8A9trNzxOA1IEwdf8UrOsFHAd_gxwkDtKPexzjvNsZOFQfuzoxW4rSfd5lnshKdHbAzXIc3C2lRCV5OC2hW8FYn69Jf9rjDOn9Iybz9HeF3pfPGQzsTqWF9ArFg2PbZ6q1KVExzFEFBX6dbEBkOjtmW_H0ooZowBVY');"></div>
@@ -484,7 +472,7 @@
 <button class="absolute left-2 md:left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-white shadow-lg rounded-full flex items-center justify-center text-black hover:bg-primary transition-colors border border-gray-200" id="cert-prev" type="button">
 <span class="material-symbols-outlined text-3xl">chevron_left</span>
 </button>
-<div class="flex gap-0 md:gap-10 overflow-x-auto no-scrollbar py-8 px-0 md:px-4 scroll-smooth snap-x snap-mandatory" id="cert-track">
+<div class="flex gap-0 md:gap-10 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-8 px-0 md:px-4 scroll-smooth snap-x snap-mandatory" id="cert-track">
 <div class="flex-shrink-0 w-full md:w-64 h-40 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300 snap-start">
 <img alt="ISO 9001 Certificate" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUEJJy4WiArk0x880kxeYUA30yE-aABjM1HeLokfmtn-b-CshTASpp0rdeoSGaeWNTy_WwEOmY9cuq4mSmjcsxPb7eVESeIO4BcKYQjtJQrKNanp4lnsuVtv93gpG6M-QdbSa53ymDIlrex6kSISpD-54wW2qalYib8H0x1dcpA8sOqdEQD05IbdB-g-qs6aWwsMAAG_Vt6YBA07K2gzvTVjYsK9xcpC8O06wIMKX_2YgPSwj0Ljy_BuuF6jO-ig-C1p1bqwPXog"/>
 </div>
@@ -591,19 +579,16 @@
                 tag: 'Global Leader in AMI',
                 title: 'Precision Metering <br><span class="text-primary">For Smart Cities</span>',
                 description: 'Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y'
             },
             {
                 tag: 'Trusted by 50+ Countries',
                 title: 'Reliable Infrastructure <br><span class="text-primary">Built to Scale</span>',
                 description: 'Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg'
             },
             {
                 tag: 'Sustainable by Design',
                 title: 'IoT Analytics <br><span class="text-primary">For Cleaner Energy</span>',
                 description: 'Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.',
-                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4'
             }
         ];
 
@@ -623,7 +608,7 @@
 
             const renderHero = (index) => {
                 const slide = heroSlides[index];
-                heroImage.style.backgroundImage = `url('${slide.image}')`;
+                heroImage.src = heroImage.dataset[`heroImage${index}`] || heroImage.src;
                 heroTag.textContent = slide.tag;
                 heroTitle.innerHTML = slide.title;
                 heroDescription.textContent = slide.description;
