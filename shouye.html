@@ -10,13 +10,13 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body class="font-['Space_Grotesk'] overflow-x-hidden bg-white text-[#181710] antialiased selection:bg-[#fcc603] selection:text-black">
-<section class="relative w-full overflow-hidden bg-gray-900 group xl:h-[90vh] xl:min-h-[700px]" id="hero-carousel">
-<div class="relative z-0 w-full h-[55vh] min-h-[360px] xl:h-full" id="hero-slide-track">
+<section class="relative w-full overflow-hidden bg-gray-900 group" id="hero-carousel">
+<div class="relative z-0 w-full aspect-[1920/700] min-h-[260px] max-h-[700px]" id="hero-slide-track">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
 {pboot:slide gid=1 num=3}
 <div class="hero-slide absolute inset-0">
-<img alt="[slide:title]" loading="eager" decoding="async" class="w-full h-full object-contain" src="[slide:src]"/>
-<div class="relative z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 h-full flex flex-col justify-center items-center text-center xl:items-start xl:text-left text-white">
+<img alt="[slide:title]" loading="eager" decoding="async" class="absolute inset-0 w-full h-full object-contain" src="[slide:src]"/>
+<div class="absolute inset-0 z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 h-full w-full flex flex-col justify-center items-center text-center xl:items-start xl:text-left text-white">
 <div class="max-w-4xl animate-fade-in-up xl:max-w-4xl max-w-3xl mx-auto xl:mx-0">
 <h2 class="hero-slide-title text-4xl md:text-6xl xl:text-8xl font-bold leading-tight mb-6 xl:mb-8">[slide:title]</h2>
 <p class="hero-slide-subtitle text-lg md:text-2xl xl:text-3xl text-gray-200 mb-8 xl:mb-12 max-w-3xl font-light leading-relaxed">[slide:subtitle]</p>
