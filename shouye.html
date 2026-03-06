@@ -11,11 +11,23 @@
 </head>
 <body class="font-['Space_Grotesk'] overflow-x-hidden bg-white text-[#181710] antialiased selection:bg-[#fcc603] selection:text-black">
 <section class="relative w-full overflow-hidden bg-gray-900 group xl:h-[90vh] xl:min-h-[700px]" id="hero-carousel">
-<div class="relative z-0 w-full h-[55vh] min-h-[360px] xl:absolute xl:inset-0 xl:h-full" id="hero-slide-track">
+<div class="relative z-0 w-full h-[55vh] min-h-[360px] xl:h-full" id="hero-slide-track">
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
-<img alt="Industrial technician examining smart meter array in high-tech facility" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XkQ1wENBR-vs5-aIjoMZTseg_8-LWLt_H-1vL-sBLanWQWwSSsTIjk4giF0ph0Jq3jdFC0Q6pEkFAsvcAXBGbdHPohXLULHQxjvEWfovdnm0ygDUiprgNovJUKVNikq9ZhkkFKtuth3L1meFMC1pb8ZxClkwLx0BWFmvCesQQOGEKRkszNPuzLk_Ph2JoujS1gAGibqc6I1evpjYaomxsqMT5cvAuk4BV350kLoqiFXAixwxljLvuBdOPRoUmf5UTa5TWfTEX0Y"/>
-<img alt="City skyline at night representing urban grid management" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg"/>
-<img alt="Solar panels on a roof" class="hero-slide-image absolute inset-0 w-full h-full object-contain transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4"/>
+{pboot:slide gid=1 num=3}
+<div class="hero-slide absolute inset-0">
+<img alt="[slide:title]" loading="eager" decoding="async" class="w-full h-full object-contain" src="[slide:src]"/>
+<div class="relative z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 h-full flex flex-col justify-center items-center text-center xl:items-start xl:text-left text-white">
+<div class="max-w-4xl animate-fade-in-up xl:max-w-4xl max-w-3xl mx-auto xl:mx-0">
+<h2 class="hero-slide-title text-4xl md:text-6xl xl:text-8xl font-bold leading-tight mb-6 xl:mb-8">[slide:title]</h2>
+<p class="hero-slide-subtitle text-lg md:text-2xl xl:text-3xl text-gray-200 mb-8 xl:mb-12 max-w-3xl font-light leading-relaxed">[slide:subtitle]</p>
+<div class="flex flex-wrap justify-center xl:justify-start gap-4 md:gap-6">
+<button class="bg-[#fcc603] hover:bg-white text-black px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">View Solutions <span class="material-symbols-outlined">arrow_forward</span></button>
+<button class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300">Contact Sales</button>
+</div>
+</div>
+</div>
+</div>
+{/pboot:slide}
 <button class="absolute left-4 md:left-8 xl:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 flex items-center justify-center rounded-full border border-white/20 bg-black/20 hover:bg-[#fcc603] hover:border-[#fcc603] text-white hover:text-black transition-all backdrop-blur-md group-hover:opacity-100 opacity-70" id="hero-prev" type="button">
 <span class="material-symbols-outlined text-3xl xl:text-4xl">chevron_left</span>
 </button>
@@ -26,34 +38,6 @@
 <button aria-label="Go to slide 1" class="w-12 xl:w-16 h-1.5 bg-[#fcc603] rounded-full shadow-[0_0_10px_rgba(252,198,3,0.5)]" type="button"></button>
 <button aria-label="Go to slide 2" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
 <button aria-label="Go to slide 3" class="w-12 xl:w-16 h-1.5 bg-white/30 rounded-full hover:bg-white cursor-pointer transition-colors backdrop-blur-sm" type="button"></button>
-</div>
-<div class="hidden" id="hero-slide-meta">
-<div><span>Global Leader in AMI</span><h3>Precision Metering <br><span class='text-[#fcc603]'>For Smart Cities</span></h3><p>Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.</p></div>
-<div><span>Trusted by 50+ Countries</span><h3>Reliable Infrastructure <br><span class='text-[#fcc603]'>Built to Scale</span></h3><p>Deploy robust metering networks that support utility growth, remote diagnostics, and long-term reliability.</p></div>
-<div><span>Sustainable by Design</span><h3>IoT Analytics <br><span class='text-[#fcc603]'>For Cleaner Energy</span></h3><p>Convert meter data into actionable insights and reduce loss through intelligent monitoring and automation.</p></div>
-</div>
-</div>
-<div class="relative z-20 max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 py-10 md:py-12 xl:h-full xl:py-0 flex flex-col items-center text-center xl:items-start xl:text-left xl:justify-center text-white">
-<div class="max-w-4xl animate-fade-in-up xl:max-w-4xl max-w-3xl mx-auto xl:mx-0">
-<span class="inline-block py-2 px-4 border border-[#fcc603] text-[#fcc603] font-bold uppercase tracking-widest mb-8 rounded backdrop-blur-sm" id="hero-slide-tag">
-                    Global Leader in AMI
-                </span>
-<h2 class="text-4xl md:text-6xl xl:text-8xl font-bold leading-tight mb-6 xl:mb-8" id="hero-slide-title">
-                    Precision Metering <br/>
-<span class="text-[#fcc603]">For Smart Cities</span>
-</h2>
-<p class="text-lg md:text-2xl xl:text-3xl text-gray-200 mb-8 xl:mb-12 max-w-3xl font-light leading-relaxed" id="hero-slide-description">
-                    Advanced infrastructure and IoT-ready measurement devices designed for the next generation of energy management.
-                </p>
-<div class="flex flex-wrap justify-center xl:justify-start gap-4 md:gap-6">
-<button class="bg-[#fcc603] hover:bg-white text-black px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300 flex items-center gap-3 shadow-[0_0_20px_rgba(252,198,3,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-                        View Solutions
-                        <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-7 py-3 md:px-9 md:py-4 xl:px-10 xl:py-5 rounded-lg text-base md:text-lg xl:text-xl font-bold transition-all duration-300">
-                        Contact Sales
-                    </button>
-</div>
 </div>
 </div>
 </section>
@@ -546,32 +530,20 @@
 <script>
     (() => {
         const heroSection = document.getElementById('hero-carousel');
-        const heroImages = Array.from(document.querySelectorAll('.hero-slide-image'));
-        const heroTag = document.getElementById('hero-slide-tag');
-        const heroTitle = document.getElementById('hero-slide-title');
-        const heroDescription = document.getElementById('hero-slide-description');
+        const heroSlides = Array.from(document.querySelectorAll('#hero-slide-track .hero-slide'));
         const heroDots = Array.from(document.querySelectorAll('#hero-pagination button'));
-        const heroSlides = Array.from(document.querySelectorAll('#hero-slide-meta > div')).map((item) => ({
-            tag: item.querySelector('span')?.textContent || '',
-            title: item.querySelector('h3')?.innerHTML || '',
-            description: item.querySelector('p')?.textContent || ''
-        }));
         const heroPrev = document.getElementById('hero-prev');
         const heroNext = document.getElementById('hero-next');
 
-        if (heroSection && heroImages.length && heroTag && heroTitle && heroDescription && heroDots.length) {
+        if (heroSection && heroSlides.length && heroDots.length) {
             let heroIndex = 0;
             let heroTimer = null;
             const autoplayMs = 7000;
 
             const renderHero = (index) => {
-                const slide = heroSlides[index];
-                heroImages.forEach((img, imgIndex) => {
-                    img.classList.toggle('hidden', imgIndex !== index);
+                heroSlides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle('hidden', slideIndex !== index);
                 });
-                heroTag.textContent = slide.tag;
-                heroTitle.innerHTML = slide.title;
-                heroDescription.textContent = slide.description;
 
                 heroDots.forEach((dot, dotIndex) => {
                     const active = dotIndex === index;
