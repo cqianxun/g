@@ -83,40 +83,28 @@
 <section class="py-20 md:py-32 bg-gray-50 border-y border-gray-100">
 <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
 <div class="text-center mb-16">
-{pboot:sort scode=5}
-<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">[sort:subname]</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-[#181710]"><a href="[sort:link]" title="[sort:name]">[sort:name]</a></h2>
-{/pboot:sort}
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-10">
-<div class="lg:col-span-1 bg-white rounded-2xl border border-gray-100 p-6 h-fit">
-<h4 class="text-xl font-bold mb-4"><a href="{pboot:sort scode=8}[sort:link]{/pboot:sort}">产品分类 <i class="text-sm not-italic text-gray-500">classification</i></a></h4>
-<div class="space-y-4">
-{pboot:nav num=4 parent=5}
-<div class="pb-4 border-b border-gray-100 last:border-0 last:pb-0">
-<p class="font-semibold mb-2"><a href="[nav:link]" title="[nav:name]">[nav:name]</a></p>
-<ul class="space-y-1 text-sm text-gray-600">
-{pboot:2nav parent=[nav:scode] num=5}
-<li><a class="hover:text-[#fcc603] transition-colors" href="[2nav:link]">[2nav:name]</a></li>
-{/pboot:2nav}
-</ul>
-</div>
-{/pboot:nav}
-<a href="{pboot:sort scode=5}[sort:link]{/pboot:sort}" title="查看更多产品" class="inline-flex mt-2 text-[#e5b402] font-bold hover:text-[#fcc603] transition-colors">查看更多产品+</a>
+<div>
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">Featured Products</h3>
+<h2 class="text-4xl md:text-6xl font-bold text-[#181710]">Cutting-Edge Hardware</h2>
 </div>
 </div>
-<div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-{pboot:list scode=5 num=9 order=sorting}
-<div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
-<div class="relative p-3 flex items-center justify-center h-56 md:h-64">
-<a href="[list:link]" title="[list:title]"><img src="[list:ico]" alt="[list:title]" class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"/></a>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-10">
+{pboot:list scode=5 num=8 order=sorting}
+<div class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col">
+<div class="relative p-2 md:p-4 flex items-center justify-center h-64 md:h-80">
+<a href="[list:link]" title="[list:title]">
+<img alt="[list:title]" class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500" src="[list:ico]"/>
+</a>
 </div>
-<div class="p-5 pt-0">
-<a href="[list:link]" title="[list:title]" class="text-lg md:text-xl font-bold text-gray-900 hover:text-[#fcc603] transition-colors">[list:title]</a>
+<div class="p-5 md:p-8 flex-grow flex flex-col justify-between">
+<div>
+<h4 class="text-xl md:text-2xl font-bold mb-3 text-gray-900"><a href="[list:link]" title="[list:title]">[list:title]</a></h4>
+<p class="text-base text-gray-500 mb-6">[list:subtitle]</p>
+</div>
+<a class="w-full py-3.5 border-2 border-black rounded-lg font-bold hover:bg-[#fcc603] hover:border-[#fcc603] hover:text-black transition-all text-base md:text-lg text-center inline-block" href="[list:link]" title="[list:title]">查看产品</a>
 </div>
 </div>
 {/pboot:list}
-</div>
 </div>
 </div>
 </section>
