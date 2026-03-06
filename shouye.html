@@ -43,40 +43,163 @@
 </section>
 <section class="py-20 md:py-32 bg-white">
 <div class="max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12">
-<div class="text-center mb-12 md:mb-16">
-<div class="max-w-3xl mx-auto">
-{pboot:sort scode=6}
-<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-base md:text-lg">[sort:subname]</h3>
-<h2 class="text-4xl md:text-6xl font-bold text-[#181710] leading-tight"><a href="[sort:link]" title="[sort:name]">[sort:name]</a></h2>
-{/pboot:sort}
-<p class="text-base md:text-xl text-gray-500 mt-4 md:mt-6 max-w-2xl mx-auto">通过栏目分类与子分类动态展示解决方案内容，可在后台灵活维护。</p>
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-3xl">
+<h3 class="text-[#fcc603] font-bold uppercase tracking-widest mb-4 text-lg">Our Expertise</h3>
+<h2 class="text-5xl md:text-6xl font-bold text-[#181710] leading-tight">Comprehensive Energy Solutions</h2>
+<p class="text-xl text-gray-500 mt-6 max-w-2xl">From residential metering to grid-scale management, our technologies power the future of energy distribution with precision and connectivity.</p>
 </div>
-</div>
-<div class="flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-8 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory md:overflow-visible" id="solution-track" style="scroll-padding-left: 0.5rem; scroll-padding-right: 0.5rem;">
-{pboot:nav num=8 parent=6}
-<div class="group flex flex-col h-full bg-white rounded-3xl border border-gray-100 hover:border-[#fcc603]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 flex-shrink-0 w-full snap-center md:w-auto p-3 md:p-4">
-<div class="relative h-56 md:h-64 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100/80 ring-1 ring-gray-200/70">
-<a href="[nav:link]" title="[nav:name]" class="block h-full">
-<img alt="[nav:name]" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" src="[nav:ico]"/>
+<div class="hidden md:block">
+<a class="inline-flex items-center gap-3 text-lg font-bold hover:text-[#fcc603] transition-colors border-b-2 border-black hover:border-[#fcc603] pb-1" href="#">
+                    Explore All Solutions <span class="material-symbols-outlined">arrow_outward</span>
 </a>
 </div>
-<div class="pt-5 px-1 flex flex-col flex-grow">
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors leading-tight"><a href="[nav:link]" title="[nav:name]">[nav:name]</a></h4>
-<ul class="text-gray-500 text-sm md:text-base leading-relaxed mb-4 flex-grow space-y-2">
-{pboot:2nav parent=[nav:scode] num=5}
-<li><a class="hover:text-[#fcc603] transition-colors inline-flex items-center gap-2" href="[2nav:link]"><span class="w-1.5 h-1.5 rounded-full bg-[#fcc603]"></span>[2nav:name]</a></li>
-{/pboot:2nav}
-</ul>
-<div class="mt-auto pt-4 border-t border-gray-100 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
-<a href="[nav:link]" title="[nav:name]">查看方案</a><span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern residential building symbolizing smart home metering" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHjOLXjsrIsDIY7IpG4Bxwe2lXXtWTC504aoYicJjVvrYmFp9Cif-1Zdz8iKtD6PR3Nk7GdSzgfJP13Gr0SBr8e2AqkGMQ9HFGrfusfrWoF8A9trNzxOA1IEwdf8UrOsFHAd_gxwkDtKPexzjvNsZOFQfuzoxW4rSfd5lnshKdHbAzXIc3C2lRCV5OC2hW8FYn69Jf9rjDOn9Iybz9HeF3pfPGQzsTqWF9ArFg2PbZ6q1KVExzFEFBX6dbEBkOjtmW_H0ooZowBVY');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Residential</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">IoT</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Smart Home Metering</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Empower homeowners with real-time usage data and cost-saving insights through our precision residential meters.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
 </div>
-{/pboot:nav}
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="City skyline at night representing urban grid management" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKYaQB_J-gAp5ein-M6REgTjEH9mRDOlx0dC3YGUjSe6FhKhA7N7oteDG8ZVZtzMUP0rx6BvzXbofUq0bQFsaZc3MVKIqOoJD57MxiOmOJ9bOrI5EZLNC4D1UNiw9KgV02Pog-3GPGqWKC4-rDwSZSMOu-u1Qo9bI5qmUs1_btcaXQvFqPV152eMyDhF08rk8w9JUbbFP-v-N-J46sUKNtp_mSYwKwjzl3U0vVrtudT5505kggfCkJmxPLtB0VfeY9pk0lbNbPofg');"></div>
 </div>
-<div class="md:hidden flex justify-center gap-4 mt-3">
-<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-[#fcc603] transition-colors" id="solution-prev" type="button"><span class="material-symbols-outlined">chevron_left</span></button>
-<button class="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-[#fcc603] transition-colors" id="solution-next" type="button"><span class="material-symbols-outlined">chevron_right</span></button>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Grid</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Stable</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Commercial Grid</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Robust solutions for commercial energy distribution, ensuring stability and accurate billing for businesses.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Industrial factory floor with machinery" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY51kTCc8EJyP_ThL9KmrVwUuDlm0FAOOdDpRHRmsqdHrO-D1EZstBYkXQ_-JoK6vYnKuAxZ4JUxoRh89NdgimkhFL1OPDPA2OTGjXPW9rh2zivXTxVvj8ieI2J1hN92BFOKlrFAinL-H1iyAZAMn9s5yx4qTeFR1SbLbGs-Ulfzk8F3cRQtLFCkls0_HmYCbnJdmh481_krM5H8LH4ei4zWS6JsfeGv1pEyxb6QJsguMtUlOKS-DuDIzxeZWsg6hMwo2OQZli6aI');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Industrial</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">High Load</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Industrial IoT</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Heavy-duty metering for industrial complexes, integrated with IoT for predictive maintenance and efficiency.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Water treatment plant pipes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1WwgTHVeavPCO4ueUxFleHuonTEYQ8Kx_LKKhrw8yjx_qsyAH5u02zMvO8k-pDpPJ2snrZIQTBFpsPvWcnyAm9F4aYIhopqWbi5oIbdQ0gp7E7kwd_j52POnjXnX5BeTy0gZc833w-zuGtfWd4OA3P24eAexfiz9YWvR26Zwz14XhUYpSi8r23Yiv7YTSkXQyVasDYNub_vpTg78zZbEB_0qPkKdrVw-CByVyS9IqVcl1ceG7xe6WquOdGaZNY9eilZ0Jg4830gQ');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Water</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Flow</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Water Management</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Smart water meters detecting leaks and managing flow with unprecedented accuracy.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Solar panels on a roof" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZcC6hqcp7u898UogYYgS_95YHodi7PAxALrIELzHpVeodgrKntjBE1D60F4efBJoizfZjwHMVrFw3451t136Lh3V9ie_Q1NnaaPo6zEFuZDxo3uCSE2jMidiRMtxjuiCMdTTUfcT6nSkTqAd1ets9RnYJBEqqtWM5uZOS8qW41kgKwX2t8hPnoQ6naJEFsbKVPhlp059TGKsocmV0MYmuebi_oBCy2bdiwF8eXyYy5LO-OMMFyTu0Lqhx1VV9csjrbVzdztE-NZ4');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Renewable</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Solar</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Renewable Integration</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Bidirectional metering designed for solar and wind energy prosumers.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of computer server rack lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJbCGw6KmPDgLw9eYaAqcnHaxyFNwtN_NEIMcQldP9PzLeSG1kgiAzs-5N50fQzRPRA4BXSBMOxMhatBIEhB_vU_HHL1XU0dY7A5jAUQ9rF0lLttdxE6eiz5OHGIGEGmOTQ-TLoPoIQvm1YMvf7__hTBl418B9DNtQr_lmJFY-tc3aYHcKmkx80BIFf-s3KcctOrswbUZtz1XTGGodc_iwC497_RTAz1Ppq99YdeXkQekTiEdgVYf_8ae4AZkQ5mXy-Woth-TYTP8');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Data</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Analytics</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">AMI Infrastructure</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Complete Advanced Metering Infrastructure setups for utility companies.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Electric car charging station" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbgKTNG5g31NSLJmW7ai1eza1JpBO1dKQfr3nQ0xX0qs5em83Mjfu0EFx7vD9X4p6FLZSlwsoOWf0XSYWzi8hOiFNN2PuIAptUiRKRSCUc1B4FTo_TLo7kHayKQScwL2MQ_B-HrCaVvOjm2xUb_DAlqGRftzf1OfwwJ77q7yBfKleyR7DNlIdnoHnyZpAWYi00xNDlCr1Jx3oxf8f0vaM3lPFj1KNzjT33n5wZj3It4HYRjOxssLQdcRqHvR1NbByFsBU2GvJb6yc');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">EV</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">Charging</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">EV Metering</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Precise sub-metering solutions for electric vehicle charging stations and fleets.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden rounded-2xl">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Digital dashboard showing graphs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEs7Wvd8-Q1kPfl8ULz2z6Ke2ThXZ0uexSO8YWQ_apnOxGlElTJ3IdASpYAzRskyyG_2tjG5jzX6kgL55R7zKsXiPfHMMgcl4JqCwTLtK_xuIuKhPbPuPP_bA8aW0AUT07zg31bNqVbg9ztpiFYJAbk6xmUmHNsUt-M00znpGB0q0_hRZx9g0SNySGOgTq_qEm7IQdhlTJrixAjiDC3zIJUhzXF_Lg-21-tbefPHALXAfd5JCvBU-uMRZIwGADxVQ6MYBBrwNDKTM');"></div>
+</div>
+<div class="pt-6 px-2 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">Software</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full border border-gray-200">SaaS</span>
+</div>
+<h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">Energy Mgmt Software</h4>
+<p class="text-gray-500 text-base leading-relaxed mb-4 flex-grow">
+                        Cloud-based platforms to visualize, analyze, and optimize energy consumption.
+                    </p>
+<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+                        Learn more <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
