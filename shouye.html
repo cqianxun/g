@@ -52,25 +52,26 @@
 </div>
 <div class="flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-8 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory md:overflow-visible" id="solution-track" style="scroll-padding-left: 0.5rem; scroll-padding-right: 0.5rem;">
 {pboot:nav num=8 parent=5}
-<div class="group flex flex-col h-full bg-white rounded-2xl cursor-pointer hover:shadow-xl transition-all duration-300 flex-shrink-0 w-full snap-center md:w-auto">
-<div class="relative h-56 md:h-64 overflow-hidden rounded-2xl bg-gray-50">
-<a href="[nav:link]" title="[nav:name]">
+<div class="group flex flex-col h-full bg-white rounded-3xl cursor-pointer border border-gray-100 hover:border-[#fcc603]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] transition-all duration-300 flex-shrink-0 w-full snap-center md:w-auto p-3 md:p-4">
+<div class="relative h-56 md:h-64 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100/80 ring-1 ring-gray-200/70">
+<a href="[nav:link]" title="[nav:name]" class="block h-full">
 <img alt="[nav:name]" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" src="[nav:ico]"/>
 </a>
+<div class="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-white/85 backdrop-blur px-3 py-1 text-xs font-bold text-[#e5b402] border border-[#fcc603]/20">Solution</div>
 </div>
-<div class="pt-6 px-2 flex flex-col flex-grow">
-<div class="flex flex-wrap gap-2 mb-4">
+<div class="pt-5 px-1 flex flex-col flex-grow">
+<div class="flex flex-wrap gap-2 mb-3">
 <span class="px-3 py-1 bg-[#fcc603]/10 text-[#e5b402] text-sm font-bold rounded-full border border-[#fcc603]/20">[nav:name]</span>
 </div>
-<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors">
+<h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#fcc603] transition-colors leading-tight">
 <a href="[nav:link]" title="[nav:name]">[nav:name]</a>
 </h4>
-<ul class="text-gray-500 text-base leading-relaxed mb-4 flex-grow space-y-1">
+<ul class="text-gray-500 text-sm md:text-base leading-relaxed mb-4 flex-grow space-y-2">
 {pboot:2nav parent=[nav:scode] num=3}
-<li><a class="hover:text-[#fcc603] transition-colors" href="[2nav:link]">[2nav:name]</a></li>
+<li><a class="hover:text-[#fcc603] transition-colors inline-flex items-center gap-2" href="[2nav:link]"><span class="w-1.5 h-1.5 rounded-full bg-[#fcc603]"></span>[2nav:name]</a></li>
 {/pboot:2nav}
 </ul>
-<div class="mt-auto pt-4 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
+<div class="mt-auto pt-4 border-t border-gray-100 flex items-center text-black font-bold group-hover:text-[#fcc603] transition-colors gap-2">
 <a href="[nav:link]" title="[nav:name]">Learn more</a> <span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
 </div>
 </div>
